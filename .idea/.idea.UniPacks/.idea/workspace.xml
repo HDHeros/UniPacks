@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="feat: added &quot;HowToUse&quot; section to userData's readme">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel1.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Docs/UserData/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/UserData/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +32,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/TestRunner/Callbacks/RemoteTestResultSender.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5980A88A-E531-4D4B-9811-FCDE1734D236/90/bdc0cc9b/String.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/WorkerHDHero/RiderProjects/UniPacks/Assets/Samples/HDHUserData/UserDataSample.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/87/d722a31b/IList.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_InputField.cs" root0="SKIP_HIGHLIGHTING" />
@@ -123,7 +121,7 @@
       <updated>1682759427056</updated>
       <workItem from="1682759483703" duration="15901000" />
       <workItem from="1682775531130" duration="3832000" />
-      <workItem from="1682924237118" duration="6530000" />
+      <workItem from="1682924237118" duration="8096000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -167,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682928878326</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: added &quot;HowToUse&quot; section to userData's readme">
+      <created>1682931722889</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682931722889</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +200,7 @@
     <MESSAGE value="fix: readme for UserData - added installing via UPM" />
     <MESSAGE value="fix: userData readme" />
     <MESSAGE value="fix: UD readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: UD readme" />
+    <MESSAGE value="feat: added &quot;HowToUse&quot; section to userData's readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added &quot;HowToUse&quot; section to userData's readme" />
   </component>
 </project>

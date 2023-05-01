@@ -80,3 +80,13 @@ Data will be saved with the delay you specified in `UserDataConfig`. It means, t
       _model.ForceSave();
    }
 ```
+
+### Saved data inspection
+The service is instantiating a `DontDestroyOnLoad` instance immediately after creation itself in order to use it own purposes.  
+
+![](https://github.com/HDHeros/UniPacks/blob/main/Docs/UserData/userdata_agent-instance.png)
+
+Also created object allows you to see currently obtained(!) models and its saved data.  
+
+![](https://github.com/HDHeros/UniPacks/blob/main/Docs/UserData/userdata_inspection.png)
+
