@@ -87,7 +87,7 @@ The service is instantiating a `DontDestroyOnLoad` instance immediately after cr
 
 ![](https://github.com/HDHeros/UniPacks/blob/main/Docs/UserData/userdata_agent-instance.png)
 
-Also created object allows you to see currently obtained(!) models and its saved data.  
+Also created object allows you to see currently obtained(!) models and their saved data.  
 
 ![](https://github.com/HDHeros/UniPacks/blob/main/Docs/UserData/userdata_inspection.png)
 
