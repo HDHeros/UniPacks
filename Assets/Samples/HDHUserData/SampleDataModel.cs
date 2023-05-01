@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace Samples.HDHUserData
 {
-    public class SampleDataModel1 : DataModel
+    public class SampleDataModel : DataModel
     {
         [JsonProperty] public int Integer;
         [JsonProperty] public bool Boolean;

@@ -9,7 +9,7 @@ namespace Samples.HDHUserData
     {
         [SerializeField] private UserDataConfig _userDataConfig;
         private UserDataService _userData;
-        private SampleDataModel1 _model1;
+        private SampleDataModel _model;
         private SampleDataModel2 _model2;
 
         public struct TestStruct
@@ -18,18 +18,19 @@ namespace Samples.HDHUserData
             public int[] Values;
         }
         
-        
-        private void Start()
+        private void Awake()
         {
             _userData = new UserDataService(_userDataConfig);
-            _model1 = _userData.GetModel<SampleDataModel1>();
+            _model = _userData.GetModel<SampleDataModel>();
             _model2 = _userData.GetModel<SampleDataModel2>();
         }
 
         private void Update()
         {
-            _model1.FloatValue += Time.deltaTime;
-            _model1.Save();
+            _model.FloatValue += Time.deltaTime;
+            _model.Save();
+            _model.Stroka = "VeryImportantStringThatShouldBeForceSaved";
+            _model.ForceSave();
         }
     }
 }

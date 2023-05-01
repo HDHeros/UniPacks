@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="fix: readme for UserData - added installing via UPM">
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel1.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Docs/UserData/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/UserData/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,14 +65,14 @@
       <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/Dto/UserDataConfig.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadMonoAgent.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/UserDataService.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" />
       <option value="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel2.cs" />
-      <option value="$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" />
       <option value="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel1.cs" />
       <option value="$PROJECT_DIR$/README.md" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" />
       <option value="$PROJECT_DIR$/Docs/UserData/README.md" />
     </changedPaths>
   </component>
@@ -120,7 +123,7 @@
       <updated>1682759427056</updated>
       <workItem from="1682759483703" duration="15901000" />
       <workItem from="1682775531130" duration="3832000" />
-      <workItem from="1682924237118" duration="3775000" />
+      <workItem from="1682924237118" duration="6530000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -150,7 +153,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682928678782</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix: userData readme">
+      <created>1682928775103</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682928775103</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix: UD readme">
+      <created>1682928878326</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682928878326</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +193,8 @@
     <MESSAGE value="feat: user data" />
     <MESSAGE value="add: readme files for UserData" />
     <MESSAGE value="fix: readme for UserData - added installing via UPM" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: readme for UserData - added installing via UPM" />
+    <MESSAGE value="fix: userData readme" />
+    <MESSAGE value="fix: UD readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: UD readme" />
   </component>
 </project>
