@@ -72,6 +72,7 @@ For implement `IUserDataConfig` you should define three properties like
    }
 ```
 Data will be saved with the delay you specified in `UserDataConfig`. It means, that if you Save some data and close the app before delay will pass, your data is not saved.  
+
 4. If you need to save the data without delay you can use `ForceSave()` method
 ```c#
    public void SaveImportantData()
