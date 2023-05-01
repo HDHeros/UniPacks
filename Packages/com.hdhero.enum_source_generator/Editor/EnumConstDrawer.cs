@@ -29,17 +29,17 @@ namespace HDH.ESG.Editor
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             EditorGUI.BeginProperty(position, label, property);
-            var indent = EditorGUI.indentLevel;
             SerializedProperty constName = property.FindPropertyRelative("Name");
             SerializedProperty setValueExplicit = property.FindPropertyRelative("SetValueExplicit");
             SerializedProperty value = property.FindPropertyRelative("Value");
+            SerializedProperty isNameValid = property.FindPropertyRelative("IsNameValid");
             int currentlyDrawingStringNum = 0;
         
             property.isExpanded = EditorGUI.Foldout(
                 position, 
                 property.isExpanded, 
                 property.isExpanded ? "" : GetFoldoutName(), 
-                style: string.IsNullOrEmpty(constName.stringValue.Trim()) 
+                style: string.IsNullOrEmpty(constName.stringValue.Trim()) || isNameValid.boolValue == false
                     ? Styles.ErrStyle
                     : EditorStyles.foldout);
 
@@ -59,22 +59,19 @@ namespace HDH.ESG.Editor
                 EditorGUI.PropertyField(valueRect, property.FindPropertyRelative("Value"));
                 GUI.enabled = true;
             }
-            
-            
+
             string GetFoldoutName() => string.IsNullOrEmpty(constName.stringValue) ? "Empty"
                 : $"{constName.stringValue} = {value.intValue}";
 
             float GetYPosition() => position.y + StringSpacing / 2 + StringHeight * currentlyDrawingStringNum +
-                                  StringSpacing * currentlyDrawingStringNum;
+                                  StringSpacing * currentlyDrawingStringNum + 10;
             
-            // Set indent back to what it was
-            EditorGUI.indentLevel = indent;
             EditorGUI.EndProperty();
         }
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label) => 
             property.isExpanded 
-                ? TotalStringsCount * StringHeight + TotalStringsCount * StringSpacing 
+                ? TotalStringsCount * StringHeight + TotalStringsCount * StringSpacing + 20
                 : 16;
     }
 }

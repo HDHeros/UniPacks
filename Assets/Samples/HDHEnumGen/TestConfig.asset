@@ -13,6 +13,95 @@ MonoBehaviour:
   m_Name: TestConfig
   m_EditorClassIdentifier: 
   _constants:
+  - Name: SomeValue
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 1
+  - Name: Asda54
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 1
   - Name: asdwafad
     SetValueExplicit: 1
     Value: 16
+    IsNameValid: 1
+  - Name: hjkm2
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 1
+  - Name: asdwafad
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 0
+  - Name: asdwafad
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 0
+  - Name: asdwafad
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 0
+  - Name: asdwafad
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 0
+  - Name: asdwafad
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 0
+  - Name: asdwafad
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 0
+  - Name: asdwafad
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 0
+  - Name: asdwafad
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 0
+  - Name: asdwafad
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 0
+  - Name: asdwafadw
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 1
+  - Name: asdwafad
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 0
+  - Name: asdwafad
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 0
+  - Name: asdwafad
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 0
+  - Name: asdwafad
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 0
+  - Name: asdwafad
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 0
+  - Name: asdwafad
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 0
+  - Name: asdwafad
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 0
+  - Name: asdwafad
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 0
+  - Name: asdwafad
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 0
