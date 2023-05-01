@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="feat: added &quot;HowToUse&quot; section to userData's readme">
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="feat: &quot;data inspection&quot; section for userData's readme">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/UserData/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/UserData/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/UserDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/UserDataService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,15 +64,15 @@
       <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/Dto/UserDataConfig.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadMonoAgent.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/UserDataService.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" />
       <option value="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel2.cs" />
       <option value="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel1.cs" />
       <option value="$PROJECT_DIR$/README.md" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" />
       <option value="$PROJECT_DIR$/Docs/UserData/README.md" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/UserDataService.cs" />
+      <option value="$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2P5un3xdLM68MXbMmHnWZdAxlmg" />
@@ -121,7 +122,7 @@
       <updated>1682759427056</updated>
       <workItem from="1682759483703" duration="15901000" />
       <workItem from="1682775531130" duration="3832000" />
-      <workItem from="1682924237118" duration="8096000" />
+      <workItem from="1682924237118" duration="8939000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -172,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682931722889</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: &quot;data inspection&quot; section for userData's readme">
+      <created>1682933091554</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682933091554</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +209,7 @@
     <MESSAGE value="fix: userData readme" />
     <MESSAGE value="fix: UD readme" />
     <MESSAGE value="feat: added &quot;HowToUse&quot; section to userData's readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added &quot;HowToUse&quot; section to userData's readme" />
+    <MESSAGE value="feat: &quot;data inspection&quot; section for userData's readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: &quot;data inspection&quot; section for userData's readme" />
   </component>
 </project>

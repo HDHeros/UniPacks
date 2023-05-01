@@ -8,6 +8,7 @@ namespace HDH.UserData
 {
     public class UserDataService
     {
+        private static bool s_isInstanceExist;
         private readonly SaveLoadService _saveLoadService;
         private readonly Dictionary<Type, DataModelInfo> _loadedModels;
         private readonly SaveLoadMonoAgent _monoAgent;
@@ -17,6 +18,10 @@ namespace HDH.UserData
 
         public UserDataService(IUserDataConfig config)
         {
+            if (s_isInstanceExist)
+                throw new Exception($"An instance of {nameof(UserDataService)} is already exist.");
+
+            s_isInstanceExist = true;
             _saveLoadService = new SaveLoadService(config.SaveFolderPath, config.FileExtension);
             _loadedModels = new Dictionary<Type, DataModelInfo>();
             _monoAgent = new GameObject("[SaveLoadAgent]").AddComponent<SaveLoadMonoAgent>();
