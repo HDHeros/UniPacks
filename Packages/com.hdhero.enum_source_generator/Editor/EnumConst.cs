@@ -9,6 +9,8 @@ namespace HDH.ESG.Editor
         [SerializeField] public string Name;
         [SerializeField] public bool SetValueExplicit;
         [SerializeField] public int Value;
-        [SerializeField] public bool IsNameValid;
+        public bool IsNameValid;
+        public string NameValidationMessage;
+        public bool IsValueUnique;
     }
 }

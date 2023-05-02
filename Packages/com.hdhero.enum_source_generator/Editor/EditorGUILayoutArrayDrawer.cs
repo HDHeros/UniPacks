@@ -1,55 +1,61 @@
-﻿using UnityEditor;
+﻿using System;
+using UnityEditor;
 using UnityEngine;
 
 namespace HDH.ESG.Editor
 {
     public static class EditorGUILayoutArrayDrawer
     {
-        private static bool _isExpanded;
+        private static bool _isExpanded = true;
         private static int _pageCapacity = 10;
         private static int _currentPage = 1;
 
         private static class Styles
         {
-            public static readonly GUIStyle RemoveItemBtnExpanded;
-            public static readonly GUIStyle RemoveItemBtnNormal;
+            public static readonly GUIStyle RemoveItemBtn;
+            public static readonly GUIStyle ItemStyle;
 
             static Styles()
             {
-                RemoveItemBtnExpanded = new GUIStyle(EditorStyles.miniButton)
+                RemoveItemBtn = new GUIStyle(EditorStyles.miniButton)
                 {
-                    fixedWidth = Const.RemoveButtonWidth,
+                    fixedWidth = 20,
+                    fontSize = 11,
                     alignment = TextAnchor.MiddleCenter,
-                    fixedHeight = 75
+                    padding = new RectOffset(0,0,0,1)
                 };
-                
-                RemoveItemBtnNormal = new GUIStyle(EditorStyles.miniButton)
+
+                ItemStyle = new GUIStyle(EditorStyles.helpBox)
                 {
-                    fixedWidth = Const.RemoveButtonWidth,
-                    alignment = TextAnchor.MiddleCenter,
+                    alignment = TextAnchor.MiddleLeft,
+                    margin = new RectOffset(0, 0, 0, 2),
+                    padding = new RectOffset(0, 0, 6, 6)
                 };
             }
         }
         
-        public static void DrawArray(SerializedProperty property)
+        public static void DrawArray(SerializedProperty property, Action<SerializedProperty> onDrawItemBegin)
         {
             _isExpanded = EditorGUILayout.BeginFoldoutHeaderGroup(_isExpanded, property.displayName);
 
             if (_isExpanded == false) return;
             DrawPages(property);
-            DrawItems(property);
+            DrawItems(property, onDrawItemBegin);
             EditorGUILayout.EndFoldoutHeaderGroup();
         }
 
-        private static void DrawItems(SerializedProperty property)
+        private static void DrawItems(SerializedProperty property, Action<SerializedProperty> onDrawItemBegin)
         {
             int startIndex = (_currentPage - 1) * _pageCapacity;
             int endIndex = Mathf.Clamp(_currentPage * _pageCapacity, 0, property.arraySize);
+            EditorGUILayout.BeginVertical();
             for (int i = startIndex; i < endIndex; i++)
             {
-                EditorGUILayout.BeginHorizontal();
+                SerializedProperty item = property.GetArrayElementAtIndex(i);
+                onDrawItemBegin?.Invoke(item);
+                EditorGUILayout.BeginHorizontal(Styles.ItemStyle);
                 EditorGUILayout.Space(20, false);
-                EditorGUILayout.PropertyField(property.GetArrayElementAtIndex(i));
+                EditorGUILayout.PropertyField(item);
                 if (IsRemoveButtonClicked(property, i))
                 {
                     property.DeleteArrayElementAtIndex(i);
@@ -58,6 +64,8 @@ namespace HDH.ESG.Editor
 
                 EditorGUILayout.EndHorizontal();
             }
+            EditorGUILayout.EndVertical();
+
         }
 
         private static void DrawPages(SerializedProperty property)
@@ -80,9 +88,8 @@ namespace HDH.ESG.Editor
 
         private static bool IsRemoveButtonClicked(SerializedProperty property, int i)
         {
-            return GUILayout.Button("✕", property.GetArrayElementAtIndex(i).isExpanded 
-                ? Styles.RemoveItemBtnExpanded 
-                : Styles.RemoveItemBtnNormal);
+            Styles.RemoveItemBtn.fixedHeight = EditorGUI.GetPropertyHeight(property.GetArrayElementAtIndex(i));
+            return GUILayout.Button("✕",Styles.RemoveItemBtn);
         }
     }
 }

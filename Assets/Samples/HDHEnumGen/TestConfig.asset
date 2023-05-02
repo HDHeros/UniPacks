@@ -17,91 +17,137 @@ MonoBehaviour:
     SetValueExplicit: 1
     Value: 16
     IsNameValid: 1
+    NameValidationMessage: 
+    IsValueUnique: 0
   - Name: Asda54
     SetValueExplicit: 1
     Value: 16
     IsNameValid: 1
+    NameValidationMessage: 
+    IsValueUnique: 0
   - Name: asdwafad
     SetValueExplicit: 1
     Value: 16
     IsNameValid: 1
+    NameValidationMessage: 
+    IsValueUnique: 0
   - Name: hjkm2
     SetValueExplicit: 1
+    Value: 12
+    IsNameValid: 1
+    NameValidationMessage: 
+    IsValueUnique: 0
+  - Name: asdwafad5
+    SetValueExplicit: 1
+    Value: 17
+    IsNameValid: 1
+    NameValidationMessage: 
+    IsValueUnique: 0
+  - Name: asdwaf
+    SetValueExplicit: 1
     Value: 16
     IsNameValid: 1
+    NameValidationMessage: 
+    IsValueUnique: 0
+  - Name: asdwafa
+    SetValueExplicit: 1
+    Value: 16
+    IsNameValid: 1
+    NameValidationMessage: 
+    IsValueUnique: 0
   - Name: asdwafad
     SetValueExplicit: 1
     Value: 16
     IsNameValid: 0
+    NameValidationMessage: Name isn't unique.
+    IsValueUnique: 0
   - Name: asdwafad
     SetValueExplicit: 1
     Value: 16
     IsNameValid: 0
+    NameValidationMessage: Name isn't unique.
+    IsValueUnique: 0
   - Name: asdwafad
     SetValueExplicit: 1
     Value: 16
     IsNameValid: 0
+    NameValidationMessage: Name isn't unique.
+    IsValueUnique: 0
   - Name: asdwafad
     SetValueExplicit: 1
     Value: 16
     IsNameValid: 0
+    NameValidationMessage: Name isn't unique.
+    IsValueUnique: 0
   - Name: asdwafad
     SetValueExplicit: 1
     Value: 16
     IsNameValid: 0
+    NameValidationMessage: Name isn't unique.
+    IsValueUnique: 0
   - Name: asdwafad
     SetValueExplicit: 1
     Value: 16
     IsNameValid: 0
-  - Name: asdwafad
-    SetValueExplicit: 1
-    Value: 16
-    IsNameValid: 0
-  - Name: asdwafad
-    SetValueExplicit: 1
-    Value: 16
-    IsNameValid: 0
-  - Name: asdwafad
-    SetValueExplicit: 1
-    Value: 16
-    IsNameValid: 0
+    NameValidationMessage: Name isn't unique.
+    IsValueUnique: 0
   - Name: asdwafadw
     SetValueExplicit: 1
     Value: 16
-    IsNameValid: 1
+    IsNameValid: 0
+    NameValidationMessage: Name isn't unique.
+    IsValueUnique: 0
   - Name: asdwafad
     SetValueExplicit: 1
     Value: 16
     IsNameValid: 0
+    NameValidationMessage: Name isn't unique.
+    IsValueUnique: 0
   - Name: asdwafad
     SetValueExplicit: 1
     Value: 16
     IsNameValid: 0
+    NameValidationMessage: Name isn't unique.
+    IsValueUnique: 0
   - Name: asdwafad
     SetValueExplicit: 1
     Value: 16
     IsNameValid: 0
+    NameValidationMessage: Name isn't unique.
+    IsValueUnique: 0
   - Name: asdwafad
     SetValueExplicit: 1
     Value: 16
     IsNameValid: 0
+    NameValidationMessage: Name isn't unique.
+    IsValueUnique: 0
   - Name: asdwafad
     SetValueExplicit: 1
     Value: 16
     IsNameValid: 0
+    NameValidationMessage: Name isn't unique.
+    IsValueUnique: 0
   - Name: asdwafad
     SetValueExplicit: 1
     Value: 16
     IsNameValid: 0
+    NameValidationMessage: Name isn't unique.
+    IsValueUnique: 0
   - Name: asdwafad
     SetValueExplicit: 1
     Value: 16
     IsNameValid: 0
+    NameValidationMessage: 
+    IsValueUnique: 0
   - Name: asdwafad
     SetValueExplicit: 1
     Value: 16
     IsNameValid: 0
+    NameValidationMessage: 
+    IsValueUnique: 0
   - Name: asdwafad
     SetValueExplicit: 1
     Value: 16
     IsNameValid: 0
+    NameValidationMessage: 
+    IsValueUnique: 0
