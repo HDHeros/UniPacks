@@ -17,17 +17,23 @@ namespace HDH.ESG.Editor
             static Styles()
             {
                 ErrStyle = new GUIStyle(EditorStyles.foldout)
-                    {normal = {textColor = Color.red,}};
+                {
+                    normal = {textColor = new Color(1, 0.43f, 0.25f),},
+                    fontStyle = FontStyle.Bold
+                };
                 
-                WarningStyle = new GUIStyle(EditorStyles.foldout) 
-                    {normal = {textColor = Color.yellow,}};
+                WarningStyle = new GUIStyle(EditorStyles.foldout)
+                {
+                    normal = {textColor = new Color(1, 0.75f, 0),},
+                    fontStyle = FontStyle.Bold
+                };
             }
         }
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             EditorGUI.BeginProperty(position, label, property);
-            SerializedProperty setValueExplicit = property.FindPropertyRelative("SetValueExplicit");
+            bool setValueExplicit = property.FindPropertyRelative("SetValueExplicit").boolValue;
             SerializedProperty value = property.FindPropertyRelative("Value");
             SerializedProperty constName = property.FindPropertyRelative("Name");
             bool isConstNameValid = string.IsNullOrEmpty(constName.stringValue.Trim()) == false && property.FindPropertyRelative("IsNameValid").boolValue;
@@ -60,13 +66,18 @@ namespace HDH.ESG.Editor
                     EditorGUI.HelpBox(new Rect(position.x, GetYPosition(), position.width, StringHeight),
                         "Value isn't unique", MessageType.Warning);
                 
-                GUI.enabled = setValueExplicit.boolValue;
-                EditorGUI.PropertyField(new Rect(position.x, GetYPosition(), position.width, StringHeight), property.FindPropertyRelative("Value"));
-                GUI.enabled = true;
+                if (setValueExplicit)
+                    EditorGUI.PropertyField(new Rect(position.x, GetYPosition(), position.width, StringHeight), property.FindPropertyRelative("Value"));
             }
 
-            string GetFoldoutName() => string.IsNullOrEmpty(constName.stringValue) ? "Empty"
-                : $"{constName.stringValue} = {value.intValue}";
+            string GetFoldoutName()
+            {
+                return string.IsNullOrEmpty(constName.stringValue)
+                    ? "Empty"
+                    : setValueExplicit 
+                        ? $"{constName.stringValue} = {value.intValue}"
+                        : constName.stringValue;
+            }
 
             float GetYPosition()
             {
@@ -83,11 +94,13 @@ namespace HDH.ESG.Editor
         {
             if (property.isExpanded)
             {
-                int stringsCount = 3;
+                int stringsCount = 2;
                 SerializedProperty constName = property.FindPropertyRelative("Name");
                 bool isConstNameValid = string.IsNullOrEmpty(constName.stringValue.Trim()) == false && property.FindPropertyRelative("IsNameValid").boolValue;
+                bool setValueExplicit = property.FindPropertyRelative("SetValueExplicit").boolValue;
                 bool isValueUnique = property.FindPropertyRelative("IsValueUnique").boolValue;
                 if (isConstNameValid == false) stringsCount++;
+                if (setValueExplicit) stringsCount++;
                 if (isValueUnique == false) stringsCount++;
                 
 

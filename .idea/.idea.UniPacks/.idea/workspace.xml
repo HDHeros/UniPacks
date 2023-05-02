@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="feat: enum config guiStyles and validation">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHEnumGen/TestConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHEnumGen/TestConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/Const.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/Const.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutArrayDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutArrayDrawer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConst.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConst.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConstDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConstDrawer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,22 +28,29 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AE72FC95-8AB4-4FDB-B61B-9D8C36CF141E/26/f1ef3629/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/WorkerHDHero/RiderProjects/UniPacks/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A5BC71BB-4D98-498A-BA1F-868B89D20D47/6f/503754fa/SerializedObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5980A88A-E531-4D4B-9811-FCDE1734D236/7a/8be9de0b/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A5BC71BB-4D98-498A-BA1F-868B89D20D47/0d/252296da/EditorGUILayout.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/WorkerHDHero/RiderProjects/UniPacks/Packages/com.hdhero.enum_source_generator/Editor/EnumConfig.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/WorkerHDHero/RiderProjects/UniPacks/Packages/com.hdhero.enum_source_generator/Editor/EnumConstDrawer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/88/a70b25c3/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/TestRunner/Callbacks/RemoteTestResultSender.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5980A88A-E531-4D4B-9811-FCDE1734D236/90/bdc0cc9b/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A5BC71BB-4D98-498A-BA1F-868B89D20D47/37/6c7d28d5/EditorStyles.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/WorkerHDHero/RiderProjects/UniPacks/Packages/com.hdhero.enum_source_generator/Editor/EnumConfig.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/87/d722a31b/IList.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/WorkerHDHero/RiderProjects/UniPacks/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutArrayDrawer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Layout/VerticalLayoutGroupTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/WorkerHDHero/RiderProjects/UniPacks/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutArrayDrawer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5980A88A-E531-4D4B-9811-FCDE1734D236/0b/bcf570a4/Type.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/WorkerHDHero/RiderProjects/UniPacks/Packages/com.hdhero.enum_source_generator/Editor/EnumConst.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A5BC71BB-4D98-498A-BA1F-868B89D20D47/b0/7614504f/EditorGUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/CanvasUpdateRegistry.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/05/9de8e052/List`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -56,6 +60,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/681FDBD9-389E-4D6E-8755-FE4F632BFBBE/c2/3aee7c51/GUIStyle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5980A88A-E531-4D4B-9811-FCDE1734D236/42/3c32520f/ICollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5980A88A-E531-4D4B-9811-FCDE1734D236/99/8f54a0f6/Int32.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/WorkerHDHero/RiderProjects/UniPacks/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutArrayDrawer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/681FDBD9-389E-4D6E-8755-FE4F632BFBBE/6f/96cb79f5/GUILayoutOption.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/d5/8e9ce562/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -84,11 +89,11 @@
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/Consts.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/Const.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutExt.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfig.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConst.cs" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfig.cs" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConstDrawer.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutArrayDrawer.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2P5un3xdLM68MXbMmHnWZdAxlmg" />
@@ -139,7 +144,7 @@
       <workItem from="1682759483703" duration="15901000" />
       <workItem from="1682775531130" duration="3832000" />
       <workItem from="1682924237118" duration="23225000" />
-      <workItem from="1683016975824" duration="9421000" />
+      <workItem from="1683016975824" duration="16857000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -218,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682950922540</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: enum config guiStyles and validation">
+      <created>1683026804880</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683026804880</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +263,7 @@
     <MESSAGE value="feat: throwing an exception if user try to create two or more instances of UserDataService" />
     <MESSAGE value="feat: new drawer for enum config" />
     <MESSAGE value="refactor: extracted arrayDrawer from enumConfig" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: extracted arrayDrawer from enumConfig" />
+    <MESSAGE value="feat: enum config guiStyles and validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: enum config guiStyles and validation" />
   </component>
 </project>
