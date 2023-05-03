@@ -12,16 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c836c4762f44d1c8bdbd63c0d94cf56, type: 3}
   m_Name: TestConfig
   m_EditorClassIdentifier: 
-  _constants:
-  - Name: Second
+  EnumName: SomeNamspace.AndMoreNS.TestEnum
+  FolderPath: C:/Users/WorkerHDHero/RiderProjects/UniPacks/Assets
+  Constants:
+  - Name: Aer
     SetValueExplicit: 0
-    Value: 1
+    Value: -1
     IsNameValid: 1
     NameValidationMessage: 
     IsValueUnique: 1
-  - Name: First
-    SetValueExplicit: 1
-    Value: 1
+  - Name: So
+    SetValueExplicit: 0
+    Value: -1
     IsNameValid: 1
     NameValidationMessage: 
+    IsValueUnique: 1
+  - Name: So
+    SetValueExplicit: 0
+    Value: -1
+    IsNameValid: 0
+    NameValidationMessage: Name isn't unique.
     IsValueUnique: 1

@@ -9,39 +9,108 @@ namespace HDH.ESG.Editor
     [CustomEditor(typeof(EnumConfig))]
     public class EnumConfigEditor : UnityEditor.Editor
     {
-        private readonly HashSet<string> _names = new HashSet<string>();
-        private readonly HashSet<int> _values = new HashSet<int>();
-        private static readonly Regex s_constNameRegEx = new Regex("^[a-zA-Z_@]?[a-zA-Z0-9_]*$");
+        private const string FolderPropertyPath = "FolderPath";
+        private const string EnumNamePropPath = "EnumName";
+        private const string ConstantsPropertyPath = "Constants";
+        private static readonly Regex s_enumFullNameRegex = new Regex("^(@?[a-z_A-Z]\\w+(?:\\.@?[a-z_A-Z]\\w+)*)$");
+        private static readonly Regex s_constNameRegex = new Regex("^[a-zA-Z_@]?[a-zA-Z0-9_]*$");
+        private static readonly HashSet<string> _names = new HashSet<string>();
+        private static readonly HashSet<int> _values = new HashSet<int>();
+        private SerializedProperty _enumName;
+        private SerializedProperty _folderPath;
         private SerializedProperty _constants;
+        private bool _isConfigValid;
 
-        private void OnEnable()
+        public void OnEnable()
         {
-            _constants = serializedObject.FindProperty("_constants");
+            _enumName = serializedObject.FindProperty(EnumNamePropPath);
+            _folderPath = serializedObject.FindProperty(FolderPropertyPath);
+            _constants = serializedObject.FindProperty(ConstantsPropertyPath);
         }
 
         public override void OnInspectorGUI()
         {
+            _isConfigValid = true;
             EditorGUILayoutArrayDrawer.DrawArray(_constants, OnDrawItemBegin);
             _names.Clear();
             _values.Clear();
-            if (_constants.isExpanded == false) return;
-            DrawAddItemButton();
-            EditorGUILayout.BeginHorizontal();
-            DrawSortByValueButton();
-            DrawSortByNameButton();
-            EditorGUILayout.EndHorizontal();
+            if (_constants.isExpanded)
+            {
+                DrawAddItemButton();
+                EditorGUILayout.BeginHorizontal();
+                DrawSortByValueButton();
+                DrawSortByNameButton();
+                EditorGUILayout.EndHorizontal();
+            }
+            
+            DrawEnumNameField();
+            DrawPathPicker();
+            DrawGenerateButton();
             serializedObject.ApplyModifiedProperties();
+            EditorGUILayout.Space();
+        }
+
+        private void DrawGenerateButton()
+        {
+            string buttonLabelText = EnumSourceGenerator.IsExist(_enumName.stringValue, _folderPath.stringValue)
+                ? "Update"
+                : "Create";
+            
+            if (_isConfigValid == false)
+            {
+                GUI.enabled = false;
+                buttonLabelText += " (There are some errors in config. Fix it)";
+            }
+            
+            if (GUILayout.Button(buttonLabelText))
+            {
+                EnumConfig config = (EnumConfig) target;
+                EnumSourceGenerator.Generate(config.Constants, config.EnumName, config.FolderPath);
+            }
+            GUI.enabled = true;
+        }
+
+        private void DrawEnumNameField()
+        {
+            if (s_enumFullNameRegex.IsMatch(_enumName.stringValue) == false)
+            {
+                SetConfigValid(false);
+                EditorGUILayout.HelpBox("The name is not matching the naming rules.", MessageType.Error);
+            }    
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Enum Name", GUILayout.Width(90));
+            _enumName.stringValue = EditorGUILayout.DelayedTextField(_enumName.stringValue);
+            EditorGUILayout.EndHorizontal();
+        }
+
+        private void DrawPathPicker()
+        {
+            float labelWidth = 90;
+            float pickPathButtonWidth = 30;
+            if (System.IO.Directory.Exists(_folderPath.stringValue) == false)
+            {
+                SetConfigValid(false);
+                EditorGUILayout.HelpBox("Directory with this name doesn't exist.", MessageType.Error);
+            }
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Save Folder", GUILayout.Width(labelWidth));
+            _folderPath.stringValue = GUILayout.TextField(_folderPath.stringValue, 
+                GUILayout.Width(EditorGUIUtility.currentViewWidth - labelWidth - pickPathButtonWidth - 30));
+            if (GUILayout.Button("...", GUILayout.Width(pickPathButtonWidth)))
+            {
+                _folderPath.stringValue =
+                    EditorUtility.OpenFolderPanel("Open folder", Application.dataPath, string.Empty);
+            }
+            EditorGUILayout.EndHorizontal();
         }
 
         private void DrawAddItemButton()
         {
-            if (GUILayout.Button("Add"))
-            {
-                _constants.InsertArrayElementAtIndex(_constants.arraySize);
-                var newItem = _constants.GetArrayElementAtIndex(_constants.arraySize - 1);
-                newItem.FindPropertyRelative("Value").intValue = -1;
-                newItem.FindPropertyRelative("SetValueExplicit").boolValue = false;
-            }
+            if (GUILayout.Button("Add") == false) return;
+            _constants.InsertArrayElementAtIndex(_constants.arraySize);
+            var newItem = _constants.GetArrayElementAtIndex(_constants.arraySize - 1);
+            newItem.FindPropertyRelative("Value").intValue = -1;
+            newItem.FindPropertyRelative("SetValueExplicit").boolValue = false;
         }
 
         private void DrawSortByNameButton()
@@ -83,9 +152,11 @@ namespace HDH.ESG.Editor
 
         private void OnDrawItemBegin(SerializedProperty obj)
         {
-            obj.FindPropertyRelative("IsNameValid").boolValue = IsNameValid(
+            bool isNameValid = IsNameValid(
                 obj.FindPropertyRelative("Name").stringValue,
                 out string message);
+            SetConfigValid(isNameValid);
+            obj.FindPropertyRelative("IsNameValid").boolValue = isNameValid;
             obj.FindPropertyRelative("NameValidationMessage").stringValue = message;
             obj.FindPropertyRelative("IsValueUnique").boolValue =
                 IsValueValid(obj.FindPropertyRelative("Value").intValue,
@@ -107,7 +178,7 @@ namespace HDH.ESG.Editor
                 return false;
             }
 
-            if (s_constNameRegEx.IsMatch(cName) == false)
+            if (s_constNameRegex.IsMatch(cName) == false)
             {
                 validationMessage = "The name is not matching the naming rules.";
                 return false;
@@ -126,5 +197,8 @@ namespace HDH.ESG.Editor
             _values.Add(value);
             return true;
         }
+        
+        private void SetConfigValid(bool value) => 
+            _isConfigValid = _isConfigValid && value;
     }
 }

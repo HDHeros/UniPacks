@@ -51,9 +51,8 @@ namespace HDH.ESG.Editor
             {
                 if (isConstNameValid == false)
                 {
-                    var nameHelpBoxRect = new Rect(position.x, GetYPosition(), position.width, StringHeight);
-                    EditorGUI.HelpBox(nameHelpBoxRect, property.FindPropertyRelative("NameValidationMessage").stringValue,
-                        MessageType.Error);
+                    EditorGUI.HelpBox(new Rect(position.x, GetYPosition(), position.width, StringHeight), 
+                        property.FindPropertyRelative("NameValidationMessage").stringValue, MessageType.Error);
                 }
                 
                 EditorGUI.PropertyField(new Rect(position.x, GetYPosition(), position.width, StringHeight), 
