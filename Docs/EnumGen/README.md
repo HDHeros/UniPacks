@@ -38,8 +38,8 @@ Open `(yourProjectPath)/Packages/manifest.json`, then add the package in the lis
 7. Enter type name. You can use either simple name like `MyEnum` or specify full name with namespace `MyProject.Feature.MyEnum`   
 
    ![](https://github.com/HDHeros/UniPacks/blob/main/Docs/EnumGen/esg_items-list.png)  
-8. Chose folder to save file in. Click button `...` to open "open folder dialog"  
-9. If all is good you can click `Create` or `Update` button and file with enum will be created  
+8. Chose folder to save file in. Click button `...` to open "open folder dialog"
+9. If all is good you can click `Create` or `Update` button and file with enum will be created
 
 Done! Your enum is generated, you can find the file in specified folder and use enum constants from scripts you need
 
