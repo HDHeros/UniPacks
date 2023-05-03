@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="fix: SEG readme line breaks">
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="fix: test line break">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Docs/EnumGen/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/EnumGen/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/EnumGen/esg_bottom-panel.png" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/EnumGen/esg_bottom-panel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +46,7 @@
     <setting file="mock://C:/Users/WorkerHDHero/RiderProjects/UniPacks/Packages/com.hdhero.enum_source_generator/Editor/EnumConfig.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/87/d722a31b/IList.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/WorkerHDHero/RiderProjects/UniPacks/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHEnumGen/MyEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/WorkerHDHero/RiderProjects/UniPacks/Packages/com.hdhero.enum_source_generator/Editor/EnumConstDrawer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
@@ -91,12 +95,12 @@
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutArrayDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/Samples/HDHEnumGen/SampleEnum.cs" />
       <option value="$PROJECT_DIR$/Assets/TestEnum.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumSourceGenerator.cs" />
       <option value="$PROJECT_DIR$/Docs/UserData/README.md" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfig.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConstDrawer.cs" />
       <option value="$PROJECT_DIR$/Docs/EnumGen/README.md" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2P5un3xdLM68MXbMmHnWZdAxlmg" />
@@ -148,7 +152,7 @@
       <workItem from="1682775531130" duration="3832000" />
       <workItem from="1682924237118" duration="23225000" />
       <workItem from="1683016975824" duration="17094000" />
-      <workItem from="1683092781245" duration="18030000" />
+      <workItem from="1683092781245" duration="19653000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -262,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683116008435</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fix: test line break">
+      <created>1683116121377</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1683116121377</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +311,7 @@
     <MESSAGE value="feat: enum generation logic" />
     <MESSAGE value="feat: ESG readme" />
     <MESSAGE value="fix: SEG readme line breaks" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: SEG readme line breaks" />
+    <MESSAGE value="fix: test line break" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: test line break" />
   </component>
 </project>

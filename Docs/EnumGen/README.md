@@ -42,4 +42,16 @@ Open `(yourProjectPath)/Packages/manifest.json`, then add the package in the lis
 9. If all is good you can click `Create` or `Update` button and file with enum will be created
 
 Done! Your enum is generated, you can find the file in specified folder and use enum constants from scripts you need
+   ![](https://github.com/HDHeros/UniPacks/blob/main/Docs/EnumGen/esg_result.png)  
+
+### Possible issues
+1. Name validation error. An error occurs when Name field is empty or does not match C# naming rules  
+   
+   ![](https://github.com/HDHeros/UniPacks/blob/main/Docs/EnumGen/esg_name-validation.png)  
+2. Value validation warning. An warning occurs when specified value is not unique  
+   
+   ![](https://github.com/HDHeros/UniPacks/blob/main/Docs/EnumGen/esg_value-validation.png)  
+3. Type name or save path error.
+   
+   ![](https://github.com/HDHeros/UniPacks/blob/main/Docs/EnumGen/esg_name-path-validation.png)  
 

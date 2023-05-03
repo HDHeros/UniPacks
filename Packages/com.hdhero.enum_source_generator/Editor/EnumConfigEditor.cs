@@ -13,7 +13,7 @@ namespace HDH.ESG.Editor
         private const string EnumNamePropPath = "EnumName";
         private const string ConstantsPropertyPath = "Constants";
         private static readonly Regex s_enumFullNameRegex = new Regex("^(@?[a-z_A-Z]\\w+(?:\\.@?[a-z_A-Z]\\w+)*)$");
-        private static readonly Regex s_constNameRegex = new Regex("^[a-zA-Z_@]?[a-zA-Z0-9_]*$");
+        private static readonly Regex s_constNameRegex = new Regex("^[a-zA-Z_@].[a-zA-Z0-9_]*$");
         private static readonly HashSet<string> _names = new HashSet<string>();
         private static readonly HashSet<int> _values = new HashSet<int>();
         private SerializedProperty _enumName;
@@ -26,12 +26,13 @@ namespace HDH.ESG.Editor
             _enumName = serializedObject.FindProperty(EnumNamePropPath);
             _folderPath = serializedObject.FindProperty(FolderPropertyPath);
             _constants = serializedObject.FindProperty(ConstantsPropertyPath);
+            _constants.isExpanded = true;
         }
 
         public override void OnInspectorGUI()
         {
             _isConfigValid = true;
-            EditorGUILayoutArrayDrawer.DrawArray(_constants, OnDrawItemBegin);
+            EditorGUILayoutArrayDrawer.DrawArray(_constants, ValidateProperty);
             _names.Clear();
             _values.Clear();
             if (_constants.isExpanded)
@@ -41,6 +42,11 @@ namespace HDH.ESG.Editor
                 DrawSortByValueButton();
                 DrawSortByNameButton();
                 EditorGUILayout.EndHorizontal();
+            }
+            else
+            {
+                for (int i = 0; i < _constants.arraySize; i++) 
+                    ValidateProperty(_constants.GetArrayElementAtIndex(i));
             }
             
             DrawEnumNameField();
@@ -150,7 +156,7 @@ namespace HDH.ESG.Editor
             }
         }
 
-        private void OnDrawItemBegin(SerializedProperty obj)
+        private void ValidateProperty(SerializedProperty obj)
         {
             bool isNameValid = IsNameValid(
                 obj.FindPropertyRelative("Name").stringValue,
