@@ -37,7 +37,7 @@ namespace HDH.ESG.Editor
         {
             property.isExpanded = EditorGUILayout.BeginFoldoutHeaderGroup(property.isExpanded, property.displayName);
             if (property.isExpanded == false) return;
-            DrawPages(property);
+            DrawPageControls(property);
             DrawItems(property, onDrawItemBegin);
 
             EditorGUILayout.EndFoldoutHeaderGroup();
@@ -68,7 +68,7 @@ namespace HDH.ESG.Editor
 
         }
 
-        private static void DrawPages(SerializedProperty property)
+        private static void DrawPageControls(SerializedProperty property)
         {
             int pagesAmount = Mathf.CeilToInt((float) property.arraySize / s_pageCapacity);
             if (pagesAmount <= 1) return;

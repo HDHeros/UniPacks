@@ -9,9 +9,7 @@ namespace HDH.ESG.Editor
     [CustomEditor(typeof(EnumConfig))]
     public class EnumConfigEditor : UnityEditor.Editor
     {
-        private const string FolderPropertyPath = "FolderPath";
-        private const string EnumNamePropPath = "EnumName";
-        private const string ConstantsPropertyPath = "Constants";
+
         private static readonly Regex s_enumFullNameRegex = new Regex("^(@?[a-z_A-Z]\\w+(?:\\.@?[a-z_A-Z]\\w+)*)$");
         private static readonly Regex s_constNameRegex = new Regex("^[a-zA-Z_@].[a-zA-Z0-9_]*$");
         private static readonly HashSet<string> _names = new HashSet<string>();
@@ -21,20 +19,30 @@ namespace HDH.ESG.Editor
         private SerializedProperty _constants;
         private bool _isConfigValid;
 
-        public void OnEnable()
-        {
-            _enumName = serializedObject.FindProperty(EnumNamePropPath);
-            _folderPath = serializedObject.FindProperty(FolderPropertyPath);
-            _constants = serializedObject.FindProperty(ConstantsPropertyPath);
-            _constants.isExpanded = true;
-        }
-
         public override void OnInspectorGUI()
         {
             _isConfigValid = true;
-            EditorGUILayoutArrayDrawer.DrawArray(_constants, ValidateProperty);
             _names.Clear();
             _values.Clear();
+            EditorGUILayoutArrayDrawer.DrawArray(_constants, ValidateProperty);
+            DrawArrayControls();
+            EditorGUILayout.Space();
+            DrawTypeNameField();
+            DrawPathPicker();
+            DrawGenerateButton();
+            serializedObject.ApplyModifiedProperties();
+        }
+
+        private void OnEnable()
+        {
+            _enumName = serializedObject.FindProperty(ESGConst.EConfigEnumNamePropPath);
+            _folderPath = serializedObject.FindProperty(ESGConst.EConfigFolderPropertyPath);
+            _constants = serializedObject.FindProperty(ESGConst.EConfigConstantsPropertyPath);
+            _constants.isExpanded = true;
+        }
+
+        private void DrawArrayControls()
+        {
             if (_constants.isExpanded)
             {
                 DrawAddItemButton();
@@ -45,27 +53,21 @@ namespace HDH.ESG.Editor
             }
             else
             {
-                for (int i = 0; i < _constants.arraySize; i++) 
+                for (int i = 0; i < _constants.arraySize; i++)
                     ValidateProperty(_constants.GetArrayElementAtIndex(i));
             }
-            
-            DrawEnumNameField();
-            DrawPathPicker();
-            DrawGenerateButton();
-            serializedObject.ApplyModifiedProperties();
-            EditorGUILayout.Space();
         }
 
         private void DrawGenerateButton()
         {
             string buttonLabelText = EnumSourceGenerator.IsExist(_enumName.stringValue, _folderPath.stringValue)
-                ? "Update"
-                : "Create";
+                ? ESGConst.UpdateButtonText
+                : ESGConst.CreateButtonText;
             
             if (_isConfigValid == false)
             {
                 GUI.enabled = false;
-                buttonLabelText += " (There are some errors in config. Fix it)";
+                buttonLabelText += ESGConst.ValidationFailedButtonText;
             }
             
             if (GUILayout.Button(buttonLabelText))
@@ -76,15 +78,15 @@ namespace HDH.ESG.Editor
             GUI.enabled = true;
         }
 
-        private void DrawEnumNameField()
+        private void DrawTypeNameField()
         {
             if (s_enumFullNameRegex.IsMatch(_enumName.stringValue) == false)
             {
                 SetConfigValid(false);
-                EditorGUILayout.HelpBox("The name is not matching the naming rules.", MessageType.Error);
+                EditorGUILayout.HelpBox(ESGConst.NameInNotMatchingNamingRules, MessageType.Error);
             }    
             EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField("Enum Name", GUILayout.Width(90));
+            EditorGUILayout.LabelField(ESGConst.ConfigTypeNameLabelText, GUILayout.Width(90));
             _enumName.stringValue = EditorGUILayout.DelayedTextField(_enumName.stringValue);
             EditorGUILayout.EndHorizontal();
         }
@@ -96,49 +98,49 @@ namespace HDH.ESG.Editor
             if (System.IO.Directory.Exists(_folderPath.stringValue) == false)
             {
                 SetConfigValid(false);
-                EditorGUILayout.HelpBox("Directory with this name doesn't exist.", MessageType.Error);
+                EditorGUILayout.HelpBox(ESGConst.InvalidDirectoryMessage, MessageType.Error);
             }
             EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField("Save Folder", GUILayout.Width(labelWidth));
+            EditorGUILayout.LabelField(ESGConst.SaveFolderLabelText, GUILayout.Width(labelWidth));
             _folderPath.stringValue = GUILayout.TextField(_folderPath.stringValue, 
                 GUILayout.Width(EditorGUIUtility.currentViewWidth - labelWidth - pickPathButtonWidth - 30));
-            if (GUILayout.Button("...", GUILayout.Width(pickPathButtonWidth)))
+            if (GUILayout.Button(ESGConst.PickFolderButtonText, GUILayout.Width(pickPathButtonWidth)))
             {
                 _folderPath.stringValue =
-                    EditorUtility.OpenFolderPanel("Open folder", Application.dataPath, string.Empty);
+                    EditorUtility.OpenFolderPanel(ESGConst.OpenFolderLabelText, Application.dataPath, string.Empty);
             }
             EditorGUILayout.EndHorizontal();
         }
 
         private void DrawAddItemButton()
         {
-            if (GUILayout.Button("Add") == false) return;
+            if (GUILayout.Button(ESGConst.AddItemButtonText) == false) return;
             _constants.InsertArrayElementAtIndex(_constants.arraySize);
             var newItem = _constants.GetArrayElementAtIndex(_constants.arraySize - 1);
-            newItem.FindPropertyRelative("Value").intValue = -1;
-            newItem.FindPropertyRelative("SetValueExplicit").boolValue = false;
+            newItem.FindPropertyRelative(ESGConst.ConstValuePropPath).intValue = -1;
+            newItem.FindPropertyRelative(ESGConst.ConstSetValueExplicitPropPath).boolValue = false;
         }
 
         private void DrawSortByNameButton()
         {
-            if (GUILayout.Button("SortByName"))
+            if (GUILayout.Button(ESGConst.SortByNameBtnText))
                 Sort((x, y) =>
                 {
-                    string xVal = x.FindPropertyRelative("Name").stringValue;
-                    string yVal = y.FindPropertyRelative("Name").stringValue;
+                    string xVal = x.FindPropertyRelative(ESGConst.ConstNamePropPath).stringValue;
+                    string yVal = y.FindPropertyRelative(ESGConst.ConstNamePropPath).stringValue;
                     return string.CompareOrdinal(xVal, yVal);
                 });
         }
 
         private void DrawSortByValueButton()
         {
-            if (GUILayout.Button("SortByValue"))
+            if (GUILayout.Button(ESGConst.SortByValueButtonText))
                 Sort((x, y) =>
                 {
-                    bool isXImplicit = x.FindPropertyRelative("SetValueExplicit").boolValue;
-                    bool isYImplicit = y.FindPropertyRelative("SetValueExplicit").boolValue;
-                    int xVal = isXImplicit ? x.FindPropertyRelative("Value").intValue : -1;
-                    int yVal = isYImplicit ? y.FindPropertyRelative("Value").intValue : -1;
+                    bool isXImplicit = x.FindPropertyRelative(ESGConst.ConstSetValueExplicitPropPath).boolValue;
+                    bool isYImplicit = y.FindPropertyRelative(ESGConst.ConstSetValueExplicitPropPath).boolValue;
+                    int xVal = isXImplicit ? x.FindPropertyRelative(ESGConst.ConstValuePropPath).intValue : -1;
+                    int yVal = isYImplicit ? y.FindPropertyRelative(ESGConst.ConstValuePropPath).intValue : -1;
                     return xVal > yVal ? 1 : xVal == yVal ? 0 : -1;
                 });
         }
@@ -159,14 +161,14 @@ namespace HDH.ESG.Editor
         private void ValidateProperty(SerializedProperty obj)
         {
             bool isNameValid = IsNameValid(
-                obj.FindPropertyRelative("Name").stringValue,
+                obj.FindPropertyRelative(ESGConst.ConstNamePropPath).stringValue,
                 out string message);
             SetConfigValid(isNameValid);
-            obj.FindPropertyRelative("IsNameValid").boolValue = isNameValid;
-            obj.FindPropertyRelative("NameValidationMessage").stringValue = message;
-            obj.FindPropertyRelative("IsValueUnique").boolValue =
-                IsValueValid(obj.FindPropertyRelative("Value").intValue,
-                    obj.FindPropertyRelative("SetValueExplicit").boolValue);
+            obj.FindPropertyRelative(ESGConst.IsConstNameValidPropPath).boolValue = isNameValid;
+            obj.FindPropertyRelative(ESGConst.ConstNameValidationMessagePropPath).stringValue = message;
+            obj.FindPropertyRelative(ESGConst.IsConstValueUniquePropPath).boolValue =
+                IsValueValid(obj.FindPropertyRelative(ESGConst.ConstValuePropPath).intValue,
+                    obj.FindPropertyRelative(ESGConst.ConstSetValueExplicitPropPath).boolValue);
         }
 
         private bool IsNameValid(string cName, out string validationMessage)
@@ -174,19 +176,19 @@ namespace HDH.ESG.Editor
             validationMessage = null;
             if (string.IsNullOrEmpty(cName))
             {
-                validationMessage = "Name can't be empty.";
+                validationMessage = ESGConst.EmptyConstNameMessage;
                 return false;
             }
             
             if (_names.Contains(cName))
             {
-                validationMessage = "Name isn't unique.";
+                validationMessage = ESGConst.NotUniqueConstNameMessage;
                 return false;
             }
 
             if (s_constNameRegex.IsMatch(cName) == false)
             {
-                validationMessage = "The name is not matching the naming rules.";
+                validationMessage = ESGConst.NameInNotMatchingNamingRules;
                 return false;
             }
 

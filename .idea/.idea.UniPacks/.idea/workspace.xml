@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="feat: appended issues to esg readme">
-      <change beforePath="$PROJECT_DIR$/Docs/EnumGen/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/EnumGen/README.md" afterDir="false" />
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="feat: esg readme notice">
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/ESGConst.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutArrayDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutArrayDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConstDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConstDrawer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +31,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AE72FC95-8AB4-4FDB-B61B-9D8C36CF141E/26/f1ef3629/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A5BC71BB-4D98-498A-BA1F-868B89D20D47/6f/503754fa/SerializedObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/WorkerHDHero/RiderProjects/UniPacks/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutArrayDrawer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/WorkerHDHero/RiderProjects/UniPacks/Packages/com.hdhero.enum_source_generator/Editor/EnumConfig.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5980A88A-E531-4D4B-9811-FCDE1734D236/7a/8be9de0b/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
@@ -90,15 +95,16 @@
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/Const.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutExt.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConst.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutArrayDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/Samples/HDHEnumGen/SampleEnum.cs" />
       <option value="$PROJECT_DIR$/Assets/TestEnum.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumSourceGenerator.cs" />
       <option value="$PROJECT_DIR$/Docs/UserData/README.md" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfig.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConstDrawer.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" />
       <option value="$PROJECT_DIR$/Docs/EnumGen/README.md" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutArrayDrawer.cs" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfig.cs" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/ESGConst.cs" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConstDrawer.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2P5un3xdLM68MXbMmHnWZdAxlmg" />
@@ -150,7 +156,7 @@
       <workItem from="1682775531130" duration="3832000" />
       <workItem from="1682924237118" duration="23225000" />
       <workItem from="1683016975824" duration="17094000" />
-      <workItem from="1683092781245" duration="19957000" />
+      <workItem from="1683092781245" duration="22326000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -278,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683118400640</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="feat: esg readme notice">
+      <created>1683118591635</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1683118591635</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,6 +331,7 @@
     <MESSAGE value="fix: SEG readme line breaks" />
     <MESSAGE value="fix: test line break" />
     <MESSAGE value="feat: appended issues to esg readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: appended issues to esg readme" />
+    <MESSAGE value="feat: esg readme notice" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: esg readme notice" />
   </component>
 </project>
