@@ -56,7 +56,7 @@ namespace HDH.ESG.Editor
                 }
                 
                 EditorGUI.PropertyField(new Rect(position.x, GetYPosition(), position.width, StringHeight), 
-                    property.FindPropertyRelative("Name"), GUIContent.none);
+                    property.FindPropertyRelative("Name"));
 
                 EditorGUI.PropertyField(new Rect(position.x, GetYPosition(), position.width, StringHeight), 
                     property.FindPropertyRelative("SetValueExplicit"));

@@ -2,7 +2,8 @@
 UserData is a simple used service for your Unity Application helps you to save and load user's data. The service serializes and stores data as JSON files in persistant data path.
 There is an external dependency in service you should to install before use this package - [Newtonsoft.Json-for-Unity](https://github.com/jilleJr/Newtonsoft.Json-for-Unity#upm)
 
-### Installing the package (via manifest.json)
+### Installing the package
+####Via manifest.json
 Open `(yourProjectPath)/Packages/manifest.json`, then add the package in the list of dependencies as bellow.
 
  ```json
@@ -13,7 +14,7 @@ Open `(yourProjectPath)/Packages/manifest.json`, then add the package in the lis
 }
 ```
 
-### Installing the package (via Unity Package Manager)
+####Via Unity Package Manager
 1. Open Unity Package Manager
    
    ![](https://github.com/HDHeros/UniPacks/blob/main/Docs/UserData/userdata_install_viaupm_1.png)
@@ -91,3 +92,5 @@ Also created object allows you to see currently obtained(!) models and their sav
 
 ![](https://github.com/HDHeros/UniPacks/blob/main/Docs/UserData/userdata_inspection.png)
 
+### Compatibility
+Tested with Unity 2020.3, Android & iOS

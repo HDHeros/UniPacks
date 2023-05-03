@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumSourceGenerator.cs" afterDir="false" />
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="feat: enum generation logic">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHEnumGen.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHEnumGen/TestConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHEnumGen/TestConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHEnumGen/GeneratedEnum.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHEnumGen/GeneratedEnum.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHEnumGen/TestConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHEnumGen/TestConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/EnumGen/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/EnumGen/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/UserData/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/UserData/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConstDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConstDrawer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +35,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AE72FC95-8AB4-4FDB-B61B-9D8C36CF141E/26/f1ef3629/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A5BC71BB-4D98-498A-BA1F-868B89D20D47/6f/503754fa/SerializedObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/WorkerHDHero/RiderProjects/UniPacks/Packages/com.hdhero.enum_source_generator/Editor/EnumConfig.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5980A88A-E531-4D4B-9811-FCDE1734D236/7a/8be9de0b/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A5BC71BB-4D98-498A-BA1F-868B89D20D47/0d/252296da/EditorGUILayout.cs" root0="SKIP_HIGHLIGHTING" />
@@ -82,7 +88,6 @@
       <option value="$PROJECT_DIR$/README.md" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel.cs" />
-      <option value="$PROJECT_DIR$/Docs/UserData/README.md" />
       <option value="$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/UserDataService.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EditorConsts.cs" />
@@ -91,12 +96,14 @@
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutExt.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConst.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutArrayDrawer.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfig.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConstDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/Samples/HDHEnumGen/SampleEnum.cs" />
       <option value="$PROJECT_DIR$/Assets/TestEnum.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumSourceGenerator.cs" />
+      <option value="$PROJECT_DIR$/Docs/UserData/README.md" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfig.cs" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConstDrawer.cs" />
+      <option value="$PROJECT_DIR$/Docs/EnumGen/README.md" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2P5un3xdLM68MXbMmHnWZdAxlmg" />
@@ -148,7 +155,7 @@
       <workItem from="1682775531130" duration="3832000" />
       <workItem from="1682924237118" duration="23225000" />
       <workItem from="1683016975824" duration="17094000" />
-      <workItem from="1683092781245" duration="14126000" />
+      <workItem from="1683092781245" duration="17489000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -241,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683042150262</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat: enum generation logic">
+      <created>1683107332543</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1683107332543</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +290,7 @@
     <MESSAGE value="refactor: extracted arrayDrawer from enumConfig" />
     <MESSAGE value="feat: enum config guiStyles and validation" />
     <MESSAGE value="feat: sort, validation warnings and errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: sort, validation warnings and errors" />
+    <MESSAGE value="feat: enum generation logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: enum generation logic" />
   </component>
 </project>

@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c836c4762f44d1c8bdbd63c0d94cf56, type: 3}
-  m_Name: TestConfig
+  m_Name: SomeEnumName
   m_EditorClassIdentifier: 
-  EnumName: SomeNamspace.AndMoreNS.TestEnum
-  FolderPath: C:/Users/WorkerHDHero/RiderProjects/UniPacks/Assets
+  EnumName: GeneratedEnum
+  FolderPath: C:/Users/WorkerHDHero/RiderProjects/UniPacks/Assets/Samples/HDHEnumGen
   Constants:
-  - Name: Aer
+  - Name: First
     SetValueExplicit: 0
-    Value: -1
+    Value: 1
     IsNameValid: 1
     NameValidationMessage: 
     IsValueUnique: 1
-  - Name: So
+  - Name: Second
     SetValueExplicit: 0
-    Value: -1
+    Value: 1
     IsNameValid: 1
     NameValidationMessage: 
     IsValueUnique: 1
-  - Name: So
-    SetValueExplicit: 0
-    Value: -1
-    IsNameValid: 0
-    NameValidationMessage: Name isn't unique.
+  - Name: Third
+    SetValueExplicit: 1
+    Value: 2
+    IsNameValid: 1
+    NameValidationMessage: 
     IsValueUnique: 1
