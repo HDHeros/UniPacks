@@ -55,3 +55,5 @@ Done! Your enum is generated, you can find the file in specified folder and use 
    
    ![](https://github.com/HDHeros/UniPacks/blob/main/Docs/EnumGen/esg_name-path-validation.png)  
 
+**NOTE:** You can't click `Create` or `Update` button until you fix all errors
+

@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="fix: test line break">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="feat: appended issues to esg readme">
       <change beforePath="$PROJECT_DIR$/Docs/EnumGen/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/EnumGen/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/EnumGen/esg_bottom-panel.png" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/EnumGen/esg_bottom-panel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +42,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/WorkerHDHero/RiderProjects/UniPacks/Packages/com.hdhero.enum_source_generator/Editor/EnumConfig.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/87/d722a31b/IList.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/WorkerHDHero/RiderProjects/UniPacks/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/WorkerHDHero/RiderProjects/UniPacks/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHEnumGen/MyEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_InputField.cs" root0="SKIP_HIGHLIGHTING" />
@@ -99,8 +97,8 @@
       <option value="$PROJECT_DIR$/Docs/UserData/README.md" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfig.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConstDrawer.cs" />
-      <option value="$PROJECT_DIR$/Docs/EnumGen/README.md" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConfigEditor.cs" />
+      <option value="$PROJECT_DIR$/Docs/EnumGen/README.md" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2P5un3xdLM68MXbMmHnWZdAxlmg" />
@@ -152,7 +150,7 @@
       <workItem from="1682775531130" duration="3832000" />
       <workItem from="1682924237118" duration="23225000" />
       <workItem from="1683016975824" duration="17094000" />
-      <workItem from="1683092781245" duration="19653000" />
+      <workItem from="1683092781245" duration="19957000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -273,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683116121377</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: appended issues to esg readme">
+      <created>1683118400640</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1683118400640</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,6 +317,7 @@
     <MESSAGE value="feat: ESG readme" />
     <MESSAGE value="fix: SEG readme line breaks" />
     <MESSAGE value="fix: test line break" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: test line break" />
+    <MESSAGE value="feat: appended issues to esg readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: appended issues to esg readme" />
   </component>
 </project>
