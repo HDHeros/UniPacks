@@ -1,5 +1,11 @@
 {
   "name": "com.hdhero.enum_source_generator",
   "version": "0.0.1",
-  "displayName": "HDH Enum Source Generator"
+  "displayName": "HDH Enum Source Generator",
+  "documentationUrl": "https://github.com/HDHeros/UniPacks/blob/main/Docs/EnumGen/README.md",
+  "author": {
+    "name": "HDHero",
+    "url": "https://github.com/HDHeros"
+  },
+  "hideInEditor": false
 }

@@ -6,6 +6,12 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "com.hdhero.pupups": {
+      "version": "file:com.hdhero.pupups",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.hdhero.user-data": {
       "version": "file:com.hdhero.user-data",
       "depth": 0,

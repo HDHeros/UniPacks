@@ -1,0 +1,11 @@
+{
+  "name": "com.hdhero.pupups",
+  "version": "0.0.1",
+  "displayName": "HDH Popup Screens",
+  "documentationUrl": "https://github.com/HDHeros/UniPacks/blob/main/Docs/Popups/README.md",
+  "author": {
+    "name": "HDHero",
+    "url": "https://github.com/HDHeros"
+  },
+  "hideInEditor": false
+}

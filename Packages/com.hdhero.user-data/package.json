@@ -1,5 +1,11 @@
 {
   "name": "com.hdhero.user-data",
   "version": "0.0.1",
-  "displayName": "HDH User Data"
+  "displayName": "HDH User Data",
+  "documentationUrl": "https://github.com/HDHeros/UniPacks/blob/main/Docs/UserData/README.md",
+  "author": {
+    "name": "HDHero",
+    "url": "https://github.com/HDHeros"
+  },
+  "hideInEditor": false
 }

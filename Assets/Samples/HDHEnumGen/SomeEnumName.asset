@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c836c4762f44d1c8bdbd63c0d94cf56, type: 3}
-  m_Name: SomeEnumName
+  m_Name: TestConfig
   m_EditorClassIdentifier: 
-  EnumName: GeneratedEnum
-  FolderPath: C:/Users/WorkerHDHero/RiderProjects/UniPacks/Assets/Samples/HDHEnumGen
+  EnumName: MyProject.Feature.MyEnum
+  FolderPath: C:/Users/WorkerHDHero/RiderProjects/UniPacks/Assets
   Constants:
-  - Name: First
+  - Name: 
     SetValueExplicit: 0
     Value: 1
-    IsNameValid: 1
-    NameValidationMessage: 
+    IsNameValid: 0
+    NameValidationMessage: Name can't be empty.
     IsValueUnique: 1
-  - Name: Second
+  - Name: Sec
     SetValueExplicit: 0
     Value: 1
     IsNameValid: 1
