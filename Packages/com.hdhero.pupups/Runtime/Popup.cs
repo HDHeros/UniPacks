@@ -53,7 +53,7 @@ namespace HDH.Popups
         private PopupView InstantiateView()
         {
             PopupView view = _viewsFactory.Instantiate(_config.Prefab);
-            view.Transform.SetParent(_viewParent.Transform);
+            view.Transform.SetParent(_viewParent.Transform, false);
             view.Closed += OnViewClosed;
             return view;
         }

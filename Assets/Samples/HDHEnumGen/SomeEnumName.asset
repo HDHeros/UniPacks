@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c836c4762f44d1c8bdbd63c0d94cf56, type: 3}
-  m_Name: TestConfig
+  m_Name: SomeEnumName
   m_EditorClassIdentifier: 
   EnumName: MyProject.Feature.MyEnum
   FolderPath: C:/Users/WorkerHDHero/RiderProjects/UniPacks/Assets

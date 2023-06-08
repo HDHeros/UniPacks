@@ -5,6 +5,5 @@
     {
         public PopupView Prefab;
         public bool InstantiateOnAwake;
-        public int MaxInstancesCount;
     }
 }
