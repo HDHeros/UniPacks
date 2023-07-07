@@ -1,0 +1,11 @@
+{
+  "name": "com.hdhero.utility-ai",
+  "version": "0.0.1",
+  "displayName": "HDH UtilityAI",
+  "documentationUrl": "https://github.com/HDHeros/UniPacks/blob/main/Docs/UtilityAI/README.md",
+  "author": {
+    "name": "HDHero",
+    "url": "https://github.com/HDHeros"
+  },
+  "hideInEditor": false
+}

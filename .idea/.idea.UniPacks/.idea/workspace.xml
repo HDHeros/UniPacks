@@ -5,15 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHPopup/TestPopupView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHPopup/TestPopupView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/IPopupArgs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/IReceivingArgs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.utility-ai/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHEnumGen/SomeEnumName.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHEnumGen/SomeEnumName.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHPopup/PopupTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHPopup/PopupTestLauncher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHPopup/PopupTest.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHPopup/PopupTestLauncher.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHPopup/PopupTest.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHPopup/PopupTest.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHPopup/PopupTestLauncher.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHPopup/PopupTestLauncher.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHPopup/TestPopupView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHPopup/TestPopupView.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/Configs/PopupConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/Configs/PopupConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/Popup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/Popup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsParent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsParent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,34 +47,27 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.pupups/Runtime/Popup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/TestRunner/Callbacks/RemoteTestResultSender.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AE72FC95-8AB4-4FDB-B61B-9D8C36CF141E/ba/0124d96c/RectOffset.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHPopup/PopupTestLauncher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.pupups/Runtime/PopupView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.pupups/Runtime/PopupsParent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHEnumGen/MyEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.pupups/Runtime/Popup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Layout/VerticalLayoutGroupTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/CanvasUpdateRegistry.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/ColorBlock.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.pupups/Runtime/Configs/PopupConfig.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/.idea/.idea.UniPacks.dir/.idea/.gitignore" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/Dto/IDataModel.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/Dto/IUserDataConfig.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/Dto/DataModel.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/Dto/UserDataConfig.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadMonoAgent.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" />
       <option value="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel2.cs" />
@@ -104,15 +104,21 @@
       <option value="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Samples/HDHPopup/PopupTest.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/Configs/PopupControllerConfig.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupView.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsParent.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutArrayDrawer.cs" />
       <option value="$PROJECT_DIR$/Assets/Samples/HDHPopup/TestPopup.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/Configs/PopupConfig.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/Popup.cs" />
       <option value="$PROJECT_DIR$/Assets/Samples/HDHPopup/PopupTestLauncher.cs" />
       <option value="$PROJECT_DIR$/Assets/Samples/HDHPopup/TestPopupView.cs" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.utility-ai/package.json" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsParent.cs" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/IPopupArgs.cs" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/IRecievingArgs.cs" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/IReceivingArgs.cs" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupView.cs" />
+      <option value="$PROJECT_DIR$/Assets/Samples/HDHPopup/Scripts/TestPopupView.cs" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/Popup.cs" />
+      <option value="$PROJECT_DIR$/Assets/Samples/HDHPopup/Scripts/PopupTestLauncher.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2P5un3xdLM68MXbMmHnWZdAxlmg" />
@@ -121,7 +127,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.43707252" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.43688726" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -142,10 +148,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17672">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="17672" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -171,6 +177,10 @@
       <workItem from="1685707653205" duration="622000" />
       <workItem from="1685947784148" duration="162000" />
       <workItem from="1685948196636" duration="7766000" />
+      <workItem from="1686216455304" duration="277000" />
+      <workItem from="1686216746713" duration="108000" />
+      <workItem from="1686223610411" duration="898000" />
+      <workItem from="1688716477005" duration="3179000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -312,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683120955277</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="fix: pupup's appearing bug&#10;feat: some scripts for popup testing">
+      <created>1686216646626</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1686216646626</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,7 +371,8 @@
     <MESSAGE value="feat: appended issues to esg readme" />
     <MESSAGE value="feat: esg readme notice" />
     <MESSAGE value="feat: constants file for ESG" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: constants file for ESG" />
+    <MESSAGE value="fix: pupup's appearing bug&#10;feat: some scripts for popup testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: pupup's appearing bug&#10;feat: some scripts for popup testing" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

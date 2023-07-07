@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using HDH.Popups.Configs;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace HDH.Popups
 {
@@ -24,8 +25,9 @@ namespace HDH.Popups
                 if (config.IsLogEnabled)
                     Debug.LogWarning($"Popups parent is null, so it'll be created automatically");
                 config.PopupsParent =
-                    new GameObject("[PopupsParent]", typeof(RectTransform), typeof(Canvas))
+                    new GameObject("[PopupsParent]", typeof(RectTransform), typeof(Canvas), typeof(GraphicRaycaster))
                         .AddComponent<PopupsParent>();
+                config.PopupsParent.Canvas.renderMode = RenderMode.ScreenSpaceOverlay;
             }
             InitializePopups(config);
         }

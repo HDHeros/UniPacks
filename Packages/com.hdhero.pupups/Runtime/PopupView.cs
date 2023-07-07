@@ -12,12 +12,14 @@ namespace HDH.Popups
         public void Show()
         {
             gameObject.SetActive(true);
+            OnShown();
         }
 
         public void Close()
         {
+            OnClosed();
+            ResetPopup();
             gameObject.SetActive(false);
-            Reset();
             Closed?.Invoke();
         }
 
@@ -25,6 +27,11 @@ namespace HDH.Popups
             Transform = GetComponent<RectTransform>();
 
         // ReSharper disable once Unity.RedundantEventFunction
-        protected virtual void Reset() { }
+
+        protected virtual void OnShown() { }
+
+        protected virtual void OnClosed() { }
+        
+        protected virtual void ResetPopup() { }
     }
 }
