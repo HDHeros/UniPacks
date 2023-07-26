@@ -4,27 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="feat: fsm logic">
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/package.json" afterDir="false" />
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="feat: fsm package">
+      <change afterPath="$PROJECT_DIR$/Docs/Fsm/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/BaseFsmState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/BaseFsmState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/FsmDebugger.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/FsmDebugger.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/IDebuggableFsm.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/IDebuggableFsm.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Fsm.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Fsm.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IFsm.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IFsm.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IFsmSharedFields.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IFsmSharedFields.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IStateSwitcher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IStateSwitcher.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/FsmTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmTest.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/FsmTest.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Docs/Popups/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/Popups/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,10 +63,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutExt.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConst.cs" />
-      <option value="$PROJECT_DIR$/Assets/Samples/HDHEnumGen/SampleEnum.cs" />
-      <option value="$PROJECT_DIR$/Assets/TestEnum.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumSourceGenerator.cs" />
       <option value="$PROJECT_DIR$/Docs/UserData/README.md" />
       <option value="$PROJECT_DIR$/Docs/EnumGen/README.md" />
@@ -127,6 +110,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/BaseFsmState.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.fsm/package.json" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IStateSwitcher.cs" />
+      <option value="$PROJECT_DIR$/Assets/Samples/HDHFsm/FsmTest.cs" />
+      <option value="$PROJECT_DIR$/Docs/Fsm/README.md" />
+      <option value="$PROJECT_DIR$/Docs/Popups/README.md" />
+      <option value="$PROJECT_DIR$/README.md" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2P5un3xdLM68MXbMmHnWZdAxlmg" />
@@ -190,7 +177,7 @@
       <workItem from="1686223610411" duration="898000" />
       <workItem from="1688716477005" duration="4300000" />
       <workItem from="1690288658056" duration="2290000" />
-      <workItem from="1690351878388" duration="8442000" />
+      <workItem from="1690351878388" duration="8805000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -353,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690360062528</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="feat: fsm package">
+      <created>1690360431165</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1690360431165</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +392,8 @@
     <MESSAGE value="fix: pupup's appearing bug&#10;feat: some scripts for popup testing" />
     <MESSAGE value="feat: args for HDHPopup" />
     <MESSAGE value="feat: fsm logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: fsm logic" />
+    <MESSAGE value="feat: fsm package" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: fsm package" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

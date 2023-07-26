@@ -3,7 +3,7 @@ using HDH.Fsm;
 using HDH.Fsm.Debug;
 using UnityEngine;
 
-namespace Fsm
+namespace Samples.HDHFsm
 {
     public class FsmTest : MonoBehaviour
     {
