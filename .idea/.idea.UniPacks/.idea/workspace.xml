@@ -5,22 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/IPopupArgs.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/IReceivingArgs.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.utility-ai/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/BaseFsmState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/BaseFsmState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/FsmDebugger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/FsmDebugger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/IDebuggableFsm.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/IDebuggableFsm.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IFsm.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IFsm.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IFsmSharedFields.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IFsmSharedFields.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IStateSwitcher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IStateSwitcher.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmTest.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHPopup/PopupTest.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHPopup/PopupTest.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHPopup/PopupTestLauncher.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHPopup/PopupTestLauncher.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHPopup/TestPopupView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHPopup/TestPopupView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/Popup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/Popup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsParent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsParent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHPopup/Scene/PopupsSample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHPopup/Scene/PopupsSample.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,37 +49,24 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/TestRunner/Callbacks/RemoteTestResultSender.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AE72FC95-8AB4-4FDB-B61B-9D8C36CF141E/ba/0124d96c/RectOffset.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.pupups/Runtime/PopupView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.pupups/Runtime/PopupsParent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHEnumGen/MyEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_InputField.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.pupups/Runtime/Popup.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Layout/VerticalLayoutGroupTests.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/CanvasUpdateRegistry.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/ColorBlock.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/38/ae8aba57/PropertyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHEnumGen/MyEnum.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/CanvasUpdateRegistry.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/TestRunner/Callbacks/RemoteTestResultSender.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_InputField.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/8e/21367ed6/Activator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Layout/VerticalLayoutGroupTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" />
-      <option value="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel2.cs" />
-      <option value="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel1.cs" />
-      <option value="$PROJECT_DIR$/README.md" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Samples/HDHUserData/SampleDataModel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/UserDataService.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EditorConsts.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/Consts.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/Const.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutExt.cs" />
@@ -119,6 +108,16 @@
       <option value="$PROJECT_DIR$/Assets/Samples/HDHPopup/Scripts/TestPopupView.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/Popup.cs" />
       <option value="$PROJECT_DIR$/Assets/Samples/HDHPopup/Scripts/PopupTestLauncher.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/Fsm.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/FsmBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IStateSwitcher.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/BaseFsmState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/FsmDebugger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/IDebuggableFsm.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Fsm.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IFsm.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmTest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/FsmDebugger.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2P5un3xdLM68MXbMmHnWZdAxlmg" />
@@ -148,10 +147,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17672">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12960">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="17672" />
+      <option name="pid" value="12960" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -180,7 +179,9 @@
       <workItem from="1686216455304" duration="277000" />
       <workItem from="1686216746713" duration="108000" />
       <workItem from="1686223610411" duration="898000" />
-      <workItem from="1688716477005" duration="3179000" />
+      <workItem from="1688716477005" duration="4300000" />
+      <workItem from="1690288658056" duration="2290000" />
+      <workItem from="1690351878388" duration="7948000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -329,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686216646626</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feat: args for HDHPopup">
+      <created>1688719822230</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1688719822230</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +380,8 @@
     <MESSAGE value="feat: esg readme notice" />
     <MESSAGE value="feat: constants file for ESG" />
     <MESSAGE value="fix: pupup's appearing bug&#10;feat: some scripts for popup testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: pupup's appearing bug&#10;feat: some scripts for popup testing" />
+    <MESSAGE value="feat: args for HDHPopup" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: args for HDHPopup" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
