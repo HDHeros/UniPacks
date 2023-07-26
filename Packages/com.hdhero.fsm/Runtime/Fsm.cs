@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Fsm.FsmCore.Debug;
+using HDH.Fsm.Debug;
 
-namespace Fsm.FsmCore
+namespace HDH.Fsm
 {
     public class Fsm<TSharedFields, TBaseState> 
         : IFsm<TSharedFields, TBaseState>,

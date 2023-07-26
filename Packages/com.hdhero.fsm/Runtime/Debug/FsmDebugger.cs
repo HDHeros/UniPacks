@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Fsm.FsmCore.Debug
+namespace HDH.Fsm.Debug
 {
     public class FsmDebugger : MonoBehaviour
     {

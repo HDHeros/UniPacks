@@ -1,7 +1,7 @@
 ﻿using System;
-using Fsm.FsmCore.Debug;
+using HDH.Fsm.Debug;
 
-namespace Fsm.FsmCore
+namespace HDH.Fsm
 {
     public interface IFsm<TSharedFields, TBaseState> where TSharedFields : class, IFsmSharedFields where TBaseState : BaseFsmState
     {

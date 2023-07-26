@@ -1,6 +1,6 @@
 using System;
 
-namespace Fsm.FsmCore.Debug
+namespace HDH.Fsm.Debug
 {
     public interface IDebuggableFsm
     {

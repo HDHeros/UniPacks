@@ -1,4 +1,4 @@
-namespace Fsm.FsmCore
+namespace HDH.Fsm
 {
     public interface IFsmSharedFields
     {

@@ -1,6 +1,6 @@
 ﻿using System;
-using Fsm.FsmCore;
-using Fsm.FsmCore.Debug;
+using HDH.Fsm;
+using HDH.Fsm.Debug;
 using UnityEngine;
 
 namespace Fsm

@@ -4,25 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/BaseFsmState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/BaseFsmState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/FsmDebugger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/FsmDebugger.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/IDebuggableFsm.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/IDebuggableFsm.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IFsm.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IFsm.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IFsmSharedFields.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IFsmSharedFields.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IStateSwitcher.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IStateSwitcher.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmTest.cs.meta" afterDir="false" />
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="feat: fsm logic">
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHPopup/Scene/PopupsSample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHPopup/Scene/PopupsSample.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/BaseFsmState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/BaseFsmState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/FsmDebugger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/FsmDebugger.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/IDebuggableFsm.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/IDebuggableFsm.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Fsm.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Fsm.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IFsm.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IFsm.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IFsmSharedFields.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IFsmSharedFields.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IStateSwitcher.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IStateSwitcher.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,26 +51,31 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IStateSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/ColorBlock.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/BaseFsmState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/38/ae8aba57/PropertyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHEnumGen/MyEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/CanvasUpdateRegistry.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/IDebuggableFsm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/TestRunner/Callbacks/RemoteTestResultSender.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_InputField.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IFsm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/8e/21367ed6/Activator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Layout/VerticalLayoutGroupTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IFsmSharedFields.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/Consts.cs" />
-      <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/Const.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EditorGUILayoutExt.cs" />
       <option value="$PROJECT_DIR$/Packages/com.hdhero.enum_source_generator/Editor/EnumConst.cs" />
       <option value="$PROJECT_DIR$/Assets/Samples/HDHEnumGen/SampleEnum.cs" />
@@ -111,13 +118,15 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/Fsm.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/FsmBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IStateSwitcher.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/BaseFsmState.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/FsmDebugger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/IDebuggableFsm.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Fsm.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/IFsm.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/Debug/FsmDebugger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Fsm/FsmCore/BaseFsmState.cs" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.fsm/package.json" />
+      <option value="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IStateSwitcher.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2P5un3xdLM68MXbMmHnWZdAxlmg" />
@@ -181,7 +190,7 @@
       <workItem from="1686223610411" duration="898000" />
       <workItem from="1688716477005" duration="4300000" />
       <workItem from="1690288658056" duration="2290000" />
-      <workItem from="1690351878388" duration="7948000" />
+      <workItem from="1690351878388" duration="8442000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -337,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688719822230</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="feat: fsm logic">
+      <created>1690360062528</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1690360062528</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +397,8 @@
     <MESSAGE value="feat: constants file for ESG" />
     <MESSAGE value="fix: pupup's appearing bug&#10;feat: some scripts for popup testing" />
     <MESSAGE value="feat: args for HDHPopup" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: args for HDHPopup" />
+    <MESSAGE value="feat: fsm logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: fsm logic" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
