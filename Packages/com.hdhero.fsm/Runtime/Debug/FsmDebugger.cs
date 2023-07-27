@@ -34,7 +34,7 @@ namespace HDH.Fsm.Debug
                 _switchStatesHistory.Insert(0, _currentState);
             }
 
-            _currentState = _fsm.CurrentState.GetType().Name;
+            _currentState = _fsm.CurrentStateType.GetType().Name;
         }
 
         private void OnStateSwitched() => 

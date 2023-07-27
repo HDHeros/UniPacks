@@ -6,31 +6,29 @@ using HDH.Fsm.Debug;
 
 namespace HDH.Fsm
 {
-    public class Fsm<TSharedFields, TBaseState> 
-        : IFsm<TSharedFields, TBaseState>,
-            IStateSwitcher<BaseFsmState>, 
-            IDebuggableFsm where TSharedFields : class, IFsmSharedFields 
-        where TBaseState : BaseFsmState
+    public class Fsm<TBaseState, TFields> : IStateSwitcher, IDebuggableFsm
+        where TBaseState : BaseFsmState<TFields>
+        where TFields : IFsmSharedFields
     {
         public event Action StateSwitchRequested;
         public event Action StateSwitched;
-        public BaseFsmState CurrentState => _currentState;
-        public TBaseState State => _currentState;
+        public Type CurrentStateType => _currentState.GetType();
+        public TBaseState CurrentState => _currentState;
 
-        private readonly TSharedFields _sharedFields;
         private readonly Dictionary<Type, TBaseState> _statesSet;
         private TBaseState _currentState;
+        private TFields _sharedFields;
 
-        private Fsm(TSharedFields sharedFields)
+        public static Fsm<TBaseState, TFields> Create(TFields sharedFields) => 
+            new Fsm<TBaseState, TFields>(sharedFields);
+
+        private Fsm(TFields sharedFields)
         {
             _sharedFields = sharedFields;
             _statesSet = new Dictionary<Type, TBaseState>();
         }
-        
-        public static IFsm<TSharedFields, TBaseState> Create(TSharedFields sharedFields) => 
-            new Fsm<TSharedFields, TBaseState>(sharedFields);
 
-        public IFsm<TSharedFields, TBaseState> AddState<TState>(bool isInitialState = false) where TState : TBaseState
+        public Fsm<TBaseState, TFields> AddState<TState>(bool isInitialState = false) where TState : TBaseState
         {
             if (!(Activator.CreateInstance(typeof(TState)) is TBaseState instance))
                 throw new NullReferenceException();
@@ -38,35 +36,29 @@ namespace HDH.Fsm
             return AddState(instance, isInitialState);
         }
 
-        public IFsm<TSharedFields, TBaseState> AddState(TBaseState instance, bool isInitialState = false)
+        public Fsm<TBaseState, TFields> AddState(TBaseState instance, bool isInitialState = false)
         {
             Type instanceType = instance.GetType();
             if (_statesSet.ContainsKey(instanceType))
                 throw new ArgumentException(
                     $"An element with the same key already exists in the FSM {GetType().Name}.");
+
+            FieldInfo switcher = typeof(SwitchableState).GetField("_stateSwitcher", BindingFlags.NonPublic | BindingFlags.Instance);
+            if (switcher != null) switcher.SetValue(instance, this);
+            else throw new NullReferenceException();
             
-            SetField(instance, "_stateSwitcher", this);
-            SetField(instance, "_fields", _sharedFields);
+            FieldInfo fields = typeof(BaseFsmState<TFields>).GetField("_fields", BindingFlags.NonPublic | BindingFlags.Instance);
+            if (fields != null) fields.SetValue(instance, _sharedFields);
+            else throw new NullReferenceException();
             
+
             if (isInitialState) _currentState = instance;
             _statesSet.Add(instanceType, instance);
 
             return this;
-            
-            
-            void SetField(BaseFsmState target, string fieldName, object value)
-            {
-                FieldInfo field = typeof(BaseFsmState).GetField(fieldName, BindingFlags.NonPublic | BindingFlags.Instance);
-                if (field != null) 
-                    field.SetValue(target, value);
-                else
-                {
-                    throw new NullReferenceException();
-                }
-            }
         }
         
-        public IFsm<TSharedFields, TBaseState> Initialize()
+        public Fsm<TBaseState, TFields> Initialize()
         {
             if (_statesSet.Count <= 0)
                 throw new Exception($"States number have to be at least one");
@@ -80,7 +72,7 @@ namespace HDH.Fsm
         public IDebuggableFsm GetIDebuggable() => 
             this;
 
-        public void SwitchState<TNewState>() where TNewState : BaseFsmState
+        public void SwitchState<TNewState>() where TNewState : SwitchableState
         {
             StateSwitchRequested?.Invoke();
             _currentState.Exit(OnExitComplete);

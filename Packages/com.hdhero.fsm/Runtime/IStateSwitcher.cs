@@ -1,7 +1,7 @@
 namespace HDH.Fsm
 {
-    public interface IStateSwitcher<TBaseState> where TBaseState : BaseFsmState
+    public interface IStateSwitcher
     {
-        public void SwitchState<TNewState>() where TNewState : TBaseState;
+        public void SwitchState<TNewState>() where TNewState : SwitchableState;
     }
 }
