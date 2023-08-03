@@ -58,7 +58,7 @@ namespace HDH.Fsm
             return this;
         }
         
-        public Fsm<TBaseState, TFields> Initialize()
+        public Fsm<TBaseState, TFields> Start()
         {
             if (_statesSet.Count <= 0)
                 throw new Exception($"States number have to be at least one");
@@ -67,6 +67,11 @@ namespace HDH.Fsm
 
             _currentState.Enter();
             return this;
+        }
+
+        public void Stop()
+        {
+            _currentState?.Exit(null);
         }
 
         public IDebuggableFsm GetIDebuggable() => 

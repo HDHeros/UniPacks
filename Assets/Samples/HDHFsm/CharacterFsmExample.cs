@@ -20,7 +20,7 @@ namespace Samples.HDHFsm
                 .AddState<WalkState>()
                 .AddState(new JumpState())
                 .AddState(new CrawlState())
-                .Initialize();
+                .Start();
             
             _debugger.SetFsm(_fsm.GetIDebuggable());
         }
