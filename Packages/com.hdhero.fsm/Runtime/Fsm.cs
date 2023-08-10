@@ -77,14 +77,17 @@ namespace HDH.Fsm
         public IDebuggableFsm GetIDebuggable() => 
             this;
 
-        public void SwitchState<TNewState>() where TNewState : SwitchableState
+        public void SwitchState<TNewState>() where TNewState : SwitchableState => 
+            SwitchState(typeof(TNewState));
+
+        public void SwitchState(Type stateType)
         {
             StateSwitchRequested?.Invoke();
             _currentState.Exit(OnExitComplete);
             
             void OnExitComplete()
             {
-                _currentState = _statesSet[typeof(TNewState)];
+                _currentState = _statesSet[stateType];
                 _currentState.Enter();
                 StateSwitched?.Invoke();
             }
