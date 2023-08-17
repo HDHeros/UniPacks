@@ -5,7 +5,7 @@ Open `(yourProjectPath)/Packages/manifest.json`, then add the package in the lis
  ```json
  {
   "dependencies": {
-    "com.hdhero.popups": "https://github.com/HDHeros/UniPacks.git?path=Packages/com.hdhero.popups"
+    "com.hdhero.popups": "https://github.com/HDHeros/UniPacks.git?path=Packages/com.hdhero.pupups"
   }
 }
 ```
@@ -17,6 +17,6 @@ Open `(yourProjectPath)/Packages/manifest.json`, then add the package in the lis
 2. Click `Add Package` and choose `Add package from GIT url...` option
 
    ![](https://github.com/HDHeros/UniPacks/blob/main/Docs/UserData/userdata_install_viaupm_2.png)
-3. Paste the link `https://github.com/HDHeros/UniPacks.git?path=Packages/com.hdhero.popups`, then click `Add`
+3. Paste the link `https://github.com/HDHeros/UniPacks.git?path=Packages/com.hdhero.pupups`, then click `Add`
 
    ![](https://github.com/HDHeros/UniPacks/blob/main/Docs/UserData/userdata_install_viaupm_3.png)
