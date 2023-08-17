@@ -14,6 +14,7 @@ namespace HDH.Popups
         private readonly bool _isLogEnabled;
         
         public bool IsShown { get; private set; }
+        public PopupView View => _view;
         private PopupView _view;
         
         
