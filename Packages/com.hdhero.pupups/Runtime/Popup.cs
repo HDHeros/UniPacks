@@ -56,7 +56,8 @@ namespace HDH.Popups
                     Debug.LogWarning($"Trying to open pop up of type {_view.GetType().Name} while it's already opened.");
                 return;
             }
-            
+
+            IsShown = true;
             _view.Show();
             _view.Transform.SetAsFirstSibling();
             Shown?.Invoke(this);
