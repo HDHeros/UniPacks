@@ -25,7 +25,7 @@ namespace HDH.Popups
             _viewParent = controllerConfig.PopupsParent;
             _isLogEnabled = controllerConfig.IsLogEnabled;
             if (config.InstantiateOnAwake)
-                InstantiateView();
+                _view = InstantiateView(false);
         }
 
         public void Open() => 
@@ -42,7 +42,7 @@ namespace HDH.Popups
 
         private void Open(Action beforeShowCallback)
         {
-            if (_view == null) _view = InstantiateView();
+            if (_view == null) _view = InstantiateView(true);
             
             beforeShowCallback?.Invoke();
             Show();
@@ -63,11 +63,12 @@ namespace HDH.Popups
             Shown?.Invoke(this);
         }
         
-        private PopupView InstantiateView()
+        private PopupView InstantiateView(bool setActive)
         {
             PopupView view = _viewsFactory.Instantiate(_config.Prefab);
             view.Transform.SetParent(_viewParent.Transform, false);
             view.Closed += OnViewClosed;
+            view.gameObject.SetActive(setActive);
             return view;
         }
 
