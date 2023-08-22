@@ -29,6 +29,7 @@ namespace HDH.Fsm.Debug
 
         private void UpdateCurrentState()
         {
+            if (_fsm.IsStarted == false) return;
             if (string.IsNullOrEmpty(_currentState) == false)
             {
                 _switchStatesHistory.Insert(0, _currentState);

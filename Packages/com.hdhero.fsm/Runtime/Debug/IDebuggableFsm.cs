@@ -6,5 +6,6 @@ namespace HDH.Fsm.Debug
     {
         public event Action StateSwitched;
         public Type CurrentStateType { get; }
+        public bool IsStarted { get; }
     }
 }

@@ -12,8 +12,9 @@ namespace HDH.Fsm
     {
         public event Action StateSwitchRequested;
         public event Action StateSwitched;
-        public Type CurrentStateType => _currentState.GetType();
+        public Type CurrentStateType => _currentState?.GetType();
         public TBaseState CurrentState => _currentState;
+        public bool IsStarted { get; private set; }
 
         private readonly Dictionary<Type, TBaseState> _statesSet;
         private TBaseState _currentState;
@@ -66,11 +67,13 @@ namespace HDH.Fsm
             _currentState ??= _statesSet.First().Value;
 
             _currentState.Enter();
+            IsStarted = true;
             return this;
         }
 
         public void Stop()
         {
+            IsStarted = false;
             _currentState?.Exit(null);
         }
 
