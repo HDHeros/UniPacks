@@ -7,7 +7,8 @@ namespace HDH.Popups
     public abstract class PopupView : MonoBehaviour
     {
         public event Action Closed;
-        public RectTransform Transform { get; private set; }
+        public RectTransform Transform => _transform ??= GetComponent<RectTransform>();
+        private RectTransform _transform;
         
         public void Show()
         {
@@ -22,9 +23,6 @@ namespace HDH.Popups
             gameObject.SetActive(false);
             Closed?.Invoke();
         }
-
-        protected virtual void Awake() => 
-            Transform = GetComponent<RectTransform>();
 
         // ReSharper disable once Unity.RedundantEventFunction
 
