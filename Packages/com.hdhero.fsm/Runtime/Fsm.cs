@@ -80,7 +80,7 @@ namespace HDH.Fsm
         public IDebuggableFsm GetIDebuggable() => 
             this;
 
-        public void SwitchState<TNewState>(Action callback) where TNewState : SwitchableState => 
+        public void SwitchState<TNewState>(Action callback = null) where TNewState : SwitchableState => 
             SwitchState(typeof(TNewState), callback);
 
         public void SwitchState(Type stateType, Action callback = null)
