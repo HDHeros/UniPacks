@@ -10,15 +10,25 @@ namespace HDH.Fsm
         where TBaseState : BaseFsmState<TFields>
         where TFields : IFsmSharedFields
     {
+        public enum InternalStateType
+        {
+            None = 0, 
+            Started = 1, 
+            Stopped = 2, 
+            Paused = 3,
+        }
         public event Action StateSwitchRequested;
         public event Action StateSwitched;
         public Type CurrentStateType => _currentState?.GetType();
         public TBaseState CurrentState => _currentState;
-        public bool IsStarted { get; private set; }
+        public InternalStateType InternalState { get; private set; }
+        public bool IsStarted => InternalState != InternalStateType.None && InternalState != InternalStateType.Stopped;
 
         private readonly Dictionary<Type, TBaseState> _statesSet;
+        private Type _initialState;
         private TBaseState _currentState;
         private TFields _sharedFields;
+        private InternalStateType _internalSate;
 
         public static Fsm<TBaseState, TFields> Create(TFields sharedFields) => 
             new Fsm<TBaseState, TFields>(sharedFields);
@@ -53,7 +63,8 @@ namespace HDH.Fsm
             else throw new NullReferenceException();
             
 
-            if (isInitialState) _currentState = instance;
+            if (isInitialState || _statesSet.Count == 0) 
+                _initialState = instanceType;
             _statesSet.Add(instanceType, instance);
 
             return this;
@@ -64,16 +75,23 @@ namespace HDH.Fsm
             if (_statesSet.Count <= 0)
                 throw new Exception($"States number have to be at least one");
 
-            _currentState ??= _statesSet.First().Value;
+            if (InternalState != InternalStateType.Paused)
+                _currentState = _statesSet[_initialState];
 
             _currentState.Enter();
-            IsStarted = true;
+            InternalState = InternalStateType.Started;
             return this;
         }
 
+        public void Pause()
+        {
+            InternalState = InternalStateType.Paused;
+            _currentState?.Exit(null);
+        }
+        
         public void Stop()
         {
-            IsStarted = false;
+            InternalState = InternalStateType.Stopped;
             _currentState?.Exit(null);
         }
 

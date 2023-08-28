@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHPopup/Scene/PopupsSample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHPopup/Scene/PopupsSample.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Docs/Fsm/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/Fsm/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,14 +41,20 @@
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Layout/VerticalLayoutGroupTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHEnumGen/MyEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Assets/Samples/HDHFsm/CharacterFsmExample.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Assets/Samples/HDHPopup/Scene/PopupsSample.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Assets/Samples/HDHPopup/Scene/PopupsSample.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Assets/Samples/HDHPopup/Scene/PopupsSample.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Assets/Samples/HDHPopup/Scene/PopupsSample.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/TestRunner/Callbacks/RemoteTestResultSender.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/IDebuggableFsm.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.fsm/Runtime/Fsm.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.fsm/Runtime/Fsm.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IFsmSharedFields.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.fsm/Runtime/IStateSwitcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IStateSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/SwitchableState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -112,25 +121,35 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2P5un3xdLM68MXbMmHnWZdAxlmg" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Dzianis\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Dzianis\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Dzianis\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Dzianis\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Dzianis\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Dzianis\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2020.3.34f1\Editor\Unity.exe" />
@@ -195,6 +214,20 @@
       <workItem from="1690351878388" duration="9595000" />
       <workItem from="1690437918616" duration="7186000" />
       <workItem from="1691048783160" duration="228000" />
+      <workItem from="1691656387315" duration="826000" />
+      <workItem from="1691733629483" duration="596000" />
+      <workItem from="1691763148917" duration="30000" />
+      <workItem from="1692272056462" duration="187000" />
+      <workItem from="1692273717512" duration="1283000" />
+      <workItem from="1692337575950" duration="11000" />
+      <workItem from="1692610679940" duration="95000" />
+      <workItem from="1692613228014" duration="727000" />
+      <workItem from="1692630794977" duration="1000" />
+      <workItem from="1692712061346" duration="1047000" />
+      <workItem from="1692714708060" duration="679000" />
+      <workItem from="1692782879878" duration="625000" />
+      <workItem from="1692952167416" duration="830000" />
+      <workItem from="1693213666586" duration="646000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -386,7 +419,95 @@
       <option name="project" value="LOCAL" />
       <updated>1691048931399</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="feat: not generic SwitchState method for Fsm">
+      <option name="closed" value="true" />
+      <created>1691656613250</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1691656613250</updated>
+    </task>
+    <task id="LOCAL-00029" summary="fix: pupups readme">
+      <option name="closed" value="true" />
+      <created>1692272228758</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1692272228758</updated>
+    </task>
+    <task id="LOCAL-00030" summary="feat: &quot;View&quot; property for Popup">
+      <option name="closed" value="true" />
+      <created>1692273809558</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1692273809558</updated>
+    </task>
+    <task id="LOCAL-00031" summary="fix: popup 'IsShown' property">
+      <option name="closed" value="true" />
+      <created>1692610757088</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1692610757088</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fix: instantiate on awake of popups">
+      <option name="closed" value="true" />
+      <created>1692613362315</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1692613362315</updated>
+    </task>
+    <task id="LOCAL-00033" summary="fix: popups parent's nullref">
+      <option name="closed" value="true" />
+      <created>1692712175836</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1692712175836</updated>
+    </task>
+    <task id="LOCAL-00034" summary="fix: popup's view transform">
+      <option name="closed" value="true" />
+      <created>1692712990849</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1692712990849</updated>
+    </task>
+    <task id="LOCAL-00035" summary="fix: fsm debugger nullref">
+      <option name="closed" value="true" />
+      <created>1692715072862</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1692715072862</updated>
+    </task>
+    <task id="LOCAL-00036" summary="feat: callback for fsm's switchState">
+      <option name="closed" value="true" />
+      <created>1692952265504</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1692952265504</updated>
+    </task>
+    <task id="LOCAL-00037" summary="fix: IStateSwitcher interface">
+      <option name="closed" value="true" />
+      <created>1692952305693</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1692952305693</updated>
+    </task>
+    <task id="LOCAL-00038" summary="fix: default value for fsm's callback">
+      <option name="closed" value="true" />
+      <created>1692952399267</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1692952399267</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,17 +529,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="add: readme files for UserData" />
-    <MESSAGE value="fix: readme for UserData - added installing via UPM" />
-    <MESSAGE value="fix: userData readme" />
-    <MESSAGE value="fix: UD readme" />
-    <MESSAGE value="feat: added &quot;HowToUse&quot; section to userData's readme" />
-    <MESSAGE value="feat: &quot;data inspection&quot; section for userData's readme" />
-    <MESSAGE value="feat: throwing an exception if user try to create two or more instances of UserDataService" />
-    <MESSAGE value="feat: new drawer for enum config" />
-    <MESSAGE value="refactor: extracted arrayDrawer from enumConfig" />
-    <MESSAGE value="feat: enum config guiStyles and validation" />
-    <MESSAGE value="feat: sort, validation warnings and errors" />
     <MESSAGE value="feat: enum generation logic" />
     <MESSAGE value="feat: ESG readme" />
     <MESSAGE value="fix: SEG readme line breaks" />
@@ -433,7 +543,37 @@
     <MESSAGE value="feat: readme for popups and Fsm" />
     <MESSAGE value="fix: state machine's fields" />
     <MESSAGE value="feat: stop method for fsm" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: stop method for fsm" />
+    <MESSAGE value="feat: not generic SwitchState method for Fsm" />
+    <MESSAGE value="fix: pupups readme" />
+    <MESSAGE value="feat: &quot;View&quot; property for Popup" />
+    <MESSAGE value="fix: popup 'IsShown' property" />
+    <MESSAGE value="fix: instantiate on awake of popups" />
+    <MESSAGE value="fix: popups parent's nullref" />
+    <MESSAGE value="fix: popup's view transform" />
+    <MESSAGE value="fix: fsm debugger nullref" />
+    <MESSAGE value="feat: callback for fsm's switchState" />
+    <MESSAGE value="fix: IStateSwitcher interface" />
+    <MESSAGE value="fix: default value for fsm's callback" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: default value for fsm's callback" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsParent.cs</url>
+          <line>7</line>
+          <properties documentPath="C:\Users\Dzianis\RiderProjects\UniPacks\Packages\com.hdhero.pupups\Runtime\PopupsParent.cs" initialLine="7" containingFunctionPresentation="Property 'Transform'">
+            <startOffsets>
+              <option value="195" />
+            </startOffsets>
+            <endOffsets>
+              <option value="235" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

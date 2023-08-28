@@ -221,7 +221,7 @@ MonoBehaviour:
   _text: Some text
   _configs:
   - Prefab: {fileID: 8342325474769882309, guid: 245ff34010c7da44881eb23f02339953, type: 3}
-    InstantiateOnAwake: 0
+    InstantiateOnAwake: 1
 --- !u!224 &1730555594
 RectTransform:
   m_ObjectHideFlags: 0
