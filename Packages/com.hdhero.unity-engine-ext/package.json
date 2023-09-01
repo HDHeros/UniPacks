@@ -1,0 +1,11 @@
+{
+  "name": "com.hdhero.unity-engine-ext",
+  "version": "0.0.1",
+  "displayName": "HDH Unity Extensions",
+  "documentationUrl": "https://github.com/HDHeros/UniPacks/blob/main/Docs/UnityEngineExt/README.md",
+  "author": {
+    "name": "HDHero",
+    "url": "https://github.com/HDHeros"
+  },
+  "hideInEditor": false
+}

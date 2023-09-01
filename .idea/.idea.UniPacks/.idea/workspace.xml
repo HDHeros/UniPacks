@@ -5,10 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Docs/UnityEngineExt/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/AnimatorExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/AnimatorExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/EaseExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/EaseExtension.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/FsmExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/FsmExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/GameObjectExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/GameObjectExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/IEnumerableExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/IEnumerableExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/MathExt.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/MathExt.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/OtherExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/OtherExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/TransformExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/TransformExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/UnityColorExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/UnityColorExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/UnityObjectExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/UnityObjectExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/UnityVectors.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/UnityVectors.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/HDH.UnityExt.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/HDH.UnityExt.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/package.json.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHPopup/Scene/PopupsSample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHPopup/Scene/PopupsSample.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Fsm/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/Fsm/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,24 +68,19 @@
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Layout/VerticalLayoutGroupTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ae72fc958ab44fdbb61b9d8c36cf141e13ca00/0d/f81ee60c/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHEnumGen/MyEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Assets/Samples/HDHPopup/Scene/PopupsSample.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Assets/Samples/HDHPopup/Scene/PopupsSample.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Assets/Samples/HDHPopup/Scene/PopupsSample.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Assets/Samples/HDHPopup/Scene/PopupsSample.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/TestRunner/Callbacks/RemoteTestResultSender.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/IDebuggableFsm.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.fsm/Runtime/Fsm.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.fsm/Runtime/Fsm.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IFsmSharedFields.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.fsm/Runtime/IStateSwitcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IStateSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/SwitchableState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/AnimatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -227,7 +250,10 @@
       <workItem from="1692714708060" duration="679000" />
       <workItem from="1692782879878" duration="625000" />
       <workItem from="1692952167416" duration="830000" />
-      <workItem from="1693213666586" duration="646000" />
+      <workItem from="1693213666586" duration="3072000" />
+      <workItem from="1693311712414" duration="75000" />
+      <workItem from="1693311794186" duration="2778000" />
+      <workItem from="1693467784203" duration="618000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -507,7 +533,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692952399267</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="feat: pause for fsm">
+      <option name="closed" value="true" />
+      <created>1693214371890</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1693214371890</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,7 +563,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="feat: enum generation logic" />
     <MESSAGE value="feat: ESG readme" />
     <MESSAGE value="fix: SEG readme line breaks" />
     <MESSAGE value="fix: test line break" />
@@ -554,7 +587,8 @@
     <MESSAGE value="feat: callback for fsm's switchState" />
     <MESSAGE value="fix: IStateSwitcher interface" />
     <MESSAGE value="fix: default value for fsm's callback" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: default value for fsm's callback" />
+    <MESSAGE value="feat: pause for fsm" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: pause for fsm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

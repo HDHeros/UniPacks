@@ -1,0 +1,28 @@
+{
+    "name": "HDH.UnityExt",
+    "rootNamespace": "HDH.UnityExt",
+    "references": [
+        "UniTask",
+        "HDH.Fsm"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.cysharp.unitask",
+            "expression": "",
+            "define": "UNI_TASK"
+        },
+        {
+            "name": "com.hdhero.fsm",
+            "expression": "",
+            "define": "HDH_FSM"
+        }
+    ],
+    "noEngineReferences": false
+}
