@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using HDH.Fsm.Debug;
 
@@ -28,7 +27,6 @@ namespace HDH.Fsm
         private Type _initialState;
         private TBaseState _currentState;
         private TFields _sharedFields;
-        private InternalStateType _internalSate;
 
         public static Fsm<TBaseState, TFields> Create(TFields sharedFields) => 
             new Fsm<TBaseState, TFields>(sharedFields);
@@ -114,5 +112,7 @@ namespace HDH.Fsm
                 callback?.Invoke();
             }
         }
+
+        public T GetState<T>() where T : TBaseState => (T) _statesSet[typeof(T)];
     }
 }

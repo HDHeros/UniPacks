@@ -5,38 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Docs/UnityEngineExt/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/AnimatorExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/AnimatorExtensions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/EaseExtension.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/EaseExtension.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/FsmExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/FsmExtensions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/GameObjectExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/GameObjectExtensions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/IEnumerableExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/IEnumerableExtensions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/MathExt.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/MathExt.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/OtherExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/OtherExtensions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/TransformExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/TransformExtensions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/UnityColorExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/UnityColorExtensions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/UnityObjectExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/UnityObjectExtensions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/UnityVectors.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/UnityVectors.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/HDH.UnityExt.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/HDH.UnityExt.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/package.json.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,6 +224,8 @@
       <workItem from="1693311712414" duration="75000" />
       <workItem from="1693311794186" duration="2778000" />
       <workItem from="1693467784203" duration="618000" />
+      <workItem from="1693577910447" duration="176000" />
+      <workItem from="1693835037739" duration="400000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -541,7 +513,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693214371890</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="feat: extensions pack">
+      <option name="closed" value="true" />
+      <created>1693578027545</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1693578027545</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,7 +543,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="feat: ESG readme" />
     <MESSAGE value="fix: SEG readme line breaks" />
     <MESSAGE value="fix: test line break" />
     <MESSAGE value="feat: appended issues to esg readme" />
@@ -588,7 +567,8 @@
     <MESSAGE value="fix: IStateSwitcher interface" />
     <MESSAGE value="fix: default value for fsm's callback" />
     <MESSAGE value="feat: pause for fsm" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: pause for fsm" />
+    <MESSAGE value="feat: extensions pack" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: extensions pack" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
