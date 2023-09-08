@@ -22,6 +22,14 @@ namespace HDH.UnityExt.Extensions
             return UniTask.WaitUntil(() => target.GetCurrentAnimatorStateInfo(layerIndex).IsName(stateName),
                 cancellationToken: ct);
         }
+        
+        public static UniTask AwaitCurrentStateTime(this Animator target, float awaitedNormalizedTime,
+            CancellationToken ct, int layerIndex = 0)
+        {
+            return UniTask.WaitWhile(() =>
+                    target.GetCurrentAnimatorStateInfo(layerIndex).normalizedTime < awaitedNormalizedTime,
+                cancellationToken: ct);
+        }
 #endif
     }
 }
