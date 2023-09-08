@@ -41,15 +41,35 @@ namespace HDH.UnityExt.Extensions
         public static float InOutQuart (float x) => 
             x < 0.5 ? 8 * x * x * x * x : 1 - Mathf.Pow(-2 * x + 2, 4) / 2;
         
+        public static float InQuint (float x) => 
+            x * x * x * x * x;
+        
+        public static float OutQuint (float x) => 
+            1 - Mathf.Pow(1 - x, 5);
+        
+        public static float InOutQuint (float x) => 
+            x < 0.5 ? 16 * x * x * x * x * x : 1 - Mathf.Pow(-2 * x + 2, 5) / 2;
+
+        public static float InExpo(float x) => 
+            x == 0 ? 0 : Mathf.Pow(2, 10 * x - 10);
+
         public static float OutExpo(float x) => 
             x >= 1 ? 1 : 1 - Mathf.Pow(2, -10 * x);
+        
+        public static float InOutExpo(float x) => 
+            x == 0
+                ? 0
+                : x >= 1
+                    ? 1
+                    : x < 0.5 
+                        ? Mathf.Pow(2, 20 * x - 10) / 2
+                        : (2 - Mathf.Pow(2, -20 * x + 10)) / 2;
 
         public static float ApplyEase(float x, Type type)
         {
             switch (type)
             {
                 case Type.Linear: return x;
-                case Type.OutExpo: return OutExpo(x);
                 case Type.InSine: return InSine(x);
                 case Type.OutSine: return OutSine(x);
                 case Type.InOutSine: return InOutSine(x);
@@ -62,6 +82,12 @@ namespace HDH.UnityExt.Extensions
                 case Type.InQuart: return InQuart(x);
                 case Type.OutQuart: return OutQuart(x);
                 case Type.InOutQuart: return InOutQuart(x);
+                case Type.InQuint: return InQuint(x);
+                case Type.OutQuint: return OutQuint(x);
+                case Type.InOutQuint: return InOutQuint(x);
+                case Type.InExpo: return InExpo(x);
+                case Type.OutExpo: return OutExpo(x);
+                case Type.InOutExpo: return InOutExpo(x);
                 default:
                     throw new ArgumentOutOfRangeException(nameof(type), type, null);
             }
@@ -82,8 +108,12 @@ namespace HDH.UnityExt.Extensions
             InQuart = 10,
             OutQuart = 11,
             InOutQuart = 12,
-            
-            OutExpo,
+            InQuint = 13,
+            OutQuint = 14,
+            InOutQuint = 15,
+            InExpo = 16,
+            OutExpo = 17,
+            InOutExpo = 18,
         }
     }
 }
