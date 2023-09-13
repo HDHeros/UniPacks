@@ -68,18 +68,21 @@ namespace HDH.Fsm
             return this;
         }
         
-        public Fsm<TBaseState, TFields> Start()
-        {
-            if (_statesSet.Count <= 0)
-                throw new Exception($"States number have to be at least one");
+        /// <summary>
+        /// Starts FSM with prev stopped or default state. If default state is not exist - starts first one
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public Fsm<TBaseState, TFields> Start() => 
+            StartWith(_initialState);
 
-            if (InternalState != InternalStateType.Paused)
-                _currentState = _statesSet[_initialState];
-
-            _currentState.Enter();
-            InternalState = InternalStateType.Started;
-            return this;
-        }
+        /// <summary>
+        /// Starts FSM with specified state
+        /// </summary>
+        /// <typeparam name="TStartState"></typeparam>
+        /// <returns></returns>
+        public Fsm<TBaseState, TFields> StartWith<TStartState>() where TStartState : TBaseState => 
+            StartWith(typeof(TStartState));
 
         public void Pause()
         {
@@ -114,5 +117,18 @@ namespace HDH.Fsm
         }
 
         public T GetState<T>() where T : TBaseState => (T) _statesSet[typeof(T)];
+        
+        private Fsm<TBaseState, TFields> StartWith(Type state)
+        {
+            if (_statesSet.Count <= 0)
+                throw new Exception($"States number have to be at least one");
+
+            if (InternalState != InternalStateType.Paused)
+                _currentState = _statesSet[state];
+
+            _currentState.Enter();
+            InternalState = InternalStateType.Started;
+            return this;
+        }
     }
 }
