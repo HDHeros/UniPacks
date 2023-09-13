@@ -86,14 +86,40 @@ namespace HDH.Fsm
 
         public void Pause()
         {
-            InternalState = InternalStateType.Paused;
-            _currentState?.Exit(null);
+            switch (InternalState)
+            {
+                case InternalStateType.None:
+                    throw new InvalidOperationException();
+                case InternalStateType.Started:
+                    _currentState?.Exit(null);
+                    InternalState = InternalStateType.Paused;
+                    break;
+                case InternalStateType.Stopped:
+                case InternalStateType.Paused:
+                    return;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
         }
         
         public void Stop()
         {
+            switch (InternalState)
+            {
+                case InternalStateType.None:
+                    throw new InvalidOperationException();
+                case InternalStateType.Started:
+                    _currentState?.Exit(null);
+                    break;
+                case InternalStateType.Paused:
+                    break;
+                case InternalStateType.Stopped:
+                    return;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+
             InternalState = InternalStateType.Stopped;
-            _currentState?.Exit(null);
         }
 
         public IDebuggableFsm GetIDebuggable() => 
