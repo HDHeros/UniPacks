@@ -19,6 +19,12 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "com.hdhero.gopool": {
+      "version": "file:com.hdhero.gopool",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.hdhero.pupups": {
       "version": "file:com.hdhero.pupups",
       "depth": 0,
