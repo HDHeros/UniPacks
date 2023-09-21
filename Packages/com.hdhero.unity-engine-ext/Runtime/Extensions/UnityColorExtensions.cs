@@ -15,5 +15,8 @@ namespace HDH.UnityExt.Extensions
 
         public static Color WithA(this Color c, float a) => 
             new Color(c.r, c.g, c.b, a);
+
+        public static Color FromScalar(float scalar) => 
+            new Color(scalar, scalar, scalar);
     }
 }
