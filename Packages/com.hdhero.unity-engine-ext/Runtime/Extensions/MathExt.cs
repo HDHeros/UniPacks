@@ -19,7 +19,7 @@ namespace HDH.UnityExt.Extensions
         /// <returns></returns>
         public static bool InRangeInA(this int target, int a, int b) => 
             target >= a && target < b;
-        
+            
         /// <summary>
         /// Inclusive 'a' and 'b'
         /// </summary>

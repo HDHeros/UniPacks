@@ -17,12 +17,16 @@ namespace HDH.UnityExt.Extensions
         /// <param name="ct"></param>
         /// <param name="layerIndex">Target animator's layer index</param>
         /// <returns></returns>
-        public static UniTask AwaitAnimatorState(this Animator target, string stateName, CancellationToken ct, int layerIndex = 0)
-        {
-            return UniTask.WaitUntil(() => target.GetCurrentAnimatorStateInfo(layerIndex).IsName(stateName),
+        public static UniTask AwaitAnimatorState(this Animator target, string stateName, CancellationToken ct, 
+            int layerIndex = 0) =>
+            UniTask.WaitUntil(() => target.GetCurrentAnimatorStateInfo(layerIndex).IsName(stateName),
                 cancellationToken: ct);
-        }
-        
+
+        public static UniTask AwaitAnimatorStateIsNot(this Animator target, string stateName, CancellationToken ct,
+            int layerIndex = 0) =>
+            UniTask.WaitWhile(() => target.GetCurrentAnimatorStateInfo(layerIndex).IsName(stateName),
+                cancellationToken: ct);
+
         public static UniTask AwaitCurrentStateTime(this Animator target, float awaitedNormalizedTime,
             CancellationToken ct, int layerIndex = 0)
         {
