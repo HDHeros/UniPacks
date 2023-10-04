@@ -27,9 +27,8 @@ namespace HDH.GoPool.Components
                 await UniTask.Delay(TimeSpan.FromSeconds(delay.Value), cancellationToken: ct);
             
             _particle.Play();
-            bool cancelled = await UniTask.WaitUntil(() => _particle == null || _particle.isPlaying == false, cancellationToken: ct)
-                .SuppressCancellationThrow();
-            if (cancelled || _particle == null) return;
+            await UniTask.WaitUntil(() => _particle == null || _particle.isPlaying == false, cancellationToken: ct);
+            if (_particle == null || _particle.gameObject == null) return;
             pool.Return(this, selfPrefab);
         }
         
