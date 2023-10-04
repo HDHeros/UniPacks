@@ -19,6 +19,7 @@ namespace HDH.GoPool.Components
             Quaternion? rotation = null,
             float? delay = null)
         {
+            CancellationTokenRegistration registration = ct.Register(OnPlayed);
             transform.position = position;
             if (rotation.HasValue)
                 transform.rotation = rotation.Value;
@@ -28,8 +29,14 @@ namespace HDH.GoPool.Components
             
             _particle.Play();
             await UniTask.WaitUntil(() => _particle == null || _particle.isPlaying == false, cancellationToken: ct);
-            if (_particle == null || _particle.gameObject == null) return;
-            pool.Return(this, selfPrefab);
+            registration.Dispose();
+            OnPlayed();
+            
+            void OnPlayed()
+            {
+                if (_particle == null || _particle.gameObject == null) return;
+                pool.Return(this, selfPrefab);
+            }
         }
         
         #endif
