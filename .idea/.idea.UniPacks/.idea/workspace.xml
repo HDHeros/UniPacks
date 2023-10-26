@@ -5,45 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHAudio/Scripts/AudioServiceLauncher.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHAudio/Scripts/AudioServiceLauncher.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHAudio/Scripts/SoundSource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHAudio/Scripts/SoundSource.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Editor/AudioConfigEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Editor/AudioConfigEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Editor/ClipWrapperDrawer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Editor/ClipWrapperDrawer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/ACS.Audio.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/ACS.Audio.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/AudioPlayer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/AudioPlayer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/AudioService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/AudioService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/AudioServiceAgent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/AudioServiceAgent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Confgis.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Confgis/AudioConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Confgis/AudioConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Confgis/AudioServiceConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Confgis/AudioServiceConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Music.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Music/MusicPlayer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Music/MusicPlayer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Music/MusicPlayerAgent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Music/MusicPlayerAgent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Player3D.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Player3D/AudioPlayer3D.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Player3D/AudioPlayer3D.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Player3D/IPlayer3DAgent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Player3D/IPlayer3DAgent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Player3D/Player3DAgent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Player3D/Player3DAgent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Player3D/VolumePrioritizer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Player3D/VolumePrioritizer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Confgis/AudioServiceSoConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Confgis/AudioServiceSoConfig.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,10 +176,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="30688">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="30688" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -271,7 +235,8 @@
       <workItem from="1694948037659" duration="837000" />
       <workItem from="1695028744836" duration="2224000" />
       <workItem from="1698222018954" duration="4000" />
-      <workItem from="1698305560320" duration="5704000" />
+      <workItem from="1698305560320" duration="6631000" />
+      <workItem from="1698318744673" duration="68000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -567,7 +532,23 @@
       <option name="project" value="LOCAL" />
       <updated>1693578027545</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="feat: audio service">
+      <option name="closed" value="true" />
+      <created>1698311532281</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1698311532281</updated>
+    </task>
+    <task id="LOCAL-00042" summary="feat: default readme file for audio">
+      <option name="closed" value="true" />
+      <created>1698311643946</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1698311643946</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -589,8 +570,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fix: SEG readme line breaks" />
-    <MESSAGE value="fix: test line break" />
     <MESSAGE value="feat: appended issues to esg readme" />
     <MESSAGE value="feat: esg readme notice" />
     <MESSAGE value="feat: constants file for ESG" />
@@ -614,7 +593,9 @@
     <MESSAGE value="fix: default value for fsm's callback" />
     <MESSAGE value="feat: pause for fsm" />
     <MESSAGE value="feat: extensions pack" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: extensions pack" />
+    <MESSAGE value="feat: audio service" />
+    <MESSAGE value="feat: default readme file for audio" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: default readme file for audio" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -631,19 +612,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Confgis/AudioConfig.cs</url>
-          <line>67</line>
-          <properties documentPath="C:\Users\Dzianis\RiderProjects\UniPacks\Packages\com.hdhero.audio\Runtime\Confgis\AudioConfig.cs" initialLine="67" containingFunctionPresentation="Method 'ConfigureSource'">
-            <startOffsets>
-              <option value="3056" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3057" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
