@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8582244f4c19491cbf7922946cc4e6d0, type: 3}
+  m_Name: 2DSoundExampleClick
+  m_EditorClassIdentifier: 
+  _audioClips:
+  - AudioClip: {fileID: 8300000, guid: d1fdb38dbbd20104ab76c38de4061d93, type: 3}
+    Probability: 1
+  _volumePriority: 1
+  _output: {fileID: 7831710181611881984, guid: f77c42eac2d75e24896246c61587786f, type: 2}
+  _limitPlaybacksCount: 0
+  _maxParallelPlaybacksCount: 0
+  _mute: 0
+  _bypassEffects: 0
+  _bypassListenerEffects: 0
+  _bypassReverbZones: 0
+  _loop: 0
+  _priority: 128
+  _volume: 1
+  _pitchMin: 1
+  _pitchMax: 1
+  _stereoPan: 0
+  _spatialBlend: 0
+  _reverbZoneMix: 1
+  _dopplerLevel: 1
+  _spread: 0
+  _rolloffMode: 0
+  _minDistance: 1
+  _maxDistance: 500

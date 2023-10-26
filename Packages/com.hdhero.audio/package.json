@@ -1,0 +1,11 @@
+{
+  "name": "com.hdhero.audio",
+  "version": "0.0.1",
+  "displayName": "HDH Audio",
+  "documentationUrl": "https://github.com/HDHeros/UniPacks/blob/main/Docs/Audio/README.md",
+  "author": {
+    "name": "HDHero",
+    "url": "https://github.com/HDHeros"
+  },
+  "hideInEditor": false
+}
