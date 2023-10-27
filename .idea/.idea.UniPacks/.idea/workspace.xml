@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Confgis/AudioServiceSoConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Confgis/AudioServiceSoConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/BaseFsmState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/BaseFsmState.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/SwitchableState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/SwitchableState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +44,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/60d5247800ce4094b57a8e9b77f693f7fa00/a7/218b5f75/AudioSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5bc71bb4d98498aba1f868b89d20d47767c00/02/2d363753/EditorGUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5bc71bb4d98498aba1f868b89d20d47767c00/18/08926a1f/ScriptAttributeUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5bc71bb4d98498aba1f868b89d20d47767c00/88/f9153025/CurveEditorSettings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5bc71bb4d98498aba1f868b89d20d47767c00/9a/d915addd/CurveEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5bc71bb4d98498aba1f868b89d20d47767c00/b1/ef391728/AudioUtil.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5bc71bb4d98498aba1f868b89d20d47767c00/bf/b9f0ff8b/TickStyle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ae72fc958ab44fdbb61b9d8c36cf141e13ca00/0d/f81ee60c/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHEnumGen/MyEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" root0="FORCE_HIGHLIGHTING" />
@@ -236,7 +242,10 @@
       <workItem from="1695028744836" duration="2224000" />
       <workItem from="1698222018954" duration="4000" />
       <workItem from="1698305560320" duration="6631000" />
-      <workItem from="1698318744673" duration="68000" />
+      <workItem from="1698318744673" duration="1081000" />
+      <workItem from="1698322054136" duration="646000" />
+      <workItem from="1698322718954" duration="250000" />
+      <workItem from="1698412977597" duration="343000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -548,7 +557,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698311643946</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="feat: AudioServiceSoConfig.cs">
+      <option name="closed" value="true" />
+      <created>1698318826760</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1698318826760</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="feat: appended issues to esg readme" />
     <MESSAGE value="feat: esg readme notice" />
     <MESSAGE value="feat: constants file for ESG" />
     <MESSAGE value="fix: pupup's appearing bug&#10;feat: some scripts for popup testing" />
@@ -595,7 +611,8 @@
     <MESSAGE value="feat: extensions pack" />
     <MESSAGE value="feat: audio service" />
     <MESSAGE value="feat: default readme file for audio" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: default readme file for audio" />
+    <MESSAGE value="feat: AudioServiceSoConfig.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: AudioServiceSoConfig.cs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
