@@ -64,7 +64,7 @@ namespace HDH.Fsm
             if (isInitialState || _statesSet.Count == 0) 
                 _initialState = instanceType;
             _statesSet.Add(instanceType, instance);
-            instance.OnReceivedFields();
+            instance.OnFieldsReceived();
 
             return this;
         }

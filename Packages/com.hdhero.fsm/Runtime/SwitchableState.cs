@@ -10,7 +10,7 @@ namespace HDH.Fsm
         private IStateSwitcher _stateSwitcher;
 #pragma warning restore 649
 
-        public virtual void OnReceivedFields(){}
+        public virtual void OnFieldsReceived(){}
         
         public virtual void Enter(){}
         
