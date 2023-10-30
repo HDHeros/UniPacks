@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/BaseFsmState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/BaseFsmState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/QuaternionExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/QuaternionExtensions.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/SwitchableState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/SwitchableState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +55,11 @@
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/IDebuggableFsm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.fsm/Runtime/Fsm.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.fsm/Runtime/Fsm.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IFsmSharedFields.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IStateSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.fsm/Runtime/SwitchableState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/SwitchableState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/AnimatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
@@ -245,7 +247,8 @@
       <workItem from="1698318744673" duration="1081000" />
       <workItem from="1698322054136" duration="646000" />
       <workItem from="1698322718954" duration="250000" />
-      <workItem from="1698412977597" duration="343000" />
+      <workItem from="1698412977597" duration="1188000" />
+      <workItem from="1698683818814" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -565,7 +568,23 @@
       <option name="project" value="LOCAL" />
       <updated>1698318826760</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="feat: OnReceivedFields method to Fsm">
+      <option name="closed" value="true" />
+      <created>1698413422105</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1698413422105</updated>
+    </task>
+    <task id="LOCAL-00045" summary="fix: renamed OnReceivedFields to OnFieldsReceived">
+      <option name="closed" value="true" />
+      <created>1698413574385</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1698413574385</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,8 +606,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="feat: esg readme notice" />
-    <MESSAGE value="feat: constants file for ESG" />
     <MESSAGE value="fix: pupup's appearing bug&#10;feat: some scripts for popup testing" />
     <MESSAGE value="feat: args for HDHPopup" />
     <MESSAGE value="feat: fsm logic" />
@@ -612,7 +629,9 @@
     <MESSAGE value="feat: audio service" />
     <MESSAGE value="feat: default readme file for audio" />
     <MESSAGE value="feat: AudioServiceSoConfig.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: AudioServiceSoConfig.cs" />
+    <MESSAGE value="feat: OnReceivedFields method to Fsm" />
+    <MESSAGE value="fix: renamed OnReceivedFields to OnFieldsReceived" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: renamed OnReceivedFields to OnFieldsReceived" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
