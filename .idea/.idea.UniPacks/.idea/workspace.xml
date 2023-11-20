@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/QuaternionExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/QuaternionExtensions.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -248,7 +243,7 @@
       <workItem from="1698322054136" duration="646000" />
       <workItem from="1698322718954" duration="250000" />
       <workItem from="1698412977597" duration="1188000" />
-      <workItem from="1698683818814" duration="31000" />
+      <workItem from="1698683818814" duration="74000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -584,7 +579,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698413574385</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="feat: QuaternionExtensions">
+      <option name="closed" value="true" />
+      <created>1698683859045</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1698683859045</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,7 +609,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fix: pupup's appearing bug&#10;feat: some scripts for popup testing" />
     <MESSAGE value="feat: args for HDHPopup" />
     <MESSAGE value="feat: fsm logic" />
     <MESSAGE value="feat: fsm package" />
@@ -631,7 +633,8 @@
     <MESSAGE value="feat: AudioServiceSoConfig.cs" />
     <MESSAGE value="feat: OnReceivedFields method to Fsm" />
     <MESSAGE value="fix: renamed OnReceivedFields to OnFieldsReceived" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: renamed OnReceivedFields to OnFieldsReceived" />
+    <MESSAGE value="feat: QuaternionExtensions" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: QuaternionExtensions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
