@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="" />
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -244,6 +247,8 @@
       <workItem from="1698322718954" duration="250000" />
       <workItem from="1698412977597" duration="1188000" />
       <workItem from="1698683818814" duration="74000" />
+      <workItem from="1700466947157" duration="661000" />
+      <workItem from="1701329478320" duration="192000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -587,7 +592,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698683859045</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="feat: playerPrefsExtension">
+      <option name="closed" value="true" />
+      <created>1700467000825</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1700467000825</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,7 +622,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="feat: args for HDHPopup" />
     <MESSAGE value="feat: fsm logic" />
     <MESSAGE value="feat: fsm package" />
     <MESSAGE value="feat: readme for popups and Fsm" />
@@ -634,7 +646,8 @@
     <MESSAGE value="feat: OnReceivedFields method to Fsm" />
     <MESSAGE value="fix: renamed OnReceivedFields to OnFieldsReceived" />
     <MESSAGE value="feat: QuaternionExtensions" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: QuaternionExtensions" />
+    <MESSAGE value="feat: playerPrefsExtension" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: playerPrefsExtension" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

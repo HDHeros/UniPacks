@@ -34,6 +34,19 @@ namespace HDH.Popups
 
         public Popup this[Type type] => _popups[type];
 
+        public bool IsAnyPopupShowed(out Popup firstFound)
+        {
+            firstFound = null;
+            foreach (KeyValuePair<Type,Popup> keyValuePair in _popups)
+            {
+                if (keyValuePair.Value.IsShown == false) continue;
+                firstFound = keyValuePair.Value;
+                return true;
+            }
+
+            return false;
+        }
+        
         private void InitializePopups(PopupControllerConfig controllerConfig)
         {
             foreach (PopupConfig config in controllerConfig.PopupsConfigs)
