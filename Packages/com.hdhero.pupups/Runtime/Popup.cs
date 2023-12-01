@@ -28,35 +28,35 @@ namespace HDH.Popups
                 _view = InstantiateView(false);
         }
 
-        public void Open() => 
+        public bool Open() => 
             Open(null);
 
-        public void Open<T>(T args) where T : IPopupArgs
+        public bool Open<T>(T args) where T : IPopupArgs
         {
-            Open(() =>
+            return Open(() =>
             {
                 if (_view is IReceivingArgs<T> argsReceiver) 
                     argsReceiver.SetArgs(args);
             });
         }
 
-        private void Open(Action beforeShowCallback)
+        private bool Open(Action beforeShowCallback)
         {
             if (_view == null) _view = InstantiateView(true);
-            
-            beforeShowCallback?.Invoke();
-            Show();
-        }
-        
-        private void Show()
-        {
             if (IsShown)
             {
                 if (_isLogEnabled) 
                     Debug.LogWarning($"Trying to open pop up of type {_view.GetType().Name} while it's already opened.");
-                return;
+                return false;
             }
-
+            
+            beforeShowCallback?.Invoke();
+            Show();
+            return true;
+        }
+        
+        private void Show()
+        {
             IsShown = true;
             _view.Show();
             _view.Transform.SetAsFirstSibling();
