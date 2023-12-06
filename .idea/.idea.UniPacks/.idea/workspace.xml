@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="fix: removed scene themes structure">
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="fix: infinite loop">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Music/MusicPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Music/MusicPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/AudioService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/AudioService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +39,7 @@
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Layout/VerticalLayoutGroupTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/60d5247800ce4094b57a8e9b77f693f7fa00/a7/218b5f75/AudioSource.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6b1444477c1d41c692ef6c02a838308529ac30/a0/e5c0eb08/CancellationTokenSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5bc71bb4d98498aba1f868b89d20d47767c00/02/2d363753/EditorGUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5bc71bb4d98498aba1f868b89d20d47767c00/18/08926a1f/ScriptAttributeUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5bc71bb4d98498aba1f868b89d20d47767c00/88/f9153025/CurveEditorSettings.cs" root0="SKIP_HIGHLIGHTING" />
@@ -52,6 +53,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.audio/Runtime/Confgis/AudioServiceConfig.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.audio/Runtime/Confgis/AudioServiceConfig.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.audio/Runtime/Music/MusicPlayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.audio/Runtime/Music/MusicPlayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.audio/Runtime/Music/MusicPlayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" root0="FORCE_HIGHLIGHTING" />
@@ -253,7 +255,7 @@
       <workItem from="1701423985602" duration="797000" />
       <workItem from="1701428860793" duration="1000" />
       <workItem from="1701776719328" duration="2054000" />
-      <workItem from="1701848649578" duration="5869000" />
+      <workItem from="1701848649578" duration="7656000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -437,14 +439,6 @@
       <option name="project" value="LOCAL" />
       <updated>1690444982826</updated>
     </task>
-    <task id="LOCAL-00029" summary="fix: pupups readme">
-      <option name="closed" value="true" />
-      <created>1692272228758</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1692272228758</updated>
-    </task>
     <task id="LOCAL-00030" summary="feat: &quot;View&quot; property for Popup">
       <option name="closed" value="true" />
       <created>1692273809558</created>
@@ -621,7 +615,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701854099748</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="fix: infinite loop">
+      <option name="closed" value="true" />
+      <created>1701855425109</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1701855425109</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,7 +645,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="feat: stop method for fsm" />
     <MESSAGE value="feat: not generic SwitchState method for Fsm" />
     <MESSAGE value="fix: pupups readme" />
     <MESSAGE value="feat: &quot;View&quot; property for Popup" />
@@ -668,7 +669,8 @@
     <MESSAGE value="feat: bool return value for Open method of Popup" />
     <MESSAGE value="fix: music player now is just a player, it no more has music control functions" />
     <MESSAGE value="fix: removed scene themes structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: removed scene themes structure" />
+    <MESSAGE value="fix: infinite loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: infinite loop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

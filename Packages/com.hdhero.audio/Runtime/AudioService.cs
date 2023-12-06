@@ -1,9 +1,13 @@
+using System;
+using System.Collections.Generic;
+using System.Threading;
 using Cysharp.Threading.Tasks;
 using HDH.Audio.Confgis;
 using HDH.Audio.Music;
 using HDH.Audio.Player3D;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.PlayerLoop;
 
 namespace HDH.Audio
 {
@@ -17,6 +21,7 @@ namespace HDH.Audio
         private readonly AudioMixer _audioMixer;
         private readonly AudioServiceConfig _config;
         private readonly AudioServiceAgent _agent;
+        private readonly Dictionary<string, CancellationTokenSource> _fadeSources;
         private AudioPlayer _player;
         private AudioPlayer3D _player3d;
         private MusicPlayer _musicPlayer;
@@ -26,6 +31,7 @@ namespace HDH.Audio
             _config = config;
             _agent = new GameObject("Audio Service").AddComponent<AudioServiceAgent>();
             _audioMixer = _config.Mixer;
+            _fadeSources = new Dictionary<string, CancellationTokenSource>();
             InstantiatePlayers();
             InitializeMixerGroups().Forget();
             _agent.Initialize(this);
@@ -34,9 +40,9 @@ namespace HDH.Audio
         public float GetGroupVolume(string paramId) => 
             PlayerPrefs.GetFloat(paramId);
 
-        public void SetGroupVolumeByName(string groupName, float normalizedVolume)
+        public void SetGroupVolumeByName(string groupName, float normalizedVolume, float fadeDuration = 0)
         {
-            SetGroupVolumeWithoutSaving(groupName, normalizedVolume);
+            SetGroupVolumeWithoutSaving(groupName, normalizedVolume, fadeDuration).Forget();
             PlayerPrefs.SetFloat(groupName, normalizedVolume);
         }
 
@@ -72,8 +78,42 @@ namespace HDH.Audio
             }
         }
 
-        private void SetGroupVolumeWithoutSaving(string groupName, float normalizedVolume) => 
+        private async UniTaskVoid SetGroupVolumeWithoutSaving(string groupName, float normalizedVolume, float fadeDuration)
+        {
+            if (_fadeSources.TryGetValue(groupName, out var ctSource))
+            {
+                if (ctSource.IsCancellationRequested == false)
+                {
+                    ctSource.Cancel();
+                }
+            }
+            else
+            {
+                _fadeSources.Add(groupName, null);
+            }
+
+            if (fadeDuration == 0)
+            {
+                _audioMixer.SetFloat(groupName, GetVolume(normalizedVolume));
+                return;
+            }
+
+            CancellationTokenSource cts = new CancellationTokenSource();
+            _fadeSources[groupName] = cts;
+            if (fadeDuration <= 0)
+                throw new ArgumentException();
+
+            float currentDuration = 0;
+            
+            while (cts.IsCancellationRequested == false && currentDuration < fadeDuration)
+            {
+                _audioMixer.SetFloat(groupName, GetVolume(currentDuration / fadeDuration));
+                currentDuration += Time.deltaTime;
+                await UniTask.Yield(PlayerLoopTiming.Update, cancellationToken: cts.Token);
+            }
+            
             _audioMixer.SetFloat(groupName, GetVolume(normalizedVolume));
+        }
 
         private float GetVolume(float value) => 
             Mathf.Lerp(-80, 0, value);
