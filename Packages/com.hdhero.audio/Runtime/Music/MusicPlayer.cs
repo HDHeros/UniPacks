@@ -63,6 +63,8 @@ namespace HDH.Audio.Music
                CurrentSongEnds?.Invoke();
                yield break;
             }
+
+            yield return null;
          }
       }
 
