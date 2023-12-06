@@ -12,12 +12,5 @@ namespace HDH.Audio.Confgis
         public float MusicTransitionDuration;
         public string[] MixerVolumeParameters;
         public int PlaybackPrioritiesAmount = 10;
-
-        [Serializable]
-        public struct SceneThemes
-        {
-            public string SceneName;
-            public AudioConfig[] Themes;
-        }
     }
 }
