@@ -82,7 +82,7 @@ namespace HDH.Audio
         {
             if (_fadeSources.TryGetValue(groupName, out var ctSource))
             {
-                if (ctSource.IsCancellationRequested == false)
+                if (ctSource?.IsCancellationRequested == false)
                 {
                     ctSource.Cancel();
                 }
