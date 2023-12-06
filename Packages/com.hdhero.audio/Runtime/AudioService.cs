@@ -104,10 +104,13 @@ namespace HDH.Audio
                 throw new ArgumentException();
 
             float currentDuration = 0;
+            float startVolume = GetGroupVolume(groupName);
             
             while (cts.IsCancellationRequested == false && currentDuration < fadeDuration)
             {
-                _audioMixer.SetFloat(groupName, GetVolume(currentDuration / fadeDuration));
+                float volumeValue =
+                    GetVolume(Mathf.Lerp(startVolume, normalizedVolume, currentDuration / fadeDuration));
+                _audioMixer.SetFloat(groupName, volumeValue);
                 currentDuration += Time.deltaTime;
                 await UniTask.Yield(PlayerLoopTiming.Update, cancellationToken: cts.Token);
             }
