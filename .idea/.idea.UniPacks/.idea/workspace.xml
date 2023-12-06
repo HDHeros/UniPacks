@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/Popup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/Popup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.pupups/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.pupups/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Confgis/AudioServiceConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Confgis/AudioServiceConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Music/MusicPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.audio/Runtime/Music/MusicPlayer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +51,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/TestRunner/Callbacks/RemoteTestResultSender.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_InputField.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.audio/Runtime/Confgis/AudioServiceConfig.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.audio/Runtime/Music/MusicPlayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.audio/Runtime/Music/MusicPlayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/IDebuggableFsm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" root0="FORCE_HIGHLIGHTING" />
@@ -58,7 +61,6 @@
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IStateSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/SwitchableState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/AnimatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -248,7 +250,10 @@
       <workItem from="1698683818814" duration="74000" />
       <workItem from="1700466947157" duration="661000" />
       <workItem from="1701329478320" duration="1262000" />
-      <workItem from="1701423985602" duration="149000" />
+      <workItem from="1701423985602" duration="797000" />
+      <workItem from="1701428860793" duration="1000" />
+      <workItem from="1701776719328" duration="2054000" />
+      <workItem from="1701848649578" duration="3762000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -608,7 +613,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701329731807</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="feat: bool return value for Open method of Popup">
+      <option name="closed" value="true" />
+      <created>1701424169683</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1701424169683</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -630,7 +643,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="feat: fsm package" />
     <MESSAGE value="feat: readme for popups and Fsm" />
     <MESSAGE value="fix: state machine's fields" />
     <MESSAGE value="feat: stop method for fsm" />
@@ -655,7 +667,8 @@
     <MESSAGE value="feat: QuaternionExtensions" />
     <MESSAGE value="feat: playerPrefsExtension" />
     <MESSAGE value="feat: IsAnyPopupOpened method for PopupsController" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: IsAnyPopupOpened method for PopupsController" />
+    <MESSAGE value="feat: bool return value for Open method of Popup" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: bool return value for Open method of Popup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

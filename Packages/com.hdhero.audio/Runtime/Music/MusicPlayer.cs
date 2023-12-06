@@ -1,25 +1,19 @@
 using System;
 using System.Collections;
-using System.Linq;
-using System.Threading;
-using Cysharp.Threading.Tasks;
 using HDH.Audio.Confgis;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using Random = UnityEngine.Random;
 
 namespace HDH.Audio.Music
 {
    public class MusicPlayer
    {
+      public event Action CurrentSongEnds;
       private readonly AudioServiceConfig _config;
       private readonly AudioSource _source1;
       private readonly AudioSource _source2;
       private readonly MusicPlayerAgent _agent;
       private AudioSource _currentlyPlayingSource;
-      private Scene _currentScene;
-      private CancellationTokenSource _playerCancellation;
-      private AudioConfig _forcedTrack;
+      private Coroutine _currentWatchingCoroutine;
 
 
       public MusicPlayer(AudioService audioService, AudioServiceConfig config)
@@ -29,44 +23,23 @@ namespace HDH.Audio.Music
          _agent.transform.SetParent(audioService.Transform);
          _source1 = _currentlyPlayingSource = _agent.gameObject.AddComponent<AudioSource>();
          _source2 = _agent.gameObject.AddComponent<AudioSource>();
-         SceneManager.sceneLoaded += OnSceneLoaded;
       }
 
-      public void DisableForcedTrack() => 
-         ForcePlayTrack(null);
-      
-      public void ForcePlayTrack(AudioConfig track)
+      public void Play(AudioConfig themeConfig) => 
+         PlayTrack(themeConfig);
+
+      public void Stop()
       {
-         _forcedTrack = track;
-         ForceChangeTrack();
-      }
-      
-      private async UniTaskVoid StartPlayLoop(CancellationToken cancellation)
-      {
-         while (cancellation.IsCancellationRequested == false)
-         {
-            if (TryGetNextTrack(out var data) == false)
-            {
-               _currentlyPlayingSource.volume = 0;
-               return;
-            }
-            
-            PlayTrack(data);
-            await UniTask.Delay(
-               TimeSpan.FromSeconds(_currentlyPlayingSource.clip.length - _config.MusicTransitionDuration), 
-               cancellationToken: cancellation);
-         }
+         if (_currentWatchingCoroutine != null)
+            _agent.StopCoroutine(_currentWatchingCoroutine);
+         _currentlyPlayingSource.Stop();
       }
 
-      private void ForceChangeTrack()
-      {
-         _playerCancellation?.Cancel();
-         _playerCancellation = new CancellationTokenSource();
-         StartPlayLoop(_playerCancellation.Token).Forget();
-      }
-      
       private void PlayTrack(AudioConfig track)
       {
+         if (_currentWatchingCoroutine != null) 
+            _agent.StopCoroutine(_currentWatchingCoroutine);
+         
          var playingSource = _currentlyPlayingSource == _source1 ? _source1 : _source2;
          var freeSource = _currentlyPlayingSource == _source1 ? _source2 : _source1;
 
@@ -78,6 +51,19 @@ namespace HDH.Audio.Music
          freeSource.Play();
          _agent.StartCoroutine(FadeAudioSource(freeSource, 1, _config.MusicTransitionDuration));
          _currentlyPlayingSource = freeSource;
+         _currentWatchingCoroutine = _agent.StartCoroutine(WatchCurrentSource());
+      }
+
+      private IEnumerator WatchCurrentSource()
+      {
+         while (_currentlyPlayingSource.isPlaying)
+         {
+            if (_currentlyPlayingSource.clip.length - _currentlyPlayingSource.time <= _config.MusicTransitionDuration)
+            {
+               CurrentSongEnds?.Invoke();
+               yield break;
+            }
+         }
       }
 
       private IEnumerator FadeAudioSource(AudioSource audioSource, float value, float duration, Action onComplete = null)
@@ -93,28 +79,6 @@ namespace HDH.Audio.Music
 
          audioSource.volume = value;
          onComplete?.Invoke();
-      }
-   
-      private bool TryGetNextTrack(out AudioConfig track)
-      {
-         track = null;
-         if (_forcedTrack != null)
-         {
-            track = _forcedTrack;
-            return true;
-         }
-         
-         var themes = _config.ScenesThemes.FirstOrDefault(d => d.SceneName.Equals(_currentScene.name));
-         if (themes.Themes == null || themes.Themes.Length == 0) return false;
-         track = themes.Themes[Random.Range(0, themes.Themes.Length)];
-         return true;
-      }
-
-      private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
-      {
-         _currentScene = arg0;
-         _forcedTrack = null;
-         ForceChangeTrack();
       }
    }
 }
