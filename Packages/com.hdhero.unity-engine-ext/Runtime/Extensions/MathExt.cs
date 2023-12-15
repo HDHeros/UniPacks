@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Cysharp.Threading.Tasks;
+using UnityEngine;
 
 namespace HDH.UnityExt.Extensions
 {
@@ -69,6 +72,36 @@ namespace HDH.UnityExt.Extensions
                 Mathf.Clamp01(f * 2);
 
             return new Vector2(x, y);
+        }
+
+        public static Vector3 GetAvg(this IList<Vector3> list) =>
+            new Vector3(
+                GetAvg(list.Select(c => c.x).ToArray()),
+                GetAvg(list.Select(c => c.y).ToArray()),
+                GetAvg(list.Select(c => c.z).ToArray()));
+
+        public static Vector3 GetAvgNotAlloc(this IList<Vector3> list)
+        {
+            float count = list.Count;
+            float sumX = 0;
+            float sumY = 0;
+            float sumZ = 0;
+            foreach (var value in list)
+            {
+                sumX += value.x;
+                sumY += value.y;
+                sumZ += value.z;
+            }
+
+            return new Vector3(sumX / count, sumY / count, sumZ / count);
+        }
+        
+        public static float GetAvg(IList<float> values)
+        {
+            float sum = 0;
+            foreach (var value in values) 
+                sum += value;
+            return sum / values.Count;
         }
     }
 }

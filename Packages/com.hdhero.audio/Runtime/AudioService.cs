@@ -7,7 +7,6 @@ using HDH.Audio.Music;
 using HDH.Audio.Player3D;
 using UnityEngine;
 using UnityEngine.Audio;
-using UnityEngine.PlayerLoop;
 
 namespace HDH.Audio
 {
