@@ -63,12 +63,12 @@ namespace HDH.UnityExt.Extensions
             float max = values.Sum(setup => setup.GetWeight());
             float randomValue = Random.Range(0, max);
 
-            foreach (T rewardSetup in values)
+            foreach (T val in values)
             {
-                randomValue -= rewardSetup.GetWeight();
+                randomValue -= val.GetWeight();
                 if (randomValue > 0) continue;
 
-                return rewardSetup;
+                return val;
             }
 
             return default;
