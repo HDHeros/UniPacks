@@ -1,13 +1,12 @@
 ﻿using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using HDH.UserData.Dto;
 using Newtonsoft.Json;
 using UnityEngine;
 
 namespace HDH.UserData
 {
-    internal class SaveLoadService
+    internal class SaveLoadService : ISaveLoadService
     {
         private readonly string _path;
         private readonly string _fileExtension;
@@ -20,7 +19,7 @@ namespace HDH.UserData
             _binaryFormatter = new BinaryFormatter();
         }
 
-        internal void Save<T>(T model) where T : DataModel, new()
+        public void Save<T>(T model) where T : DataModel, new()
         {
             string fileFullPath = GetFileFullPath(model.GetType());
             var stream = new FileStream(fileFullPath, FileMode.OpenOrCreate, FileAccess.Write);
@@ -29,7 +28,7 @@ namespace HDH.UserData
             stream.Close();
         }
 
-        internal T Load<T>() where T : DataModel, new()
+        public T Load<T>() where T : DataModel, new()
         {
             string fullPath = GetFileFullPath(typeof(T));
             if (Directory.Exists(_path) == false)

@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/ISaveLoadService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/ISaveLoadService.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/IEnumerableExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/IEnumerableExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/UserDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/UserDataService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +55,7 @@
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/SwitchableState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/AnimatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/IEnumerableExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -247,7 +251,8 @@
       <workItem from="1701938447776" duration="110000" />
       <workItem from="1701956526637" duration="608000" />
       <workItem from="1702625851848" duration="961000" />
-      <workItem from="1702646140114" duration="1348000" />
+      <workItem from="1702646140114" duration="1963000" />
+      <workItem from="1705324960686" duration="129000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -431,14 +436,6 @@
       <option name="project" value="LOCAL" />
       <updated>1690444982826</updated>
     </task>
-    <task id="LOCAL-00034" summary="fix: popup's view transform">
-      <option name="closed" value="true" />
-      <created>1692712990849</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1692712990849</updated>
-    </task>
     <task id="LOCAL-00035" summary="fix: fsm debugger nullref">
       <option name="closed" value="true" />
       <created>1692715072862</created>
@@ -615,7 +612,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702626210853</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="fix: some var names">
+      <option name="closed" value="true" />
+      <created>1702648690710</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1702648690710</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -637,7 +642,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fix: instantiate on awake of popups" />
     <MESSAGE value="fix: popups parent's nullref" />
     <MESSAGE value="fix: popup's view transform" />
     <MESSAGE value="fix: fsm debugger nullref" />
@@ -662,7 +666,8 @@
     <MESSAGE value="fix: null ref" />
     <MESSAGE value="fix: fade logic" />
     <MESSAGE value="feat unityExt: avg for arrays of Vector3" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat unityExt: avg for arrays of Vector3" />
+    <MESSAGE value="fix: some var names" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: some var names" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
