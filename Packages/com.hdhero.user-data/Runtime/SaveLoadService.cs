@@ -8,10 +8,13 @@ namespace HDH.UserData
 {
     internal class SaveLoadService : ISaveLoadService
     {
+        public event Action Initialized;
+        public bool IsInitialized => true;
         private readonly string _path;
         private readonly string _fileExtension;
         private readonly BinaryFormatter _binaryFormatter;
-    
+
+
         internal SaveLoadService(string saveFolder, string fileExtension)
         {
             _path = $"{Application.persistentDataPath}/{saveFolder}";

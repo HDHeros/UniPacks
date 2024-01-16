@@ -14,7 +14,13 @@ namespace HDH.UserData
         private readonly SaveLoadMonoAgent _monoAgent;
         private readonly WaitForSeconds _saveDelayYield;
 
+        public event Action Initialized
+        {
+            add => _saveLoadService.Initialized += value;
+            remove => _saveLoadService.Initialized -= value;
+        }
         public Dictionary<Type, DataModelInfo> LoadedModels => _loadedModels;
+        public bool IsInitialized => _saveLoadService.IsInitialized;
 
         public UserDataService(IUserDataConfig config, ISaveLoadService saveLoadService = null)
         {
