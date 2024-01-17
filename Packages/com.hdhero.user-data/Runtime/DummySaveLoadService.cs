@@ -4,7 +4,6 @@ namespace HDH.UserData
 {
     public class DummySaveLoadService : ISaveLoadService
     {
-        public event Action Initialized;
         public bool IsInitialized => true;
 
         public void Save<T>(T model) where T : DataModel, new()

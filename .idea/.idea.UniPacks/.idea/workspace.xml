@@ -8,8 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DummySaveLoadService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DummySaveLoadService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/ISaveLoadService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/ISaveLoadService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/UserDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/UserDataService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.user-data/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +57,8 @@
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/AnimatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.user-data/Runtime/DummySaveLoadService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.user-data/Runtime/UserDataService.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -254,7 +253,8 @@
       <workItem from="1702625851848" duration="961000" />
       <workItem from="1702646140114" duration="1963000" />
       <workItem from="1705324960686" duration="1032000" />
-      <workItem from="1705396080327" duration="268000" />
+      <workItem from="1705396080327" duration="939000" />
+      <workItem from="1705481043713" duration="53000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -438,14 +438,6 @@
       <option name="project" value="LOCAL" />
       <updated>1690444982826</updated>
     </task>
-    <task id="LOCAL-00037" summary="fix: IStateSwitcher interface">
-      <option name="closed" value="true" />
-      <created>1692952305693</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1692952305693</updated>
-    </task>
     <task id="LOCAL-00038" summary="fix: default value for fsm's callback">
       <option name="closed" value="true" />
       <created>1692952399267</created>
@@ -622,7 +614,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705325391517</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="feat: delayed initialization for save load service">
+      <option name="closed" value="true" />
+      <created>1705396390590</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1705396390590</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -644,7 +644,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fix: fsm debugger nullref" />
     <MESSAGE value="feat: callback for fsm's switchState" />
     <MESSAGE value="fix: IStateSwitcher interface" />
     <MESSAGE value="fix: default value for fsm's callback" />
@@ -669,7 +668,8 @@
     <MESSAGE value="fix: some var names" />
     <MESSAGE value="fix: save load service interface" />
     <MESSAGE value="feat: dummy save load service" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: dummy save load service" />
+    <MESSAGE value="feat: delayed initialization for save load service" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: delayed initialization for save load service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
