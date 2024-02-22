@@ -49,7 +49,7 @@ namespace HDH.Audio.Music
          track.ConfigureSource(freeSource);
          
          freeSource.Play();
-         _agent.StartCoroutine(FadeAudioSource(freeSource, 1, _config.MusicTransitionDuration));
+         _agent.StartCoroutine(FadeAudioSource(freeSource, track.Volume, _config.MusicTransitionDuration));
          _currentlyPlayingSource = freeSource;
          _currentWatchingCoroutine = _agent.StartCoroutine(WatchCurrentSource());
       }
