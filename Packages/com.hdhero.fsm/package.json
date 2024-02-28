@@ -7,5 +7,10 @@
     "name": "HDHero",
     "url": "https://github.com/HDHeros"
   },
-  "hideInEditor": false
+  "hideInEditor": false,
+  "samples" : {
+    "displayName": "ButtonGame",
+    "description": "A small clicker game with one button",
+    "path": "Samples~/ButtonGame"
+  }
 }
