@@ -54,7 +54,7 @@ namespace HDH.UserData
         public void ForceSaveModel<T>(T model) where T : DataModel, new()
         {
             ValidateModel(model);
-            _saveLoadService.Save(model);
+            SaveModel(model);
         }
 
         private void ValidateModel(DataModel model)
@@ -67,10 +67,16 @@ namespace HDH.UserData
         private IEnumerator SaveDelayed<T>(T model, DataModelInfo modelInfo) where T : DataModel, new()
         {
             yield return _saveDelayYield;
-            _saveLoadService.Save(model);
+            SaveModel(model);
             modelInfo.IsDirty = false;
         }
-    
+
+        private void SaveModel<T>(T model) where T : DataModel, new()
+        {
+            model.BeforeSave();
+            _saveLoadService.Save(model);
+        }
+
         public class DataModelInfo
         {
             public DataModel Model;

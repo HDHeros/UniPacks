@@ -13,5 +13,7 @@ namespace HDH.UserData
 
         public void ForceSave() => 
             ForceSaveRequested?.Invoke(this);
+        
+        public virtual void BeforeSave(){}
     }
 }
