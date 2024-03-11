@@ -51,6 +51,9 @@ namespace HDH.Audio
         public void SetActiveGroup(string paramId, bool isActive) => 
             SetGroupVolumeByName(paramId, isActive ? 1 : 0);
 
+        public void SetPauseGroup(string paramId, bool isPaused) => 
+            SetGroupVolumeByName(paramId, isPaused ? 0 : GetGroupVolume(paramId));
+
         private void InstantiatePlayers()
         {
             _player = new AudioPlayer(this, _config.SourcesLimit2D);

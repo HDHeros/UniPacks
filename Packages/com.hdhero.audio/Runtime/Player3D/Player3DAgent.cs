@@ -39,10 +39,10 @@ namespace HDH.Audio.Player3D
         private float _priorityVolumeMultiplier = 1;
         private float _userVolumeMultiplier = 1;
 
-        public void Initialize(AudioPlayer3D host) => 
+        public virtual void Initialize(AudioPlayer3D host) => 
             _host = host;
 
-        public void Play(AudioConfig config, Transform client, bool returnAfterPlay = true, bool synchronizePosition = true, float synchronizeRate = 0.2f)
+        public virtual void Play(AudioConfig config, Transform client, bool returnAfterPlay = true, bool synchronizePosition = true, float synchronizeRate = 0.2f)
         {
             if (_isBusy && _currentClient != client) 
                 throw new Exception("Request from side client");
@@ -59,7 +59,7 @@ namespace HDH.Audio.Player3D
             SubscribeOnValidate();
         }
 
-        public void Stop()
+        public virtual void Stop()
         {
             if (this == null) return;
             if (_audioSource != null) _audioSource.Stop();
@@ -68,7 +68,7 @@ namespace HDH.Audio.Player3D
             PlaybackStopped?.Invoke(this);
         }
 
-        public void Return()
+        public virtual void Return()
         {
             Stop();
             _isBusy = false;
@@ -78,7 +78,7 @@ namespace HDH.Audio.Player3D
             _userVolumeMultiplier = 1;
         }
 
-        public void Configure()
+        public virtual void Configure()
         {
             _config.ConfigureSource(_audioSource);
             RecalculateVolume();
@@ -89,25 +89,25 @@ namespace HDH.Audio.Player3D
             return base.ToString() + _config.VolumePriority;
         }
 
-        public void SetVolumeMultiplier(float multiplier)
+        public virtual void SetVolumeMultiplier(float multiplier)
         {
             _priorityVolumeMultiplier = multiplier;
             RecalculateVolume();
         }
 
-        private void RecalculateVolume()
+        protected virtual  void RecalculateVolume()
         {
             _audioSource.volume = _config.Volume * _priorityVolumeMultiplier * _userVolumeMultiplier;
         }
         
-        private void Awake()
+        protected virtual void Awake()
         {
-            _audioSource = GetComponent<AudioSource>();
+            _audioSource = gameObject.AddComponent<AudioSource>();
             _audioSource.playOnAwake = false;
             _transform = transform;
         }
 
-        private IEnumerator SyncPosition(bool returnAfterPlay, bool syncPosition, float syncRate)
+        protected virtual IEnumerator SyncPosition(bool returnAfterPlay, bool syncPosition, float syncRate)
         {
             syncRate = Mathf.Clamp(syncRate, 0.01f, float.MaxValue);
             var syncYield = new WaitForSeconds(syncRate);
@@ -128,16 +128,16 @@ namespace HDH.Audio.Player3D
             }
         }
 
-        private void OnDestroy() => UnsubscribeOnValidate();
+        protected virtual  void OnDestroy() => UnsubscribeOnValidate();
 
-        private void SubscribeOnValidate()
+        protected virtual  void SubscribeOnValidate()
         {
             #if UNITY_EDITOR
             _config.Validated += Configure;
             #endif
         }
 
-        private void UnsubscribeOnValidate()
+        protected virtual void UnsubscribeOnValidate()
         {
             #if UNITY_EDITOR
             if (_config is null == false) _config.Validated -= Configure;

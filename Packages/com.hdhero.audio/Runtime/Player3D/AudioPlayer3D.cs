@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using HDH.Audio.Confgis;
 using UnityEngine;
@@ -12,11 +13,13 @@ namespace HDH.Audio.Player3D
         private readonly List<Player3DAgent> _freeAgents;
         private readonly Transform _parent;
         private readonly VolumePrioritizer _prioritizer;
+        private readonly AudioServiceConfig _config;
         public int AgentsAmount => _agents.Count;
         public int FreeAgentsAmount => _freeAgents.Count;
         
         public AudioPlayer3D(AudioService audioService, AudioServiceConfig config)
         {
+            _config = config;
             _agents = new List<Player3DAgent>(config.SourcesLimit3D + 1);
             _freeAgents = new List<Player3DAgent>(_agents.Capacity);
             _parent = new GameObject("Audio Player 3D").transform;
@@ -67,6 +70,9 @@ namespace HDH.Audio.Player3D
 
         private void CreateAgents(int sourcesLimit)
         {
+            if (_config.Player3DAgentType.IsAssignableFrom(typeof(Player3DAgent)) == false)
+                throw new Exception("Player3DAgent type is wrong");
+
             for (int i = 0; i < sourcesLimit; i++) 
                 InstantiatePlayer();
         }
@@ -86,8 +92,7 @@ namespace HDH.Audio.Player3D
 
         private void InstantiatePlayer()
         {
-            Player3DAgent agent =  new GameObject("AudioAgent", typeof(AudioSource))
-                .AddComponent<Player3DAgent>();
+            Player3DAgent agent = new GameObject("AudioAgent", _config.Player3DAgentType).GetComponent<Player3DAgent>();
             agent.transform.SetParent(_parent);
             agent.Initialize(this);
             _agents.Add(agent);
