@@ -55,9 +55,15 @@ namespace HDH.Audio.Player3D
                 StopCoroutine(_synchronizeCoroutine);
             _synchronizeCoroutine = StartCoroutine(SyncPosition(returnAfterPlay, synchronizePosition, synchronizeRate));
             _audioSource.Play();
-            PlaybackStarted?.Invoke(this);
+            RaisePlaybackStarted();
             SubscribeOnValidate();
         }
+
+        protected void RaisePlaybackStarted() => 
+            PlaybackStarted?.Invoke(this);
+
+        protected void RaisePlaybackStopped() => 
+            PlaybackStopped?.Invoke(this);
 
         public virtual void Stop()
         {
@@ -65,7 +71,7 @@ namespace HDH.Audio.Player3D
             if (_audioSource != null) _audioSource.Stop();
             StopAllCoroutines();
             _synchronizeCoroutine = null;
-            PlaybackStopped?.Invoke(this);
+            RaisePlaybackStopped();
         }
 
         public virtual void Return()
