@@ -11,12 +11,12 @@ namespace HDH.Audio.Player3D
         public event Action<Player3DAgent> PlaybackStarted;
         public event Action<Player3DAgent> PlaybackStopped;
         
-        public float Pitch
+        public virtual float Pitch
         {
             get => _audioSource.pitch;
             set => _audioSource.pitch = value;
         }
-        public float Volume
+        public virtual float Volume
         {
             get => _userVolumeMultiplier;
             set
