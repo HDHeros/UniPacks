@@ -51,8 +51,10 @@ namespace HDH.Audio
         public void SetActiveGroup(string paramId, bool isActive) => 
             SetGroupVolumeByName(paramId, isActive ? 1 : 0);
 
-        public void SetPauseGroup(string paramId, bool isPaused) => 
-            SetGroupVolumeByName(paramId, isPaused ? 0 : GetGroupVolume(paramId));
+        public void SetPauseGroup(string paramId, bool isPaused)
+        {
+            SetGroupVolumeWithoutSaving(paramId, isPaused ? 0 : GetGroupVolume(paramId), 0).Forget();
+        }
 
         private void InstantiatePlayers()
         {
