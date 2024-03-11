@@ -28,16 +28,16 @@ namespace HDH.Audio.Player3D
 
         public AudioConfig AudioConfig => _config;
         public bool IsPlaying => _audioSource.isPlaying;
-        private float _busyDuration;
-        private Transform _currentClient;
-        private AudioSource _audioSource;
-        private AudioPlayer3D _host;
-        private Transform _transform;
-        private Coroutine _synchronizeCoroutine;
-        private AudioConfig _config;
-        private bool _isBusy;
-        private float _priorityVolumeMultiplier = 1;
-        private float _userVolumeMultiplier = 1;
+        protected float _busyDuration;
+        protected Transform _currentClient;
+        protected AudioSource _audioSource;
+        protected AudioPlayer3D _host;
+        protected Transform _transform;
+        protected Coroutine _synchronizeCoroutine;
+        protected AudioConfig _config;
+        protected bool _isBusy;
+        protected float _priorityVolumeMultiplier = 1;
+        protected float _userVolumeMultiplier = 1;
 
         public virtual void Initialize(AudioPlayer3D host) => 
             _host = host;
