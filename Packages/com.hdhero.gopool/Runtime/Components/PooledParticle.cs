@@ -8,6 +8,7 @@ namespace HDH.GoPool.Components
     public class PooledParticle : MonoBehaviour
     {
         [SerializeField] private ParticleSystem _particle;
+        public ParticleSystem ParticleSystem => _particle;
 
         #if UNI_TASK
         
