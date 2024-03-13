@@ -1,0 +1,16 @@
+{
+    "name": "HDH.FsmEditor",
+    "rootNamespace": "HDH.FsmEditor",
+    "references": [
+        "HDH.Fsm"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -5,11 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/DefaultStatesExample.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces/IState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces/IState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces/IStateSwitcher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces/IStateSwitcher.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseAwaitToLoadingStartState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseBaseState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseLoadingState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DummySaveLoadService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DummySaveLoadService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/ISaveLoadService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/ISaveLoadService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/UserDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/UserDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.user-data/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/FsmSampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/FsmSampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/FsmExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/FsmExample.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/DefaultStatesExample.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleAwaitToLoadingStartState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleAwaitToLoadingStartState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseAwaitToLoadingStartState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleBaseState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleBaseState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseBaseState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleGameFinishedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameFinishedState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleGameFinishedState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameFinishedState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleGameState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleGameState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleLoadingState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleLoadingState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseLoadingState.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +43,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="MIXED" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -36,28 +60,42 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/CanvasUpdateRegistry.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/ColorBlock.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.3.34f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Layout/VerticalLayoutGroupTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/105da1159ec9496ab9310694c7b11dd2532bb0/53/a50056fe/IFormatProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/681fdbd9389e4d6e8755fe4f632bfbbe28600/4b/310634db/GUIStyle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/681fdbd9389e4d6e8755fe4f632bfbbe28600/c4/b207ab47/GUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6b1444477c1d41c692ef6c02a838308529ac30/03/41eabb87/IConvertible.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5bc71bb4d98498aba1f868b89d20d47767c00/e4/a4dbd1fd/SerializedObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ae72fc958ab44fdbb61b9d8c36cf141e13ca00/c9/423f1cf6/RectOffset.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHEnumGen/MyEnum.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/DefaultStatesExample.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces/IStateSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseAwaitToLoadingStartState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseBaseState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameFinishedState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseLoadingState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/TestRunner/Callbacks/RemoteTestResultSender.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_InputField.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/BaseInput.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Editor/FsmDebuggerEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/IDebuggableFsm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IFsmSharedFields.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IStateSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/SwitchableState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/FsmExample.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleAwaitToLoadingStartState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleBaseState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleGameFinishedState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleGameState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleLoadingState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/AnimatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Dzianis/RiderProjects/UniPacks/Packages/com.hdhero.user-data/Runtime/DummySaveLoadService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -130,16 +168,18 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;fsm__debugger&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -254,7 +294,15 @@
       <workItem from="1702646140114" duration="1963000" />
       <workItem from="1705324960686" duration="1032000" />
       <workItem from="1705396080327" duration="939000" />
-      <workItem from="1705481043713" duration="53000" />
+      <workItem from="1705481043713" duration="699000" />
+      <workItem from="1707228733713" duration="1100000" />
+      <workItem from="1707231178620" duration="294000" />
+      <workItem from="1707384351019" duration="645000" />
+      <workItem from="1707408044348" duration="42000" />
+      <workItem from="1707498323686" duration="94000" />
+      <workItem from="1708612552647" duration="9514000" />
+      <workItem from="1709147168091" duration="6587000" />
+      <workItem from="1710358430081" duration="131000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -438,62 +486,6 @@
       <option name="project" value="LOCAL" />
       <updated>1690444982826</updated>
     </task>
-    <task id="LOCAL-00038" summary="fix: default value for fsm's callback">
-      <option name="closed" value="true" />
-      <created>1692952399267</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1692952399267</updated>
-    </task>
-    <task id="LOCAL-00039" summary="feat: pause for fsm">
-      <option name="closed" value="true" />
-      <created>1693214371890</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1693214371890</updated>
-    </task>
-    <task id="LOCAL-00040" summary="feat: extensions pack">
-      <option name="closed" value="true" />
-      <created>1693578027545</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1693578027545</updated>
-    </task>
-    <task id="LOCAL-00041" summary="feat: audio service">
-      <option name="closed" value="true" />
-      <created>1698311532281</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1698311532281</updated>
-    </task>
-    <task id="LOCAL-00042" summary="feat: default readme file for audio">
-      <option name="closed" value="true" />
-      <created>1698311643946</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1698311643946</updated>
-    </task>
-    <task id="LOCAL-00043" summary="feat: AudioServiceSoConfig.cs">
-      <option name="closed" value="true" />
-      <created>1698318826760</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1698318826760</updated>
-    </task>
-    <task id="LOCAL-00044" summary="feat: OnReceivedFields method to Fsm">
-      <option name="closed" value="true" />
-      <created>1698413422105</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1698413422105</updated>
-    </task>
     <task id="LOCAL-00045" summary="fix: renamed OnReceivedFields to OnFieldsReceived">
       <option name="closed" value="true" />
       <created>1698413574385</created>
@@ -622,7 +614,63 @@
       <option name="project" value="LOCAL" />
       <updated>1705396390590</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="remove: redundant &quot;Initialized&quot; event">
+      <option name="closed" value="true" />
+      <created>1705481139951</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1705481139951</updated>
+    </task>
+    <task id="LOCAL-00062" summary="test push">
+      <option name="closed" value="true" />
+      <created>1707231194348</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1707231194348</updated>
+    </task>
+    <task id="LOCAL-00063" summary="fix: music player, track's volume">
+      <option name="closed" value="true" />
+      <created>1708612834897</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1708612834897</updated>
+    </task>
+    <task id="LOCAL-00064" summary="feat: new fsm sample">
+      <option name="closed" value="true" />
+      <created>1708630418842</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1708630418842</updated>
+    </task>
+    <task id="LOCAL-00065" summary="import: fsm samples">
+      <option name="closed" value="true" />
+      <created>1709147405999</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1709147405999</updated>
+    </task>
+    <task id="LOCAL-00066" summary="feat: current state name and shared fields monitoring">
+      <option name="closed" value="true" />
+      <created>1710016414356</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1710016414356</updated>
+    </task>
+    <task id="LOCAL-00067" summary="feat: delayed debugger initialization">
+      <option name="closed" value="true" />
+      <created>1710355715883</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1710355715884</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -644,13 +692,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="feat: callback for fsm's switchState" />
-    <MESSAGE value="fix: IStateSwitcher interface" />
-    <MESSAGE value="fix: default value for fsm's callback" />
-    <MESSAGE value="feat: pause for fsm" />
-    <MESSAGE value="feat: extensions pack" />
-    <MESSAGE value="feat: audio service" />
-    <MESSAGE value="feat: default readme file for audio" />
     <MESSAGE value="feat: AudioServiceSoConfig.cs" />
     <MESSAGE value="feat: OnReceivedFields method to Fsm" />
     <MESSAGE value="fix: renamed OnReceivedFields to OnFieldsReceived" />
@@ -669,7 +710,14 @@
     <MESSAGE value="fix: save load service interface" />
     <MESSAGE value="feat: dummy save load service" />
     <MESSAGE value="feat: delayed initialization for save load service" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: delayed initialization for save load service" />
+    <MESSAGE value="remove: redundant &quot;Initialized&quot; event" />
+    <MESSAGE value="test push" />
+    <MESSAGE value="fix: music player, track's volume" />
+    <MESSAGE value="feat: new fsm sample" />
+    <MESSAGE value="import: fsm samples" />
+    <MESSAGE value="feat: current state name and shared fields monitoring" />
+    <MESSAGE value="feat: delayed debugger initialization" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: delayed debugger initialization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -677,14 +725,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsParent.cs</url>
           <line>7</line>
-          <properties documentPath="C:\Users\Dzianis\RiderProjects\UniPacks\Packages\com.hdhero.pupups\Runtime\PopupsParent.cs" initialLine="7" containingFunctionPresentation="Property 'Transform'">
-            <startOffsets>
-              <option value="195" />
-            </startOffsets>
-            <endOffsets>
-              <option value="235" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\Dzianis\RiderProjects\UniPacks\Packages\com.hdhero.pupups\Runtime\PopupsParent.cs" initialLine="7" containingFunctionPresentation="Property 'Transform'" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
