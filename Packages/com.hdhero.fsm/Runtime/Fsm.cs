@@ -22,6 +22,7 @@ namespace HDH.Fsm
         public TBaseState CurrentState => _currentState;
         public InternalStateType InternalState { get; private set; }
         public bool IsStarted => InternalState != InternalStateType.None && InternalState != InternalStateType.Stopped;
+        public IReadOnlyDictionary<Type, TBaseState> StatesSet => _statesSet;
 
         private readonly Dictionary<Type, TBaseState> _statesSet;
         private Type _initialState;
