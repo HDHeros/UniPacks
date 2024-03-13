@@ -4,39 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="feat: current state name and shared fields monitoring">
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/FsmPackage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/FsmExample.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/FsmExample.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleAwaitToLoadingStartState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleAwaitToLoadingStartState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleBaseState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleBaseState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleGameFinishedState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleGameFinishedState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleGameState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleGameState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleLoadingState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleLoadingState.cs.meta" afterDir="false" />
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/DefaultStatesExample.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces/IState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces/IState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces/IStateSwitcher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces/IStateSwitcher.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseAwaitToLoadingStartState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseBaseState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseLoadingState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/FsmSampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/FsmSampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/FsmExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/FsmPackage/FsmExample.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/FsmExample.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/FsmPackage/FsmExample.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/States.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/FsmPackage/States.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/States/FsmExampleAwaitToLoadingStartState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/FsmPackage/States/FsmExampleAwaitToLoadingStartState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/States/FsmExampleAwaitToLoadingStartState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/FsmPackage/States/FsmExampleAwaitToLoadingStartState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/States/FsmExampleBaseState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/FsmPackage/States/FsmExampleBaseState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/States/FsmExampleBaseState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/FsmPackage/States/FsmExampleBaseState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/States/FsmExampleGameFinishedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/FsmPackage/States/FsmExampleGameFinishedState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/States/FsmExampleGameFinishedState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/FsmPackage/States/FsmExampleGameFinishedState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/States/FsmExampleGameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/FsmPackage/States/FsmExampleGameState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/States/FsmExampleGameState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/FsmPackage/States/FsmExampleGameState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/States/FsmExampleLoadingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/FsmPackage/States/FsmExampleLoadingState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/States/FsmExampleLoadingState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/FsmPackage/States/FsmExampleLoadingState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Editor/FsmDebuggerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Editor/FsmDebuggerEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/FsmExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/FsmExample.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/DefaultStatesExample.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleAwaitToLoadingStartState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleAwaitToLoadingStartState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseAwaitToLoadingStartState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleBaseState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleBaseState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseBaseState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleGameFinishedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameFinishedState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleGameFinishedState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameFinishedState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleGameState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleGameState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleLoadingState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleLoadingState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseLoadingState.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,15 +67,20 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5bc71bb4d98498aba1f868b89d20d47767c00/e4/a4dbd1fd/SerializedObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ae72fc958ab44fdbb61b9d8c36cf141e13ca00/c9/423f1cf6/RectOffset.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHEnumGen/MyEnum.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/DefaultStatesExample.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces/IStateSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseAwaitToLoadingStartState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseBaseState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameFinishedState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseLoadingState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/TestRunner/Callbacks/RemoteTestResultSender.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/BaseInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Editor/FsmDebuggerEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.fsm/Editor/FsmDebuggerEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/IDebuggableFsm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IFsmSharedFields.cs" root0="FORCE_HIGHLIGHTING" />
@@ -305,6 +302,7 @@
       <workItem from="1707498323686" duration="94000" />
       <workItem from="1708612552647" duration="9514000" />
       <workItem from="1709147168091" duration="6587000" />
+      <workItem from="1710358430081" duration="131000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -488,14 +486,6 @@
       <option name="project" value="LOCAL" />
       <updated>1690444982826</updated>
     </task>
-    <task id="LOCAL-00044" summary="feat: OnReceivedFields method to Fsm">
-      <option name="closed" value="true" />
-      <created>1698413422105</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1698413422105</updated>
-    </task>
     <task id="LOCAL-00045" summary="fix: renamed OnReceivedFields to OnFieldsReceived">
       <option name="closed" value="true" />
       <created>1698413574385</created>
@@ -672,7 +662,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710016414356</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="feat: delayed debugger initialization">
+      <option name="closed" value="true" />
+      <created>1710355715883</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1710355715884</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -694,7 +692,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="feat: default readme file for audio" />
     <MESSAGE value="feat: AudioServiceSoConfig.cs" />
     <MESSAGE value="feat: OnReceivedFields method to Fsm" />
     <MESSAGE value="fix: renamed OnReceivedFields to OnFieldsReceived" />
@@ -719,7 +716,8 @@
     <MESSAGE value="feat: new fsm sample" />
     <MESSAGE value="import: fsm samples" />
     <MESSAGE value="feat: current state name and shared fields monitoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: current state name and shared fields monitoring" />
+    <MESSAGE value="feat: delayed debugger initialization" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: delayed debugger initialization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

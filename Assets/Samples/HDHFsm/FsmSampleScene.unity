@@ -761,15 +761,14 @@ GameObject:
   - component: {fileID: 143545089}
   - component: {fileID: 143545088}
   - component: {fileID: 143545087}
-  - component: {fileID: 143545086}
   - component: {fileID: 143545085}
   m_Layer: 5
-  m_Name: ButtonWithStatesSimpleImplementaiton
+  m_Name: ButtonWithStatesDefImplementaiton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &143545084
 RectTransform:
   m_ObjectHideFlags: 0
@@ -802,41 +801,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 143545083}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 124bda9d787f48a439f7c2cdaceb0972, type: 3}
+  m_Script: {fileID: 11500000, guid: c97f4622b318434bb13abdb7fd2661a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TargetFsmContainer: {fileID: 143545083}
-  GuiScaleFactor: 1
-  InitializationFrequency: 0.1
-  ObservableFields:
-  - FieldName: Label
-    Observe: 1
-  - FieldName: LockPanel
-    Observe: 1
-  - FieldName: GamePanel
-    Observe: 1
-  - FieldName: CoroutineRunner
-    Observe: 1
-  - FieldName: ClicksCounter
-    Observe: 1
-  - FieldName: LoadingProgress
-    Observe: 1
---- !u!114 &143545086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 143545083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e683a99ab8b4273b9ff3d94cf6fdc60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _fields:
-    Label: {fileID: 1544526336}
-    LockPanel: {fileID: 2119325677}
-    GamePanel: {fileID: 1039058764}
+  _label: {fileID: 1544526336}
+  _lockPanel: {fileID: 2119325677}
+  _gamePanel: {fileID: 1039058764}
 --- !u!114 &143545087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3276,7 +3246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &915483550
 RectTransform:
   m_ObjectHideFlags: 0
