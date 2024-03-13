@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using Image = UnityEngine.UI.Image;
 using Random = UnityEngine.Random;
 
-namespace Samples.HDHFsm.Scripts.States
+namespace Samples.HDHFsm.Scripts.SimpleImplementation.States
 {
     public class FsmExampleGameFinishedState : FsmExampleBaseState
     {

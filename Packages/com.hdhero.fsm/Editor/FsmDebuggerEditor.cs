@@ -9,7 +9,6 @@ namespace HDH.FsmEditor.Editor
     public class FsmDebuggerEditor : UnityEditor.Editor
     {
         private FsmDebugger _debugger;
-        private string[] _strings;
         private SerializedProperty[] _properties;
 
         private void OnEnable()
@@ -19,6 +18,7 @@ namespace HDH.FsmEditor.Editor
             {
                 serializedObject.FindProperty("TargetFsmContainer"),
                 serializedObject.FindProperty("GuiScaleFactor"),
+                serializedObject.FindProperty("InitializationFrequency"),
                 serializedObject.FindProperty("ObservableFields"),
             };
         }

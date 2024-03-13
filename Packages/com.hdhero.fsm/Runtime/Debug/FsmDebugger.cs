@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using UnityEditor;
@@ -14,11 +15,11 @@ namespace HDH.Fsm.Debug
         private const float RowHeight = 20;
         private const float WindowHPadding = 5;
         private const int SymbolsInLine = 40;
-
-
-        [SerializeField] public GameObject TargetFsmContainer;
-        [SerializeField] public float GuiScaleFactor = 1;
-        [SerializeField] public List<ObservableField> ObservableFields;
+        
+        [SerializeField, Tooltip("Any GameObject that contain target FsmContainer")] public GameObject TargetFsmContainer;
+        [SerializeField, Tooltip("Scale factor of debugger window")] public float GuiScaleFactor = 1;
+        [SerializeField, Tooltip("Frequency of trying initialization if target container initializes later than debugger")] public float InitializationFrequency = 1f;
+        [SerializeField, Tooltip("Fsm's fields to observe in debugger window")] public List<ObservableField> ObservableFields;
         private string _currentState;
         private List<string> _switchStatesHistory = new List<string>();
         private Rect _windowRect = new Rect(new Vector2(WindowWidth, WindowHeight), new Vector2(WindowWidth, WindowHeight));
@@ -27,15 +28,35 @@ namespace HDH.Fsm.Debug
         private IDebuggableFsm _fsm;
         private IFsmSharedFields _fsmFields;
         private IFsmContainer _fsmContainer;
+        private WaitForSeconds _initializationFrequencyYield;
+        private bool _isInitialized;
 
         private GUIStyle CStyle => new GUIStyle
         {
             fontSize = (int) (14 * GuiScaleFactor),
         };
         
+        private GUIStyle CStyleRed => new GUIStyle
+        {
+            fontSize = (int) (14 * GuiScaleFactor),
+            normal = new GUIStyleState
+            {
+                textColor = Color.red,
+            }
+        };
+        
         private void OnEnable()
         {
-            if (TargetFsmContainer == null || TargetFsmContainer.TryGetComponent(out IFsmContainer container) == false) return;
+            _initializationFrequencyYield = new WaitForSeconds(InitializationFrequency);
+            StartCoroutine(InitDebugger());
+        }
+
+        private IEnumerator InitDebugger()
+        {
+            if (TargetFsmContainer == null || TargetFsmContainer.TryGetComponent(out IFsmContainer container) == false) yield break;
+            while (container.GetDebuggableFsm() == null)
+                yield return _initializationFrequencyYield;
+            
             _fsm = container.GetDebuggableFsm();
             _fsmFields = container.GetFieldsInstance();
             _fsmContainer = container;
@@ -43,13 +64,14 @@ namespace HDH.Fsm.Debug
                 _fsm.StateSwitched += OnStateSwitched;
             
             UpdateCurrentState();
+            _isInitialized = true;
         }
 
-        private void OnDestroy()
+        private void OnDisable()
         {
             if (_fsm != null)
                 _fsm.StateSwitched -= OnStateSwitched;
-            
+            _isInitialized = false;
         }
 
         private void UpdateCurrentState()
@@ -75,6 +97,13 @@ namespace HDH.Fsm.Debug
         private void DrawWindow(int id)
         {
             _currentRow = 0;
+            if (_isInitialized == false)
+            {
+                GUI.Label(NextRowRect(), "Target Fsm container isn't initialized", CStyleRed);
+                return;
+            }
+
+            
             GUI.Label(NextRowRect(), _currentState, CStyle);
             
             foreach (ObservableField observableField in ObservableFields)

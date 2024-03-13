@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Samples.HDHFsm.Scripts.States
+namespace Samples.HDHFsm.Scripts.SimpleImplementation.States
 {
     public class FsmExampleLoadingState : FsmExampleBaseState
     {

@@ -1,12 +1,12 @@
 ﻿using System;
 using HDH.Fsm;
 using HDH.Fsm.Debug;
-using Samples.HDHFsm.Scripts.States;
+using Samples.HDHFsm.Scripts.FsmPackage.States;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Samples.HDHFsm.Scripts
+namespace Samples.HDHFsm.Scripts.FsmPackage
 {
     public class FsmExample : MonoBehaviour, IPointerClickHandler, IFsmContainer
     {
@@ -23,7 +23,7 @@ namespace Samples.HDHFsm.Scripts
         public IFsmSharedFields GetFieldsInstance() => 
             _fields;
 
-        private void Awake()
+        private void Start()
         {
             _fields.CoroutineRunner = this;
             _fsm = Fsm<FsmExampleBaseState, SharedFields>

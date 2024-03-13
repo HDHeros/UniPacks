@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace Samples.HDHFsm.Scripts.States
+namespace Samples.HDHFsm.Scripts.FsmPackage.States
 {
     public class FsmExampleGameState : FsmExampleBaseState
     {

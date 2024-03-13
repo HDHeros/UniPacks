@@ -1,7 +1,7 @@
 ﻿using HDH.Fsm;
 using UnityEngine.EventSystems;
 
-namespace Samples.HDHFsm.Scripts.States
+namespace Samples.HDHFsm.Scripts.FsmPackage.States
 {
     public abstract class FsmExampleBaseState : BaseFsmState<FsmExample.SharedFields>
     {
