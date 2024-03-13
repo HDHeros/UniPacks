@@ -33,13 +33,13 @@ namespace Samples.HDHFsm.Scripts.SimpleImplementation
         {
             _states = new Dictionary<Type, DseBaseState>()
             {
-                { typeof(DseAwaitToLoadingStartState), new DseAwaitToLoadingStartState(this, _lockPanel, _label) },
+                { typeof(DseWaitingForLoadingStartState), new DseWaitingForLoadingStartState(this, _lockPanel, _label) },
                 { typeof(DseLoadingState), new DseLoadingState(this, _lockPanel, _label) },
                 { typeof(DseGameState), new DseGameState(this, _label, _gamePanel) },
                 { typeof(DseGameFinishedState), new DseGameFinishedState(this, this, _lockPanel, _label, _gamePanel) },
             };
             
-            _currentState = _states[typeof(DseAwaitToLoadingStartState)];
+            _currentState = _states[typeof(DseWaitingForLoadingStartState)];
             _currentState.Enter();
         }
     }

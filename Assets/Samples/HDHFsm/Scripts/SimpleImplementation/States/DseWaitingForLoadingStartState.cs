@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 namespace Samples.HDHFsm.Scripts.SimpleImplementation.States
 {
-    public class DseAwaitToLoadingStartState : DseBaseState
+    public class DseWaitingForLoadingStartState : DseBaseState
     {
         private readonly RectTransform _lockPanel;
         private readonly Text _label;
 
-        public DseAwaitToLoadingStartState(IStateSwitcher stateSwitcher, RectTransform lockPanel, Text label) : base(stateSwitcher)
+        public DseWaitingForLoadingStartState(IStateSwitcher stateSwitcher, RectTransform lockPanel, Text label) : base(stateSwitcher)
         {
             _lockPanel = lockPanel;
             _label = label;

@@ -57,7 +57,7 @@ namespace Samples.HDHFsm.Scripts.SimpleImplementation.States
         public override void OnPointerClick(PointerEventData eventData)
         {
             if (_fadeCompleted == false) return;
-            StateSwitcher.SwitchState<DseAwaitToLoadingStartState>();
+            StateSwitcher.SwitchState<DseWaitingForLoadingStartState>();
         }
 
         public override void Update()
