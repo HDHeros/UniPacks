@@ -59,7 +59,7 @@ namespace HDH.Popups
         {
             IsShown = true;
             _view.Show();
-            _view.Transform.SetAsFirstSibling();
+            _view.Transform.SetAsLastSibling();
             Shown?.Invoke(this);
         }
         
