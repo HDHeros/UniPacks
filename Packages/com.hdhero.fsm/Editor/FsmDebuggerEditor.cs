@@ -17,7 +17,7 @@ namespace HDH.FsmEditor.Editor
             _properties = new[]
             {
                 serializedObject.FindProperty("TargetFsmContainer"),
-                serializedObject.FindProperty("GuiScaleFactor"),
+                // serializedObject.FindProperty("GuiScaleFactor"),
                 serializedObject.FindProperty("InitializationFrequency"),
                 serializedObject.FindProperty("ObservableFields"),
             };
