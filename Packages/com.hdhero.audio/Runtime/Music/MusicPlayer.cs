@@ -25,8 +25,8 @@ namespace HDH.Audio.Music
          _source2 = _agent.gameObject.AddComponent<AudioSource>();
       }
 
-      public void Play(AudioConfig themeConfig) => 
-         PlayTrack(themeConfig);
+      public void Play(AudioConfig themeConfig, bool withFade = true) => 
+         PlayTrack(themeConfig, withFade);
 
       public void Stop()
       {
@@ -35,7 +35,7 @@ namespace HDH.Audio.Music
          _currentlyPlayingSource.Stop();
       }
 
-      private void PlayTrack(AudioConfig track)
+      private void PlayTrack(AudioConfig track, bool withFade)
       {
          if (_currentWatchingCoroutine != null) 
             _agent.StopCoroutine(_currentWatchingCoroutine);
@@ -44,12 +44,14 @@ namespace HDH.Audio.Music
          var freeSource = _currentlyPlayingSource == _source1 ? _source2 : _source1;
 
          _agent.StopAllCoroutines();
-
-         _agent.StartCoroutine(FadeAudioSource(playingSource, 0, _config.MusicTransitionDuration, playingSource.Stop));
-         track.ConfigureSource(freeSource);
          
+         _agent.StartCoroutine(FadeAudioSource(playingSource, 0, withFade ? _config.MusicTransitionDuration : 0, playingSource.Stop));
+         track.ConfigureSource(freeSource);
+
+         if (withFade)
+            freeSource.volume = 0;
          freeSource.Play();
-         _agent.StartCoroutine(FadeAudioSource(freeSource, track.Volume, _config.MusicTransitionDuration));
+         _agent.StartCoroutine(FadeAudioSource(freeSource, track.Volume, withFade ? _config.MusicTransitionDuration : 0));
          _currentlyPlayingSource = freeSource;
          _currentWatchingCoroutine = _agent.StartCoroutine(WatchCurrentSource());
       }
