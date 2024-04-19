@@ -11,12 +11,17 @@ namespace HDH.GoPool
         private readonly Dictionary<int, Queue<GameObject>> _poolsContainer;
         private readonly Transform _parent;
         private readonly Func<GameObject, Transform, GameObject> _instantiateFunc;
+        private readonly Action<GameObject> _destroyFunc;
+        private readonly ILogger _logger;
 
-        public SimpleGoPool(Func<GameObject, Transform, GameObject> instantiate, bool project = true)
+        public SimpleGoPool(Func<GameObject, Transform, GameObject> instantiate, bool project = true, Action<GameObject> destroyFunc = null, ILogger logger = null)
         {
             _instantiateFunc = instantiate;
             _parent = new GameObject("PooledObjectsParent").transform;
             _poolsContainer = new Dictionary<int, Queue<GameObject>>();
+            _destroyFunc = destroyFunc;
+            if (logger == null)
+                _logger = Debug.unityLogger;
             
             if (project) Object.DontDestroyOnLoad(_parent);
         }
@@ -46,7 +51,23 @@ namespace HDH.GoPool
 
         public void Return<TComponent>(TComponent obj, TComponent prefab) where TComponent : Component =>
             Return(obj.gameObject, prefab.gameObject);
-        
+
+        public void Clean()
+        {
+            if (_destroyFunc == null)
+            {
+                return;
+            }
+            
+            foreach (var keyValuePair in _poolsContainer)
+            {
+                foreach (GameObject gameObject in keyValuePair.Value)
+                {
+                    _destroyFunc.Invoke(gameObject);
+                }
+            }
+        }
+
         private void AddPool(GameObject obj) => 
             _poolsContainer.Add(obj.GetHashCode(), new Queue<GameObject>(16));
 

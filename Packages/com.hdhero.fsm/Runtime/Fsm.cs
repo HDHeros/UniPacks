@@ -123,9 +123,7 @@ namespace HDH.Fsm
 
             InternalState = InternalStateType.Stopped;
         }
-
-        public IDebuggableFsm GetIDebuggable() => 
-            this;
+        
 
         public void SwitchState<TNewState>(Action callback = null) where TNewState : SwitchableState => 
             SwitchState(typeof(TNewState), callback);

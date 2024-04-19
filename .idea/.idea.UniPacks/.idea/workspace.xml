@@ -5,30 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/DefaultStatesExample.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces/IState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces/IState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces/IStateSwitcher.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces/IStateSwitcher.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseAwaitToLoadingStartState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseBaseState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseLoadingState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/FsmSampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/FsmSampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/FsmExample.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/FsmExample.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/DefaultStatesExample.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleAwaitToLoadingStartState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleAwaitToLoadingStartState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseAwaitToLoadingStartState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleBaseState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleBaseState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseBaseState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleGameFinishedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameFinishedState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleGameFinishedState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameFinishedState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleGameState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleGameState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleLoadingState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/FsmExampleLoadingState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseLoadingState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.gopool/Runtime/IGoPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.gopool/Runtime/IGoPool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.gopool/Runtime/SimpleGoPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.gopool/Runtime/SimpleGoPool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.gopool/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.gopool/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,11 +46,12 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/681fdbd9389e4d6e8755fe4f632bfbbe28600/c4/b207ab47/GUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6b1444477c1d41c692ef6c02a838308529ac30/03/41eabb87/IConvertible.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5bc71bb4d98498aba1f868b89d20d47767c00/e4/a4dbd1fd/SerializedObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ae72fc958ab44fdbb61b9d8c36cf141e13ca00/5a/2d2ffd80/ILogger.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ae72fc958ab44fdbb61b9d8c36cf141e13ca00/83/55a4b2b0/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ae72fc958ab44fdbb61b9d8c36cf141e13ca00/c9/423f1cf6/RectOffset.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHEnumGen/MyEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/DefaultStatesExample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces/IStateSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseAwaitToLoadingStartState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseBaseState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameFinishedState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -172,7 +154,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;fsm__debugger&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -303,6 +285,16 @@
       <workItem from="1708612552647" duration="9514000" />
       <workItem from="1709147168091" duration="6587000" />
       <workItem from="1710358430081" duration="131000" />
+      <workItem from="1710502016861" duration="1633000" />
+      <workItem from="1710752573893" duration="870000" />
+      <workItem from="1710784194793" duration="807000" />
+      <workItem from="1710852439884" duration="385000" />
+      <workItem from="1710949016452" duration="2159000" />
+      <workItem from="1711359480376" duration="1062000" />
+      <workItem from="1712223190669" duration="298000" />
+      <workItem from="1712427769787" duration="491000" />
+      <workItem from="1713260591333" duration="917000" />
+      <workItem from="1713510853955" duration="761000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -486,38 +478,6 @@
       <option name="project" value="LOCAL" />
       <updated>1690444982826</updated>
     </task>
-    <task id="LOCAL-00045" summary="fix: renamed OnReceivedFields to OnFieldsReceived">
-      <option name="closed" value="true" />
-      <created>1698413574385</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1698413574385</updated>
-    </task>
-    <task id="LOCAL-00046" summary="feat: QuaternionExtensions">
-      <option name="closed" value="true" />
-      <created>1698683859045</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1698683859045</updated>
-    </task>
-    <task id="LOCAL-00047" summary="feat: playerPrefsExtension">
-      <option name="closed" value="true" />
-      <created>1700467000825</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1700467000825</updated>
-    </task>
-    <task id="LOCAL-00048" summary="feat: IsAnyPopupOpened method for PopupsController">
-      <option name="closed" value="true" />
-      <created>1701329731807</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1701329731807</updated>
-    </task>
     <task id="LOCAL-00049" summary="feat: bool return value for Open method of Popup">
       <option name="closed" value="true" />
       <created>1701424169683</created>
@@ -670,7 +630,39 @@
       <option name="project" value="LOCAL" />
       <updated>1710355715884</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="fix: popups siblings order">
+      <option name="closed" value="true" />
+      <created>1710752698213</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1710752698213</updated>
+    </task>
+    <task id="LOCAL-00069" summary="fix: fsm readme">
+      <option name="closed" value="true" />
+      <created>1710949214245</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1710949214245</updated>
+    </task>
+    <task id="LOCAL-00070" summary="[fsm] fix: hid scale factor field, there is a small bug, should to fix it later">
+      <option name="closed" value="true" />
+      <created>1710952125772</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1710952125772</updated>
+    </task>
+    <task id="LOCAL-00071" summary="[audio] feat: configurable fade for music player">
+      <option name="closed" value="true" />
+      <created>1711359940131</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1711359940131</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -692,10 +684,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="feat: AudioServiceSoConfig.cs" />
-    <MESSAGE value="feat: OnReceivedFields method to Fsm" />
-    <MESSAGE value="fix: renamed OnReceivedFields to OnFieldsReceived" />
-    <MESSAGE value="feat: QuaternionExtensions" />
     <MESSAGE value="feat: playerPrefsExtension" />
     <MESSAGE value="feat: IsAnyPopupOpened method for PopupsController" />
     <MESSAGE value="feat: bool return value for Open method of Popup" />
@@ -717,19 +705,11 @@
     <MESSAGE value="import: fsm samples" />
     <MESSAGE value="feat: current state name and shared fields monitoring" />
     <MESSAGE value="feat: delayed debugger initialization" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: delayed debugger initialization" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsParent.cs</url>
-          <line>7</line>
-          <properties documentPath="C:\Users\Dzianis\RiderProjects\UniPacks\Packages\com.hdhero.pupups\Runtime\PopupsParent.cs" initialLine="7" containingFunctionPresentation="Property 'Transform'" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="fix: popups siblings order" />
+    <MESSAGE value="fix: fsm readme" />
+    <MESSAGE value="[fsm] fix: hid scale factor field, there is a small bug, should to fix it later" />
+    <MESSAGE value="[audio] feat: configurable fade for music player" />
+    <option name="LAST_COMMIT_MESSAGE" value="[audio] feat: configurable fade for music player" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

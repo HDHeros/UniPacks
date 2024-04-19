@@ -8,5 +8,6 @@ namespace HDH.GoPool
         public TComponent Get<TComponent>(TComponent obj, Transform parent = null) where TComponent : Component;
         public void Return(GameObject obj, GameObject prefab);
         public void Return<TComponent>(TComponent obj, TComponent prefab) where TComponent : Component;
+        public void Clean();
     }
 }
