@@ -65,6 +65,7 @@ namespace HDH.GoPool
                 {
                     _destroyFunc.Invoke(gameObject);
                 }
+                keyValuePair.Value.Clear();
             }
         }
 
