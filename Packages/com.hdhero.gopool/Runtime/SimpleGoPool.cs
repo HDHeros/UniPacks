@@ -52,7 +52,7 @@ namespace HDH.GoPool
         public void Return<TComponent>(TComponent obj, TComponent prefab) where TComponent : Component =>
             Return(obj.gameObject, prefab.gameObject);
 
-        public void Clean()
+        public void Clear()
         {
             if (_destroyFunc == null)
             {
