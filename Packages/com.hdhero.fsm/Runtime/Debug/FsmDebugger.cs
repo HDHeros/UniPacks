@@ -10,6 +10,7 @@ namespace HDH.Fsm.Debug
     [DefaultExecutionOrder(1)]
     public class FsmDebugger : MonoBehaviour
     {
+        #if UNITY_EDITOR
         private const float WindowWidth = 300;
         private const float WindowHeight = 25;
         private const float RowHeight = 20;
@@ -145,5 +146,6 @@ namespace HDH.Fsm.Debug
             public string FieldName;
             public bool Observe;
         }
+        #endif
     }
 }

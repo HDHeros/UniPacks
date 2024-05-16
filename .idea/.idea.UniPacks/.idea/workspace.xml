@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.gopool/Runtime/IGoPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.gopool/Runtime/IGoPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.gopool/Runtime/SimpleGoPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.gopool/Runtime/SimpleGoPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.gopool/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.gopool/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +66,7 @@
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/IDebuggableFsm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.fsm/Runtime/Fsm.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IFsmSharedFields.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IStateSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/SwitchableState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -74,6 +76,8 @@
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleGameFinishedState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleGameState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleLoadingState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.gopool/Runtime/IGoPool.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.gopool/Runtime/SimpleGoPool.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/AnimatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -166,15 +170,15 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Dzianis\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Dzianis\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Dzianis\\AppData\\Local\\Symbols\\src&quot;
+      &quot;C:\\Users\\leode\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\leode\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\leode\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2020.3.34f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\Dzianis\RiderProjects\UniPacks -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Dzianis\RiderProjects\UniPacks" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -182,7 +186,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2020.3.34f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\Dzianis\RiderProjects\UniPacks -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Dzianis\RiderProjects\UniPacks" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -294,7 +298,12 @@
       <workItem from="1712223190669" duration="298000" />
       <workItem from="1712427769787" duration="491000" />
       <workItem from="1713260591333" duration="917000" />
-      <workItem from="1713510853955" duration="761000" />
+      <workItem from="1713510853955" duration="2508000" />
+      <workItem from="1714028288198" duration="646000" />
+      <workItem from="1714592728606" duration="1289000" />
+      <workItem from="1715850018602" duration="25000" />
+      <workItem from="1715850127902" duration="884000" />
+      <workItem from="1715853885950" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -478,30 +487,6 @@
       <option name="project" value="LOCAL" />
       <updated>1690444982826</updated>
     </task>
-    <task id="LOCAL-00049" summary="feat: bool return value for Open method of Popup">
-      <option name="closed" value="true" />
-      <created>1701424169683</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1701424169683</updated>
-    </task>
-    <task id="LOCAL-00050" summary="fix: music player now is just a player, it no more has music control functions">
-      <option name="closed" value="true" />
-      <created>1701852596422</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1701852596422</updated>
-    </task>
-    <task id="LOCAL-00051" summary="fix: removed scene themes structure">
-      <option name="closed" value="true" />
-      <created>1701854099748</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1701854099748</updated>
-    </task>
     <task id="LOCAL-00052" summary="fix: infinite loop">
       <option name="closed" value="true" />
       <created>1701855425109</created>
@@ -662,7 +647,31 @@
       <option name="project" value="LOCAL" />
       <updated>1711359940131</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="[gopool] feat: clean method">
+      <option name="closed" value="true" />
+      <created>1713511656759</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1713511656759</updated>
+    </task>
+    <task id="LOCAL-00073" summary="[gopool] fix: method clean renamed to clear">
+      <option name="closed" value="true" />
+      <created>1713511838727</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1713511838727</updated>
+    </task>
+    <task id="LOCAL-00074" summary="[gopool] fix: clear method of SimpleGoPool">
+      <option name="closed" value="true" />
+      <created>1713514149241</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1713514149241</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,6 +679,11 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -684,9 +698,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="feat: playerPrefsExtension" />
-    <MESSAGE value="feat: IsAnyPopupOpened method for PopupsController" />
-    <MESSAGE value="feat: bool return value for Open method of Popup" />
     <MESSAGE value="fix: music player now is just a player, it no more has music control functions" />
     <MESSAGE value="fix: removed scene themes structure" />
     <MESSAGE value="fix: infinite loop" />
@@ -709,7 +720,10 @@
     <MESSAGE value="fix: fsm readme" />
     <MESSAGE value="[fsm] fix: hid scale factor field, there is a small bug, should to fix it later" />
     <MESSAGE value="[audio] feat: configurable fade for music player" />
-    <option name="LAST_COMMIT_MESSAGE" value="[audio] feat: configurable fade for music player" />
+    <MESSAGE value="[gopool] feat: clean method" />
+    <MESSAGE value="[gopool] fix: method clean renamed to clear" />
+    <MESSAGE value="[gopool] fix: clear method of SimpleGoPool" />
+    <option name="LAST_COMMIT_MESSAGE" value="[gopool] fix: clear method of SimpleGoPool" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
