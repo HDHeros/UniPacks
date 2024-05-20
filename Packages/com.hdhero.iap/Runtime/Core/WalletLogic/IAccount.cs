@@ -8,5 +8,6 @@ namespace HDH.Iap.Core.WalletLogic
         public string CurrencyId { get; }
         public UniTask<TransactionResult> MakePurchase(IapItem item);
         public UniTask<bool> IsEnoughResourcesToPurchase(IapItem item);
+        public bool IsAccountAvailable();
     }
 }

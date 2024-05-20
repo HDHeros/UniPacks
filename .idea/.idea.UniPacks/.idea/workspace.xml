@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/IIapConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/IIapConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Implementations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Implementations/IapConfigContainer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Implementations/IapConfigContainer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Implementations/IapConfigSo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Implementations/IapConfigSo.cs.meta" afterDir="false" />
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="feat: iap cfg implementations">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/Assortment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/Assortment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/IIapItemConfigContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/IIapItemConfigContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/IAccount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/IAccount.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +53,6 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/BaseInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Editor/FsmDebuggerEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.fsm/Editor/HDH.FsmEditor.asmdef" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/IDebuggableFsm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" root0="FORCE_HIGHLIGHTING" />
@@ -75,13 +65,12 @@
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleGameFinishedState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleGameState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleLoadingState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.fsm/package.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/Assortment.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/AnimatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/packages-lock.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -303,7 +292,7 @@
       <workItem from="1715850018602" duration="25000" />
       <workItem from="1715850127902" duration="884000" />
       <workItem from="1715853885950" duration="935000" />
-      <workItem from="1716189581405" duration="6169000" />
+      <workItem from="1716189581405" duration="7271000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -487,14 +476,6 @@
       <option name="project" value="LOCAL" />
       <updated>1690444982826</updated>
     </task>
-    <task id="LOCAL-00055" summary="fix: fade logic">
-      <option name="closed" value="true" />
-      <created>1701860497052</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1701860497052</updated>
-    </task>
     <task id="LOCAL-00056" summary="feat unityExt: avg for arrays of Vector3">
       <option name="closed" value="true" />
       <created>1702626210853</created>
@@ -671,7 +652,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716194946563</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="feat: iap cfg implementations">
+      <option name="closed" value="true" />
+      <created>1716196056945</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1716196056945</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -698,7 +687,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="feat: fade for set method of group volume" />
     <MESSAGE value="fix: null ref" />
     <MESSAGE value="fix: fade logic" />
     <MESSAGE value="feat unityExt: avg for arrays of Vector3" />
@@ -723,7 +711,8 @@
     <MESSAGE value="[fsm]fix: fsm debugger's build exception" />
     <MESSAGE value="[fsm] fix: platforms of editor's assembly" />
     <MESSAGE value="[iap] feat: started core" />
-    <option name="LAST_COMMIT_MESSAGE" value="[iap] feat: started core" />
+    <MESSAGE value="feat: iap cfg implementations" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: iap cfg implementations" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
