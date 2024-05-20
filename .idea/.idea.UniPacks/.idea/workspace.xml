@@ -5,12 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Docs/Iap/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/Assortment.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/Assortment.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/IIapFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/IIapFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/IIapItemConfigContainer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/IIapItemConfigContainer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/IapItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/IapItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/IapService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/IapService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/IAccount.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/IAccount.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/TransactionResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/TransactionResult.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/TransactionResultType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/TransactionResultType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/Wallet.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/Wallet.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,15 +59,10 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="cc0d3771-f0b3-4e92-852a-1c9a088c7297" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/105da1159ec9496ab9310694c7b11dd2532bb0/53/a50056fe/IFormatProvider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/681fdbd9389e4d6e8755fe4f632bfbbe28600/4b/310634db/GUIStyle.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/681fdbd9389e4d6e8755fe4f632bfbbe28600/c4/b207ab47/GUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6b1444477c1d41c692ef6c02a838308529ac30/03/41eabb87/IConvertible.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5bc71bb4d98498aba1f868b89d20d47767c00/e4/a4dbd1fd/SerializedObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ae72fc958ab44fdbb61b9d8c36cf141e13ca00/5a/2d2ffd80/ILogger.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ae72fc958ab44fdbb61b9d8c36cf141e13ca00/83/55a4b2b0/Debug.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ae72fc958ab44fdbb61b9d8c36cf141e13ca00/c9/423f1cf6/RectOffset.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHEnumGen/MyEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/DefaultStatesExample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/Interfaces/IStateSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
@@ -58,15 +71,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseGameState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseLoadingState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.31/UnityEngine.TestRunner/TestRunner/Callbacks/RemoteTestResultSender.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/BaseInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Editor/FsmDebuggerEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.fsm/Editor/HDH.FsmEditor.asmdef" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/FsmDebugger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Debug/IDebuggableFsm.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/Fsm.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.fsm/Runtime/Fsm.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IFsmSharedFields.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/IStateSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Runtime/SwitchableState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -76,13 +89,13 @@
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleGameFinishedState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleGameState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleLoadingState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.gopool/Runtime/IGoPool.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.gopool/Runtime/SimpleGoPool.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.fsm/package.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/AnimatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/packages-lock.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -303,7 +316,8 @@
       <workItem from="1714592728606" duration="1289000" />
       <workItem from="1715850018602" duration="25000" />
       <workItem from="1715850127902" duration="884000" />
-      <workItem from="1715853885950" duration="25000" />
+      <workItem from="1715853885950" duration="935000" />
+      <workItem from="1716189581405" duration="4926000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -487,22 +501,6 @@
       <option name="project" value="LOCAL" />
       <updated>1690444982826</updated>
     </task>
-    <task id="LOCAL-00052" summary="fix: infinite loop">
-      <option name="closed" value="true" />
-      <created>1701855425109</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1701855425109</updated>
-    </task>
-    <task id="LOCAL-00053" summary="feat: fade for set method of group volume">
-      <option name="closed" value="true" />
-      <created>1701859613497</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1701859613497</updated>
-    </task>
     <task id="LOCAL-00054" summary="fix: null ref">
       <option name="closed" value="true" />
       <created>1701859941432</created>
@@ -671,7 +669,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713514149241</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="[fsm]fix: fsm debugger's build exception">
+      <option name="closed" value="true" />
+      <created>1715853987604</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1715853987605</updated>
+    </task>
+    <task id="LOCAL-00076" summary="[fsm] fix: platforms of editor's assembly">
+      <option name="closed" value="true" />
+      <created>1715854214061</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1715854214061</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -698,8 +712,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fix: music player now is just a player, it no more has music control functions" />
-    <MESSAGE value="fix: removed scene themes structure" />
     <MESSAGE value="fix: infinite loop" />
     <MESSAGE value="feat: fade for set method of group volume" />
     <MESSAGE value="fix: null ref" />
@@ -723,7 +735,9 @@
     <MESSAGE value="[gopool] feat: clean method" />
     <MESSAGE value="[gopool] fix: method clean renamed to clear" />
     <MESSAGE value="[gopool] fix: clear method of SimpleGoPool" />
-    <option name="LAST_COMMIT_MESSAGE" value="[gopool] fix: clear method of SimpleGoPool" />
+    <MESSAGE value="[fsm]fix: fsm debugger's build exception" />
+    <MESSAGE value="[fsm] fix: platforms of editor's assembly" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fsm] fix: platforms of editor's assembly" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

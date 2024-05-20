@@ -1,0 +1,11 @@
+{
+  "name": "com.hdhero.iap",
+  "version": "0.0.1",
+  "displayName": "HDH Iap",
+  "documentationUrl": "https://github.com/HDHeros/UniPacks/blob/main/Docs/Iap/README.md",
+  "author": {
+    "name": "HDHero",
+    "url": "https://github.com/HDHeros"
+  },
+  "hideInEditor": false
+}

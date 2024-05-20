@@ -31,6 +31,12 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "com.hdhero.iap": {
+      "version": "file:com.hdhero.iap",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.hdhero.pupups": {
       "version": "file:com.hdhero.pupups",
       "depth": 0,
