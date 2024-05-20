@@ -5,30 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Docs/Iap/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/Assortment.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/Assortment.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/IIapFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/IIapFactory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/IIapItemConfigContainer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/IIapItemConfigContainer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/IapItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/IapItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/IapService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/IapService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/IAccount.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/IAccount.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/TransactionResult.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/TransactionResult.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/TransactionResultType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/TransactionResultType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/Wallet.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/Wallet.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/IIapConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/IIapConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Implementations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Implementations/IapConfigContainer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Implementations/IapConfigContainer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Implementations/IapConfigSo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Implementations/IapConfigSo.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/Assortment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/Assortment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/IIapItemConfigContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/IIapItemConfigContainer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -317,7 +303,7 @@
       <workItem from="1715850018602" duration="25000" />
       <workItem from="1715850127902" duration="884000" />
       <workItem from="1715853885950" duration="935000" />
-      <workItem from="1716189581405" duration="4926000" />
+      <workItem from="1716189581405" duration="6169000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -501,14 +487,6 @@
       <option name="project" value="LOCAL" />
       <updated>1690444982826</updated>
     </task>
-    <task id="LOCAL-00054" summary="fix: null ref">
-      <option name="closed" value="true" />
-      <created>1701859941432</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1701859941432</updated>
-    </task>
     <task id="LOCAL-00055" summary="fix: fade logic">
       <option name="closed" value="true" />
       <created>1701860497052</created>
@@ -685,7 +663,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715854214061</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="[iap] feat: started core">
+      <option name="closed" value="true" />
+      <created>1716194946563</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1716194946563</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -712,7 +698,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fix: infinite loop" />
     <MESSAGE value="feat: fade for set method of group volume" />
     <MESSAGE value="fix: null ref" />
     <MESSAGE value="fix: fade logic" />
@@ -737,7 +722,8 @@
     <MESSAGE value="[gopool] fix: clear method of SimpleGoPool" />
     <MESSAGE value="[fsm]fix: fsm debugger's build exception" />
     <MESSAGE value="[fsm] fix: platforms of editor's assembly" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fsm] fix: platforms of editor's assembly" />
+    <MESSAGE value="[iap] feat: started core" />
+    <option name="LAST_COMMIT_MESSAGE" value="[iap] feat: started core" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

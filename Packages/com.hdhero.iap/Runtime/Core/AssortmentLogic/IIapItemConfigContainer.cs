@@ -6,8 +6,4 @@ namespace HDH.Iap.Core.AssortmentLogic
     {
         public Dictionary<string, IIapConfig> Configs { get; }
     }
-
-    public interface IIapConfig
-    {
-    }
 }
