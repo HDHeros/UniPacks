@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="[iap] feat: availability check method for account">
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Implementations/DefaultIapFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Implementations/DefaultIapFactory.cs.meta" afterDir="false" />
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/Assortment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/Assortment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/IapItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/IapItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/UserDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/UserDataService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.user-data/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +67,7 @@
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleGameFinishedState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleGameState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleLoadingState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/Assortment.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/Assortment.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/IAccount.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -296,7 +296,9 @@
       <workItem from="1715850018602" duration="25000" />
       <workItem from="1715850127902" duration="884000" />
       <workItem from="1715853885950" duration="935000" />
-      <workItem from="1716189581405" duration="8554000" />
+      <workItem from="1716189581405" duration="9194000" />
+      <workItem from="1716287661379" duration="209000" />
+      <workItem from="1717091898166" duration="456000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -480,14 +482,6 @@
       <option name="project" value="LOCAL" />
       <updated>1690444982826</updated>
     </task>
-    <task id="LOCAL-00057" summary="fix: some var names">
-      <option name="closed" value="true" />
-      <created>1702648690710</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1702648690710</updated>
-    </task>
     <task id="LOCAL-00058" summary="fix: save load service interface">
       <option name="closed" value="true" />
       <created>1705325145079</created>
@@ -664,7 +658,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716197063140</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="[iap] feat: default iap factory">
+      <option name="closed" value="true" />
+      <created>1716199290718</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1716199290718</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -691,7 +693,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fix: fade logic" />
     <MESSAGE value="feat unityExt: avg for arrays of Vector3" />
     <MESSAGE value="fix: some var names" />
     <MESSAGE value="fix: save load service interface" />
@@ -716,7 +717,8 @@
     <MESSAGE value="[iap] feat: started core" />
     <MESSAGE value="feat: iap cfg implementations" />
     <MESSAGE value="[iap] feat: availability check method for account" />
-    <option name="LAST_COMMIT_MESSAGE" value="[iap] feat: availability check method for account" />
+    <MESSAGE value="[iap] feat: default iap factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="[iap] feat: default iap factory" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

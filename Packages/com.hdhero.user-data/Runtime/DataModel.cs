@@ -15,5 +15,7 @@ namespace HDH.UserData
             ForceSaveRequested?.Invoke(this);
         
         public virtual void BeforeSave(){}
+        
+        public virtual void Reset(){}
     }
 }

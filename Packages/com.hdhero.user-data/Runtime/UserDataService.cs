@@ -50,11 +50,26 @@ namespace HDH.UserData
             modelInfo.IsDirty = true;
             _monoAgent.StartCoroutine(SaveDelayed(model, modelInfo));
         }
-
+        
         public void ForceSaveModel<T>(T model) where T : DataModel, new()
         {
             ValidateModel(model);
             SaveModel(model);
+        }
+
+        public void ResetModel(Type type)
+        {
+            if (!_loadedModels.TryGetValue(type, out var info)) return;
+            info.IsDirty = true;
+            info.Model.Reset();
+        }
+
+        public void ResetAllModels()
+        {
+            foreach (var dataModelInfo in _loadedModels)
+            {
+                ResetModel(dataModelInfo.Value.Model.GetType());
+            }
         }
 
         private void ValidateModel(DataModel model)
