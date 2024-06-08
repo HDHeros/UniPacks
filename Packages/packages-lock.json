@@ -37,6 +37,12 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "com.hdhero.metrics": {
+      "version": "file:com.hdhero.metrics",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.hdhero.pupups": {
       "version": "file:com.hdhero.pupups",
       "depth": 0,

@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Docs/Metrics/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.metrics/Runtime/Event.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.metrics/Runtime/Event.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.metrics/Runtime/IMetricsAgent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.metrics/Runtime/IMetricsAgent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.metrics/Runtime/MetricsService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.metrics/Runtime/MetricsService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.metrics/Runtime/ObjectPool.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.metrics/Runtime/ObjectPool.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/UserDataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/UserDataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.user-data/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.user-data/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,12 +74,10 @@
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleGameFinishedState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleGameState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleLoadingState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/Assortment.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.iap/Runtime/Core/AssortmentLogic/Assortment.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.iap/Runtime/Core/WalletLogic/IAccount.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/AnimatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.user-data/Runtime/DataModel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -298,7 +303,8 @@
       <workItem from="1715853885950" duration="935000" />
       <workItem from="1716189581405" duration="9194000" />
       <workItem from="1716287661379" duration="209000" />
-      <workItem from="1717091898166" duration="456000" />
+      <workItem from="1717091898166" duration="1221000" />
+      <workItem from="1717831609923" duration="1324000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -482,14 +488,6 @@
       <option name="project" value="LOCAL" />
       <updated>1690444982826</updated>
     </task>
-    <task id="LOCAL-00058" summary="fix: save load service interface">
-      <option name="closed" value="true" />
-      <created>1705325145079</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1705325145080</updated>
-    </task>
     <task id="LOCAL-00059" summary="feat: dummy save load service">
       <option name="closed" value="true" />
       <created>1705325391517</created>
@@ -666,7 +664,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716199290718</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="[userData] feat: reset model logic">
+      <option name="closed" value="true" />
+      <created>1717092379831</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1717092379831</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -693,7 +699,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="feat unityExt: avg for arrays of Vector3" />
     <MESSAGE value="fix: some var names" />
     <MESSAGE value="fix: save load service interface" />
     <MESSAGE value="feat: dummy save load service" />
@@ -718,7 +723,8 @@
     <MESSAGE value="feat: iap cfg implementations" />
     <MESSAGE value="[iap] feat: availability check method for account" />
     <MESSAGE value="[iap] feat: default iap factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="[iap] feat: default iap factory" />
+    <MESSAGE value="[userData] feat: reset model logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="[userData] feat: reset model logic" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

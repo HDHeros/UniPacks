@@ -1,0 +1,11 @@
+{
+  "name": "com.hdhero.metrics",
+  "version": "0.0.1",
+  "displayName": "HDH Metrics",
+  "documentationUrl": "https://github.com/HDHeros/UniPacks/blob/main/Docs/Metrics/README.md",
+  "author": {
+    "name": "HDHero",
+    "url": "https://github.com/HDHeros"
+  },
+  "hideInEditor": false
+}
