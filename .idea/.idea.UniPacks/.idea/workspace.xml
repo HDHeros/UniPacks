@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Docs/Metrics/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.metrics/Runtime/Event.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.metrics/Runtime/Event.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.metrics/Runtime/IMetricsAgent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.metrics/Runtime/IMetricsAgent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.metrics/Runtime/MetricsService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.metrics/Runtime/MetricsService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.metrics/Runtime/ObjectPool.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.metrics/Runtime/ObjectPool.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="[metrics] feat: metrics service">
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.metrics/Runtime/DummyMetricsAgent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.metrics/Runtime/DummyMetricsAgent.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,7 +295,7 @@
       <workItem from="1716189581405" duration="9194000" />
       <workItem from="1716287661379" duration="209000" />
       <workItem from="1717091898166" duration="1221000" />
-      <workItem from="1717831609923" duration="1324000" />
+      <workItem from="1717831609923" duration="1445000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Unity project">
       <created>1682759940662</created>
@@ -488,14 +479,6 @@
       <option name="project" value="LOCAL" />
       <updated>1690444982826</updated>
     </task>
-    <task id="LOCAL-00059" summary="feat: dummy save load service">
-      <option name="closed" value="true" />
-      <created>1705325391517</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1705325391517</updated>
-    </task>
     <task id="LOCAL-00060" summary="feat: delayed initialization for save load service">
       <option name="closed" value="true" />
       <created>1705396390590</created>
@@ -672,7 +655,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717092379831</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="[metrics] feat: metrics service">
+      <option name="closed" value="true" />
+      <created>1717832993059</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1717832993059</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -699,7 +690,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fix: some var names" />
     <MESSAGE value="fix: save load service interface" />
     <MESSAGE value="feat: dummy save load service" />
     <MESSAGE value="feat: delayed initialization for save load service" />
@@ -724,7 +714,8 @@
     <MESSAGE value="[iap] feat: availability check method for account" />
     <MESSAGE value="[iap] feat: default iap factory" />
     <MESSAGE value="[userData] feat: reset model logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="[userData] feat: reset model logic" />
+    <MESSAGE value="[metrics] feat: metrics service" />
+    <option name="LAST_COMMIT_MESSAGE" value="[metrics] feat: metrics service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
