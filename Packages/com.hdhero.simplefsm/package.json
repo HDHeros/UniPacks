@@ -1,0 +1,11 @@
+﻿{
+  "name": "com.hdhero.simplefsm",
+  "version": "0.0.1",
+  "displayName": "HDH SimpleFsm",
+  "documentationUrl": "https://github.com/HDHeros/UniPacks/blob/main/Docs/SimpleFsm/README.md",
+  "author": {
+    "name": "HDHero",
+    "url": "https://github.com/HDHeros"
+  },
+  "hideInEditor": false
+}

@@ -49,6 +49,12 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "com.hdhero.simplefsm": {
+      "version": "file:com.hdhero.simplefsm",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.hdhero.unity-engine-ext": {
       "version": "file:com.hdhero.unity-engine-ext",
       "depth": 0,
