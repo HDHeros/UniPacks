@@ -9,10 +9,13 @@ namespace HDH.SimpleFsm
         private bool _isStarted;
         private T _currentState;
 
-        public SimpleFsm(T[] statesId)
+        public static SimpleFsm<T> Create(T[] states) => 
+            new(states);
+
+        private SimpleFsm(T[] states)
         {
             _states = new Dictionary<T, State>();
-            foreach (var id in statesId)
+            foreach (var id in states)
             {
                 _states.Add(id, new State());
             }

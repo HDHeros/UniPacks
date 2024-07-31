@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="[metrics] feat: dummy metrics agent">
-      <change afterPath="$PROJECT_DIR$/Docs/SimpleFsm/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.simplefsm/Runtime/SimpleFsm.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.simplefsm/Runtime/SimpleFsm.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/com.hdhero.simplefsm/package.json" afterDir="false" />
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="[simpleFsm] feat: first version">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.simplefsm/Runtime/SimpleFsm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.simplefsm/Runtime/SimpleFsm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.simplefsm/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.simplefsm/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -483,14 +480,6 @@
       <option name="project" value="LOCAL" />
       <updated>1690444982826</updated>
     </task>
-    <task id="LOCAL-00061" summary="remove: redundant &quot;Initialized&quot; event">
-      <option name="closed" value="true" />
-      <created>1705481139951</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1705481139951</updated>
-    </task>
     <task id="LOCAL-00062" summary="test push">
       <option name="closed" value="true" />
       <created>1707231194348</created>
@@ -667,7 +656,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717833087569</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="[simpleFsm] feat: first version">
+      <option name="closed" value="true" />
+      <created>1722439427533</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1722439427533</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -694,7 +691,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="feat: dummy save load service" />
     <MESSAGE value="feat: delayed initialization for save load service" />
     <MESSAGE value="remove: redundant &quot;Initialized&quot; event" />
     <MESSAGE value="test push" />
@@ -719,7 +715,8 @@
     <MESSAGE value="[userData] feat: reset model logic" />
     <MESSAGE value="[metrics] feat: metrics service" />
     <MESSAGE value="[metrics] feat: dummy metrics agent" />
-    <option name="LAST_COMMIT_MESSAGE" value="[metrics] feat: dummy metrics agent" />
+    <MESSAGE value="[simpleFsm] feat: first version" />
+    <option name="LAST_COMMIT_MESSAGE" value="[simpleFsm] feat: first version" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
