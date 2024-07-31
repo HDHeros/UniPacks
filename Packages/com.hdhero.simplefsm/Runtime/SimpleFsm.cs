@@ -9,7 +9,7 @@ namespace HDH.SimpleFsm
         private bool _isStarted;
         private T _currentState;
 
-        public static SimpleFsm<T> Create(T[] states) => 
+        public static SimpleFsm<T> Create(params T[] states) => 
             new(states);
 
         private SimpleFsm(T[] states)
