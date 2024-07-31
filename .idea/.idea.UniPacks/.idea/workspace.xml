@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="[simpleFsm] feat: first version">
+    <list default="true" id="a38ee892-8962-4c21-a206-87edb7adc536" name="Default Changelist" comment="[simpleFsm] feat: params keyword for &quot;Create&quot; method">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UniPacks/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.simplefsm/Runtime/SimpleFsm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.simplefsm/Runtime/SimpleFsm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/com.hdhero.simplefsm/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/com.hdhero.simplefsm/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHFsm/Scripts/SimpleImplementation/States/DseLoadingState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Samples/HDHUserData/UserDataSample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_InputField.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/BaseInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Editor/FsmDebuggerEditor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,9 +67,10 @@
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleGameState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.fsm/Samples~/ButtonGame/Scripts/States/FsmExampleLoadingState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.pupups/Runtime/PopupsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.simplefsm/Runtime/SimpleFsm.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.simplefsm/package.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.unity-engine-ext/Runtime/Extensions/AnimatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Editor/SaveLoadMonoAgentEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Other/Projects/RiderProjects/UniPacks/Packages/com.hdhero.user-data/Runtime/DataModel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/DataModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/com.hdhero.user-data/Runtime/SaveLoadService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -480,22 +481,6 @@
       <option name="project" value="LOCAL" />
       <updated>1690444982826</updated>
     </task>
-    <task id="LOCAL-00062" summary="test push">
-      <option name="closed" value="true" />
-      <created>1707231194348</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1707231194348</updated>
-    </task>
-    <task id="LOCAL-00063" summary="fix: music player, track's volume">
-      <option name="closed" value="true" />
-      <created>1708612834897</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1708612834897</updated>
-    </task>
     <task id="LOCAL-00064" summary="feat: new fsm sample">
       <option name="closed" value="true" />
       <created>1708630418842</created>
@@ -664,7 +649,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722439427533</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="[simpleFsm] feat: static method &quot;Create&quot; for convenient usage with builder pattern">
+      <option name="closed" value="true" />
+      <created>1722439900603</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1722439900604</updated>
+    </task>
+    <task id="LOCAL-00086" summary="[simpleFsm] feat: params keyword for &quot;Create&quot; method">
+      <option name="closed" value="true" />
+      <created>1722440012655</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1722440012655</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -691,8 +692,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="feat: delayed initialization for save load service" />
-    <MESSAGE value="remove: redundant &quot;Initialized&quot; event" />
     <MESSAGE value="test push" />
     <MESSAGE value="fix: music player, track's volume" />
     <MESSAGE value="feat: new fsm sample" />
@@ -716,7 +715,9 @@
     <MESSAGE value="[metrics] feat: metrics service" />
     <MESSAGE value="[metrics] feat: dummy metrics agent" />
     <MESSAGE value="[simpleFsm] feat: first version" />
-    <option name="LAST_COMMIT_MESSAGE" value="[simpleFsm] feat: first version" />
+    <MESSAGE value="[simpleFsm] feat: static method &quot;Create&quot; for convenient usage with builder pattern" />
+    <MESSAGE value="[simpleFsm] feat: params keyword for &quot;Create&quot; method" />
+    <option name="LAST_COMMIT_MESSAGE" value="[simpleFsm] feat: params keyword for &quot;Create&quot; method" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

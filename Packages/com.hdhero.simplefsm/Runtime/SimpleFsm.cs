@@ -3,31 +3,31 @@ using System.Collections.Generic;
 
 namespace HDH.SimpleFsm
 {
-    public class SimpleFsm<T>
+    public class SimpleFsm<TStateId, TTransitionArgs>
     {
-        private readonly Dictionary<T,State> _states;
+        private readonly Dictionary<TStateId,State> _states;
         private bool _isStarted;
-        private T _currentState;
+        private TStateId _currentState;
 
-        public static SimpleFsm<T> Create(params T[] states) => 
+        public static SimpleFsm<TStateId, TTransitionArgs> Create(params TStateId[] states) => 
             new(states);
 
-        private SimpleFsm(T[] states)
+        private SimpleFsm(TStateId[] states)
         {
-            _states = new Dictionary<T, State>();
+            _states = new Dictionary<TStateId, State>();
             foreach (var id in states)
             {
                 _states.Add(id, new State());
             }
         }
 
-        public SimpleFsm<T> AddTransition(T from, T to, Action action)
+        public SimpleFsm<TStateId, TTransitionArgs> AddTransition(TStateId from, TStateId to, Action<TTransitionArgs> action)
         {
             _states[from].AddTransitionTo(to, action);
             return this;
         }
 
-        public void StartWith(T initialState)
+        public void StartWith(TStateId initialState)
         {
             if (_isStarted)
                 throw new Exception("Fsm is already started");
@@ -38,25 +38,28 @@ namespace HDH.SimpleFsm
             _currentState = initialState;
         }
 
-        public void SwitchState(T targetState)
+        public void SwitchState(TStateId targetState, TTransitionArgs args)
         {
             if (_states.ContainsKey(targetState) == false)
                 throw new Exception($"There is no state with id {targetState}. Try to add it before.");
 
-            if (_states[_currentState].TryGetTransitionTo(targetState, out Action transitionAction))
-                transitionAction?.Invoke();
+            if (_states[_currentState].TryGetTransitionTo(targetState, out Action<TTransitionArgs> transitionAction))
+                transitionAction?.Invoke(args);
                 
             _currentState = targetState;
         }
         
         public class State
         {
-            private readonly Dictionary<T, Action> _transitionsTo;
-        
-            public void AddTransitionTo(T to, Action action) => 
+            private readonly Dictionary<TStateId, Action<TTransitionArgs>> _transitionsTo;
+
+            public State() => 
+                _transitionsTo = new Dictionary<TStateId, Action<TTransitionArgs>>();
+            
+            public void AddTransitionTo(TStateId to, Action<TTransitionArgs> action) => 
                 _transitionsTo.Add(to, action);
 
-            public bool TryGetTransitionTo(T targetState, out Action action) => 
+            public bool TryGetTransitionTo(TStateId targetState, out Action<TTransitionArgs> action) => 
                 _transitionsTo.TryGetValue(targetState, out action);
         }
 
