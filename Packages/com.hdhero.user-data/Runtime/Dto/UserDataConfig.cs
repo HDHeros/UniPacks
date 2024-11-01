@@ -13,5 +13,12 @@ namespace HDH.UserData.Dto
         [SerializeField] private string _saveFolderPath;
         [SerializeField] private string _fileExtension;
         [SerializeField] private float _saveDelayInSeconds;
+
+        public UserDataConfig(string saveFolderPath, string fileExtension, float saveDelayInSeconds)
+        {
+            _saveFolderPath = saveFolderPath;
+            _fileExtension = fileExtension;
+            _saveDelayInSeconds = saveDelayInSeconds;
+        }
     }
 }
